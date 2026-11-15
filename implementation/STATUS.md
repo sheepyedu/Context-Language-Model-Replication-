@@ -28,3 +28,6 @@ CPFS当次约5.95TB可用，保留全部请求/响应、Token/logprob、工具�
 
 
 新增首有效组group004，同题32条完整轨迹，1365完整Qwen调用，32有效评审，6成功/26负结果。1条原native ERROR工具超时及原负奖励保留。全部归档SHA、Token/logprob/mask、21操作编辑回合及成本重算通过，整组满足奖励方差条件。此组验收新增模型0，仍需凑齐8有效组再执行首个参数更新。
+
+
+03:02新增逐轨迹CSV及角色/任务/策略分账，各维度与总账一致，2881已闭调用32299581 Token，含DeepSeek151472。原始网页检索2025份/4050文件也已复制服务器逐SHA核验。生成与评审在途仍持续，快照随读取更新。统计脚本 `management/token_report.py`，网页辅助记录镜像脚本 `snapshot_web_evidence.py` 与 `receive_web_evidence.py`。
