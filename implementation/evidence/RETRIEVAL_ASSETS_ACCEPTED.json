@@ -1,0 +1,11 @@
+{
+  "assets_verified": 16,
+  "index_revision": "b3f37f70c33829eb09d04784a54277a31871fd63",
+  "java_version": "openjdk version \"21.0.13\" 2026-10-20 LTS\nOpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)",
+  "java_home": "/mount-data/CLM-Replication/env/java21/jdk-21.0.13+9-jre",
+  "index_path": "/mount-data/Datasets/BrowseComp-Plus/indexes/bm25-b3f37f70",
+  "runtime": "/mount-data/CLM-Replication/management/retrieval-runtime.sh",
+  "cuda_visible_devices": "",
+  "active_training_source_changed": false,
+  "model_calls": 0
+}

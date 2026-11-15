@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "scope": "complete32 group, native harness/judge, retention and training provenance",
+  "source_sha256": "4179b56eff438f250ab7af8138a32fa9009ae291407fd3e76650dc5808f76294",
+  "prompt_count": 1,
+  "planned_trajectories": 32,
+  "native_status_counts": {
+    "COMPLETED": 30,
+    "ERROR": 2
+  },
+  "finalized_reward_count": 32,
+  "invalid_judge_count": 0,
+  "derived_closed_tool_timeout_count": 2,
+  "samples": 641,
+  "model_calls": 641,
+  "pure_edit_turns": 46,
+  "all_original_input_ids_logprobs_masks_and_token_receipts_match": true,
+  "all_archive_file_hashes_match": true,
+  "native_results_changed": false,
+  "whole_group_trainable": true,
+  "whole_group_exclusion": null,
+  "pure_edit_rule": "Pinned official operational criterion: changed mirror, exit0, empty output. Arbitrary silent side effects are not proven absent.",
+  "new_model_tool_or_judge_calls": 0
+}

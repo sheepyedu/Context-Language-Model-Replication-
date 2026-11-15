@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "indexed_documents": 100195,
+  "exact_source_contents_matched": 100195,
+  "source_identity_digest": "da5242c4182fe041ab0eae25616b07f2ceaa0ed4a5ed28f83a38269a0fa69eb2",
+  "index_revision": "b3f37f70c33829eb09d04784a54277a31871fd63",
+  "top_k": 10,
+  "snippet_token_cap": 512,
+  "reader_token_cap": 8192,
+  "unicode_prefix_checks": 12,
+  "live_web_read_rejected": true,
+  "tokenizer_path": "/mount-data/Models/Qwen3.5-9B",
+  "retriever": "pyserini1.2.0 / Anserini1.1.1 SimpleSearcher constructor BM25 defaults",
+  "query_for_wiring_only": "Paris France",
+  "benchmark_questions_used": 0,
+  "model_calls": 0,
+  "elapsed_seconds": 56.890525817871094,
+  "active_training_source_changed": false
+}

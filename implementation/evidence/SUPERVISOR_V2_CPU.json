@@ -1,0 +1,6 @@
+{
+  "passed": 3,
+  "source_sha256": "1e46bf5e8307a3b98657f6e6adc418451ce254dade17b0598968a269817b269a",
+  "scope": "supervisor only, excludes rollout and critic rows from actor train metric count",
+  "scientific_source_changed": false
+}

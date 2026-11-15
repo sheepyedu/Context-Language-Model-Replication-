@@ -1,0 +1,15 @@
+{
+  "accepted": true,
+  "groups": {
+    "group004-terminal-snapshot.json": {
+      "actual_api_judge_no_thinking": 31,
+      "deterministic_empty_answer_negative_no_api_call": 1
+    },
+    "group005-terminal-snapshot.json": {
+      "actual_api_judge_no_thinking": 30,
+      "deterministic_empty_answer_negative_no_api_call": 2
+    }
+  },
+  "old_invalid_group_preserved": true,
+  "new_api_calls": 0
+}
