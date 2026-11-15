@@ -1,0 +1,26 @@
+{
+  "accepted": true,
+  "created": 1794781849.0998392,
+  "terminal_task_statuses_exact": 13,
+  "terminal_session_summaries_exact": true,
+  "original_timeout_results_retained": 91,
+  "old_coordinator": {
+    "pid": 2345487,
+    "start_ticks": 44442258,
+    "argv": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/env/rl/bin/polar serve_rollout -c /mount-data/CLM-Replication/management/topology.yaml "
+  },
+  "new_coordinator_owner": {
+    "pid": 2619786,
+    "start_ticks": 46842148,
+    "argv": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/management/queue-timeout-recovery-v2/owned_coordinator.py "
+  },
+  "training_owner": {
+    "pid": 2594495,
+    "start_ticks": 46588081,
+    "argv": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/management/owned_training_v7.py --attempt 7 "
+  },
+  "training_and_model_restarted": false,
+  "model_calls_during_switch": 0,
+  "optimizer_updates": 0,
+  "next_unstarted_position": 10
+}

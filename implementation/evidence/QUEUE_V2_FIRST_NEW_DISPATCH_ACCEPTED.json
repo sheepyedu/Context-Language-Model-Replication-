@@ -1,0 +1,18 @@
+{
+  "accepted": true,
+  "created": 1794781934.8087137,
+  "scope": "First actual new group010 completion under patched coordinator, not full execution-budget duration validation",
+  "task_id": "clm-c2-seed1234-00000-000-010",
+  "logical_policy": 0,
+  "finish_reason": "tool_calls",
+  "model_reported": "qwen35-clm",
+  "input_tokens": 1676,
+  "output_tokens": 182,
+  "original_files_sha256": {
+    "INTENT.json": "5d82f5a12d6cf7e652a1abfef6b7a7530001d25608684cde5dc0b62587436268",
+    "RESPONSE.json": "47b52ca1a69a82b6090611e4d59a2d7545bfb883cdde1b7fd9a3e59d8e5b8e64",
+    "TOKEN_RECEIPT.json": "0fe3cf98a223d259395f654310442c125aed2ab7005fa2eed08d91bdd47cfc37"
+  },
+  "new_validation_generation_calls": 0,
+  "original_timeout_results_replayed": 0
+}

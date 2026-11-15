@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "pid": 2345487,
+    "start_ticks": 44442258,
+    "argv": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/env/rl/bin/polar serve_rollout -c /mount-data/CLM-Replication/management/topology.yaml "
+  },
+  "signal": 15,
+  "exactgone": true,
+  "native_wait_exit_code": null,
+  "reason": "original coordinator had no owned wait wrapper"
+}

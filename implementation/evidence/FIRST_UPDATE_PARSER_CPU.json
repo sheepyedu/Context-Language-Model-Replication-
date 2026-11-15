@@ -1,0 +1,7 @@
+{
+  "accepted": true,
+  "checks": 7,
+  "model_calls": 0,
+  "real_optimizer_update_accepted": false,
+  "scope": "management parser CPU regression only"
+}
