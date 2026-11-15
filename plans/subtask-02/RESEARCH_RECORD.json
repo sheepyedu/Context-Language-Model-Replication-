@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-15",
+  "scope": "subtask_2_method_plan_not_training",
+  "live_checks": [
+    "arxiv HTML v1",
+    "official GitHub RL README main",
+    "Qwen official model card",
+    "Tiny CLM author experiment blog",
+    "Hermes GitHub recovery cost record",
+    "Notion CLM title search returned zero results"
+  ],
+  "web_queries": [
+    "context language models reproduction RL",
+    "CLM ProRL reproduction",
+    "context-language-models reproduction GRPO",
+    "CLM 复现 强化学习 Shao",
+    "context-language-models slime reproduction github",
+    "context-language-models reproduce RL github",
+    "Context Language Models replication reinforcement",
+    "tiny-clm GRPO reproduction"
+  ],
+  "community_snapshot": {
+    "tiny_clm": "52a34a8120a7728cfaec523f48c4aa23af6a3f6d",
+    "raw_live_refetch": "cache miss; fixed local source inspected",
+    "files_read": [
+      "rl/advantages.py",
+      "rl/segments.py",
+      "rl/grpo_stepwise.py",
+      "configs/e3_r2.yaml",
+      "RESULTS.md"
+    ]
+  },
+  "new_model_calls": 0,
+  "new_remote_commands": 0,
+  "training_runs": 0,
+  "notion_write": false,
+  "notion_reason": "Publishing authorized in latest request",
+  "review_submission": "not_submitted_no_registered_subpage",
+  "primary_findings": [
+    "paper resolves sampling, budget, judge and selection details",
+    "70 updates versus one epoch explicitly reconciled",
+    "28K/reserve and harness defaults explicitly selected",
+    "community implementation not copied as identical algorithm",
+    "default decisions do not substitute missing raw tokens or rewards"
+  ],
+  "project_authorization": "User approved root and four subprojects, task1 complete task2 implementation task3/4 pending",
+  "judge_change": "DeepSeek 4.1f API"
+}
