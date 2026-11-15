@@ -1,0 +1,41 @@
+{
+  "kind": "document_consistency_only_not_training_test",
+  "checks": [
+    {
+      "check": "logical_batch_is_256_trajectories",
+      "passed": true
+    },
+    {
+      "check": "accepted_trajectory_lower_bound_is_17920",
+      "passed": true
+    },
+    {
+      "check": "budget_reserve_not_double_counted",
+      "passed": true
+    },
+    {
+      "check": "budget_plus_max_response_fits_nominal_server_window",
+      "passed": true
+    },
+    {
+      "check": "no_training_claim",
+      "passed": true
+    },
+    {
+      "check": "efficiency_weight_is_point25",
+      "passed": true
+    },
+    {
+      "check": "baseline_pins_full_sha",
+      "passed": true
+    },
+    {
+      "check": "all_T01_T10_present",
+      "passed": true
+    },
+    {
+      "check": "document_has_source_index",
+      "passed": true
+    }
+  ]
+}
