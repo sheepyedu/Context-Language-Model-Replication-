@@ -1,0 +1,31 @@
+{
+  "accepted": true,
+  "created": 1794783220.3078382,
+  "scope": "C1 configuration and CPU-only native Ray environment override",
+  "changed_effective_keys": [
+    "clm_admission_gate_path",
+    "clm_audit_dir",
+    "clm_run_id",
+    "custom_config_path",
+    "polar_task_id_template",
+    "save",
+    "save_debug_rollout_data",
+    "save_debug_train_data",
+    "train_env_vars"
+  ],
+  "cpu_worker": {
+    "pid": 2631812,
+    "actual_efficiency_weight": "0",
+    "cuda_visible_devices": "",
+    "native_task_only_advantages": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "cpu_worker_exactgone": true,
+  "new_model_calls": 0,
+  "gpu_actor_created": false,
+  "C1_training_started": false,
+  "C1_actual_gpu_actor_environment_pending": true
+}

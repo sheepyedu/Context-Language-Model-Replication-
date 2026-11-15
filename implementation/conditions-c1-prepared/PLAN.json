@@ -1,0 +1,15 @@
+{
+  "status": "prepared_not_dispatched",
+  "efficiency_weight": 0,
+  "source_revision": "training-v7",
+  "reference_condition": "C2",
+  "model_calls": 0,
+  "optimizer_updates": 0,
+  "scope": "C1 explicit native train_env_vars override, same source and scientific hyperparameters",
+  "requires_before_dispatch": [
+    "C2 has released its owned cards and services at a closed boundary",
+    "initial checkpoint and dataset hashes verified",
+    "independent C1 ownership/admission record",
+    "actual native GPU actor environment verified"
+  ]
+}

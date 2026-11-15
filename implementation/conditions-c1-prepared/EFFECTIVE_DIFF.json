@@ -1,0 +1,43 @@
+{
+  "custom_config_path": {
+    "c2": "/mount-data/CLM-Replication/management/train-config-v7.yaml",
+    "c1": "/mount-data/CLM-Replication/management/conditions-c1-prepared/train-config-c1.yaml"
+  },
+  "train_env_vars": {
+    "c2": {
+      "CUDA_DEVICE_MAX_CONNECTIONS": "1"
+    },
+    "c1": {
+      "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+      "POLAR_DUAL_CHANNEL_W_EFF": "0"
+    }
+  },
+  "save_debug_rollout_data": {
+    "c2": "/mount-data/CLM-Replication/runs/c2-seed1234/training/rollout-{rollout_id}.pt",
+    "c1": "/mount-data/CLM-Replication/runs/c1-seed1234/training/rollout-{rollout_id}.pt"
+  },
+  "save": {
+    "c2": "/mount-data/CLM-Replication/runs/c2-seed1234/checkpoints",
+    "c1": "/mount-data/CLM-Replication/runs/c1-seed1234/checkpoints"
+  },
+  "clm_run_id": {
+    "c2": "c2-seed1234",
+    "c1": "c1-seed1234"
+  },
+  "save_debug_train_data": {
+    "c2": "/mount-data/CLM-Replication/runs/c2-seed1234/training/train-{rollout_id}.pt",
+    "c1": "/mount-data/CLM-Replication/runs/c1-seed1234/training/train-{rollout_id}.pt"
+  },
+  "clm_admission_gate_path": {
+    "c2": "/mount-data/CLM-Replication/management/queue-timeout-recovery-v2/PAUSE_NEW_TASKS.json",
+    "c1": "/mount-data/CLM-Replication/management/conditions-c1-prepared/PAUSE_NEW_TASKS.json"
+  },
+  "clm_audit_dir": {
+    "c2": "/mount-data/CLM-Replication/runs/c2-seed1234/audit",
+    "c1": "/mount-data/CLM-Replication/runs/c1-seed1234/audit"
+  },
+  "polar_task_id_template": {
+    "c2": "clm-c2-eval-{rollout_id}-{sample.metadata.qid}",
+    "c1": "clm-c1-eval-{rollout_id}-{sample.metadata.qid}"
+  }
+}

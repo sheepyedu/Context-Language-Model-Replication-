@@ -1,0 +1,15 @@
+{
+  "created": 1794783713.9312255,
+  "files": {
+    "summary_context.py": "6cef1ddcbb6df82f2b4f98dea4904537d8a8f1bf358a096b362f11d0a0fb80cd",
+    "check_summary_context.py": "1bdb99f6232d359da7f6a4233c4172e617d6eb4585c94fd5f9c2819bc86c7ebe",
+    "check_summary_tokenizer.py": "e73045e99e456276d9ffaae0b750b718ab93e1446d5141169319e01bcee7fb35",
+    "README.md": "8f7bc0c4dd00dd2f15f652ce76cf76417847a7d3d5d13282b4651a2505c1545e",
+    "prompts/prompt.md": "ab0c334d4faca17e3afbb9b16967c1b2fdcc7242a9a0880af57949fa236d6d07",
+    "prompts/summary_prefix.md": "e9b088e794a6bb9082ac053fcc760bd818d7e720ee4bcdc72c6e480de7b7cb0e",
+    "prompts/SOURCE.json": "4dc4644b4a1c8dce4e689231c9a00a7cda038e230d3e116e46ea7a41abdee999",
+    "prompts/UPSTREAM_LICENSE": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc"
+  },
+  "status": "prepared_not_dispatched",
+  "production_C2_source_changed": false
+}

@@ -1,0 +1,9 @@
+{
+  "created": 1794783203.0957909,
+  "native_exit": 1,
+  "cpu_worker_pid": 2629160,
+  "exactgone": true,
+  "new_model_calls": 0,
+  "cause": "CPU validation actor inherited allowed GPU visibility from Ray head; no CUDA allocation was requested, but the empty-visibility assumption failed",
+  "fix": "Explicit empty CUDA_VISIBLE_DEVICES only in the CPU validation actor runtime_env; C1 GPU actor configuration unchanged"
+}

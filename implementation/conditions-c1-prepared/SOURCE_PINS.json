@@ -1,0 +1,10 @@
+{
+  "created": 1794783713.9208162,
+  "files": {
+    "train-c1.sh": "e562b930445f4ef2440ddcfcb0bb82fb97dc2052b82ab5713acc539c57c23ec2",
+    "train-config-c1.yaml": "c2ff55bb98ae6f89fd03f26c5638580191dd235e84981fc53ea82eea90509ecc",
+    "check_c1_environment.py": "dfeed15537bb92774fbf2fd24525d0fcebbacc89ac6029417543d9b6f8cd50d2"
+  },
+  "status": "prepared_not_dispatched",
+  "production_C2_source_changed": false
+}

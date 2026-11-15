@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "created": 1794783713.9441197,
+  "logic_cpu_cases": 14,
+  "actual_tokenizer_template_boundary": {
+    "accepted": true,
+    "scope": "Actual Qwen tokenizer/template CPU boundary check",
+    "before_tokens": 28672,
+    "after_tokens": 401,
+    "trigger": 28672,
+    "context_limit": 32768,
+    "task_turn_limit": 100,
+    "prompt_source_tree": "5cb38e79842a0e0a6dca5bb97874163e8ee50129",
+    "new_model_calls": 0,
+    "Summary_harness_integrated": false,
+    "S0_S1_started": false
+  },
+  "source_pins_sha256": "3d1370b6f74803c98bbb54dbad3034c9ca859999c69d7186dab3ae1d8292ad63",
+  "new_model_calls": 0,
+  "S0_S1_started": false,
+  "full_Summary_harness_integration_pending": true
+}

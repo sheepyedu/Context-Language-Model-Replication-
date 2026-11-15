@@ -1,0 +1,44 @@
+clm_run_id: c1-seed1234
+clm_audit_dir: /mount-data/CLM-Replication/runs/c1-seed1234/audit
+polar_rollout_url: http://127.0.0.1:19170
+polar_gateway_url: http://127.0.0.1:19171
+polar_reward_key: score
+polar_max_async_level: 1
+polar_request_timeout: 10800
+polar_allow_weight_update_overlap: false
+polar_task_id_template: clm-c1-eval-{rollout_id}-{sample.metadata.qid}
+polar_task_template:
+  timeout_seconds: 10800
+  runtime:
+    image: sha256:a7e768658111a21f942395b89214267138b74dc6a8f37f91f37772239812e19c
+    network: bridge
+    cpus: 2
+    memory_mb: 4096
+    prepare:
+    - type: exec
+      command: mkdir -p /polar/session/workspace /polar/session/logs/agent
+    workdir: /polar/session/workspace
+    kwargs:
+      volumes:
+      - /mount-data/CLM-Replication/env/agent:/mount-data/CLM-Replication/env/agent:ro
+      - /mount-data/CLM-Replication/env/cpython312:/mount-data/CLM-Replication/env/cpython312:ro
+      - /mount-data/CLM-Replication/agent-bundle-v1/clm_replication:/mount-data/CLM-Replication/src/clm_replication:ro
+      - /mount-data/CLM-Replication/src/context-language-models/clm/clm_harness:/mount-data/CLM-Replication/src/context-language-models/clm/clm_harness:ro
+  agent:
+    import_path: clm_replication.polar_agent:ClmHarness
+    model_name: qwen35-clm
+  builder:
+    strategy: per_request
+  evaluator:
+    strategy: clm_replication.evaluator:DeepResearchEvaluator
+    config:
+      question: '{instruction}'
+      expected_answer: '{sample.label}'
+  metadata:
+    qid: '{sample.metadata.qid}'
+    condition: '{args.clm_run_id}'
+    purpose: '{args.clm_phase}'
+clm_phase: training
+clm_source_revision: training-v7
+clm_candidate_group_concurrency: 1
+clm_admission_gate_path: /mount-data/CLM-Replication/management/conditions-c1-prepared/PAUSE_NEW_TASKS.json

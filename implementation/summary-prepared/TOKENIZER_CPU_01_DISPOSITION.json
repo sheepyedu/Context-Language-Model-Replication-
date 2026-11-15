@@ -1,0 +1,8 @@
+{
+  "created": 1794783380.2909608,
+  "native_exit": 1,
+  "model_calls": 0,
+  "affected_scope": "prepared Summary CPU counter only, never used by production C2",
+  "cause": "Transformers5.3 defaults apply_chat_template return_dict=True; len(BatchEncoding) counts two fields rather than token IDs",
+  "fix": "Explicit return_dict=False and verify flat integer token list"
+}

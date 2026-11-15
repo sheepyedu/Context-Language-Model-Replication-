@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/openai/codex",
+  "git_tree_sha": "5cb38e79842a0e0a6dca5bb97874163e8ee50129",
+  "files": [
+    {
+      "path": "codex-rs/prompts/templates/compact/prompt.md",
+      "blob_sha": "42fae605db8a71cb2becb7b4eabd1de963ccb7a3",
+      "sha256": "ab0c334d4faca17e3afbb9b16967c1b2fdcc7242a9a0880af57949fa236d6d07",
+      "bytes": 426
+    },
+    {
+      "path": "codex-rs/prompts/templates/compact/summary_prefix.md",
+      "blob_sha": "62a7161b89b2d3834f50ae35dadb13ac3f0bd524",
+      "sha256": "e9b088e794a6bb9082ac053fcc760bd818d7e720ee4bcdc72c6e480de7b7cb0e",
+      "bytes": 399
+    }
+  ],
+  "purpose": "future summary baseline reproduction default; author historical revision unprovided; not enabled in C2",
+  "license": {
+    "url": "https://raw.githubusercontent.com/openai/codex/main/LICENSE",
+    "git_blob_sha": "4606e72e042564097e8780d66c1d4dcb611869bd",
+    "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+    "first_line": "                                 Apache License"
+  }
+}
