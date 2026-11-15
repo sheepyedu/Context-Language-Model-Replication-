@@ -1,8 +1,8 @@
 {
   "schema": "clm_rl_method_spec_v1",
   "kind": "design_not_executable_launcher",
-  "date": "2026-11-15",
-  "training_started": false,
+  "date": "2026-11-16",
+  "training_started": true,
   "provenance_legend": {
     "P": "paper",
     "O": "official_clm",
@@ -85,7 +85,19 @@
     "judge_protocol": "chat_completions",
     "judge_origin": "user_override_2026-11-15",
     "paper_judge": "GPT-5.4-nano",
-    "credential_reference": "/mount-data/Tools/skill-api"
+    "credential_reference": "/mount-data/Tools/skill-api",
+    "judge_thinking": {
+      "type": "disabled"
+    },
+    "pure_edit_rule": {
+      "source": "pinned official harness operational criterion",
+      "ctx_changed": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "semantic_silent_side_effects_proven_absent": false,
+      "v2_semantic_classifier_implemented": false
+    }
   },
   "cost": {
     "formula": "appendix_C",
@@ -153,17 +165,22 @@
     ]
   },
   "hardware": {
-    "proposal_only": true,
-    "target": "8_H20_if_available",
-    "policy_gpus": 4,
-    "rollout_gpus": 4,
+    "proposal_only": false,
+    "physical_gpu_indices": [
+      4,
+      5
+    ],
+    "layout": "colocated offload",
+    "policy_gpus": 2,
+    "rollout_gpus": 2,
+    "devices_shared": true,
     "policy_tp": 2,
-    "policy_dp": 2,
+    "policy_dp": 1,
     "policy_cp": 1,
     "policy_pp": 1,
     "rollout_tp": 2,
-    "current_resources_observed": false,
-    "actual_layout": "freeze_after_memory_and_correctness_validation"
+    "cpu_optimizer": true,
+    "current_resources_observed": true
   },
   "unresolved_at_design_time": {
     "runtime_image_digest": null,
@@ -173,5 +190,11 @@
     "exact_rubric_artifact_sha": null,
     "note": "Resolved and pinned in T01-T03; not historical author values and not permission blockers."
   },
-  "version": "v2"
+  "version": "v3",
+  "runtime_status": {
+    "formal_optimizer_updates_at_revision": 0,
+    "target_updates": 70,
+    "actual_source_revision": "training-v5",
+    "source_pins_sha256": "a2df10b51fd217f73cd75ecc921655ae94b6a19a00de42edcff5ac8a8e628271"
+  }
 }

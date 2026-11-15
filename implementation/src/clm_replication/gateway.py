@@ -1,6 +1,8 @@
 """Run Polar with durable task artifacts before its temporary-dir cleanup."""
 
 import argparse
+import os
+from contextlib import asynccontextmanager
 import asyncio
 import hashlib
 import json
@@ -19,6 +21,17 @@ from .accounting import record_tokens
 
 
 ROOT = Path('/mount-data/CLM-Replication')
+
+if os.environ.get('CLM_GATEWAY_START_PAUSED') == '1':
+    original_lifespan = app.router.lifespan_context
+
+    @asynccontextmanager
+    async def paused_lifespan(application):
+        async with original_lifespan(application):
+            await get_state().inference.pause_generation(timeout_seconds=1)
+            yield
+
+    app.router.lifespan_context = paused_lifespan
 original_cleanup = GatewayNodeManager._remove_session_dir_best_effort
 original_completion = InferenceClient.completion
 request_session = contextvars.ContextVar('clm_request_session', default='unattributed')

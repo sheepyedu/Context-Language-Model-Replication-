@@ -1,0 +1,12 @@
+{
+  "passed": 4,
+  "source_session": "sk-polar-91916f2c-143d-44af-8d17-d3be4a5bd24d",
+  "model_calls": 6,
+  "red_trainable_tokens": 0,
+  "green_trainable_tokens": 664,
+  "original_negative_reward": -0.2,
+  "original_native_record_unchanged_sha256": "63baf070091e8414135e2afc92592ee2927c4b805711caeab316dcdcaa29e0b1",
+  "unresolved_provider_attempt_stays_invalid": true,
+  "invalid_judge_stays_invalid": true,
+  "new_model_tool_or_judge_calls": 0
+}

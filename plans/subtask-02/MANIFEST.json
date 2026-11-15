@@ -1,16 +1,16 @@
 {
   "files": {
     "CONFIG_SPEC.json": {
-      "bytes": 5361,
-      "sha256": "7cd0a2b41076c2ce381d739876e86d2c9417d9497bb6674f807bc714163c3c28"
+      "bytes": 5985,
+      "sha256": "0598138976a9af273f14b4e796ce194895837fd26e39ad195bbcfa12502306c3"
     },
     "DOCUMENT_CHECKS.json": {
-      "bytes": 823,
-      "sha256": "6be7ce858a071c7cfcaad8108c9853ffd5c2f8277048eedf84ffd31ff40bbe22"
+      "bytes": 948,
+      "sha256": "9a6c06f0d7d65b78bb3f55b39053f7ecd2c74b5c7bc8b9bdf1a5167c2c46f036"
     },
     "PLAN.md": {
-      "bytes": 30711,
-      "sha256": "39076214a9ed6f4010f2a95a8f9bb2d9e699c11326048fa54139b2aa84a07ef9"
+      "bytes": 32476,
+      "sha256": "3f609c36343338c378249f1674a1d80b21616626fadc73c8a0c45a50a771a342"
     },
     "RESEARCH_RECORD.json": {
       "bytes": 1756,

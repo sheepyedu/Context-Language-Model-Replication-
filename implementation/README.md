@@ -23,3 +23,6 @@ PYTHONPATH=implementation/src python -m unittest discover -s implementation/test
 ```
 
 服务器需要自行配置 `/mount-data/Tools/skill-api` 的DeepSeek服务。仓库配置仅含服务名和模型ID。当前公共检索由Mac broker反向隧道提供，属于复现默认实现差异，实际网页及工具原返回保留。
+
+
+当前training-v5新增 `native_failures.py`，只为有完整原证的模型工具超时派生训练视图。原任务状态和负奖励保留。`management/train-v5.sh`/`train-config-v5.yaml` 记录当前服务器入口，部署时将本目录源安装到对应版本路径并复用固定上游源码。不要运行历史launcher来覆盖活跃任务。当前judge显式关闭thinking，全部新对照保持一致。详细变更、失败和未完成项见 `STATUS.md`。

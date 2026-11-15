@@ -32,7 +32,7 @@ def token_counts(response):
         'total_tokens': input_tokens + output_tokens if input_tokens is not None and output_tokens is not None else None,
         'reported_total_tokens': usage.get('total_tokens'),
         'cached_input_tokens_subset': input_details.get('cached_tokens'),
-        'reasoning_output_tokens_subset': output_details.get('reasoning_tokens'),
+        'reasoning_output_tokens_subset': output_details.get('reasoning_tokens', usage.get('reasoning_tokens')),
         'input_count_source': 'usage' if reported_input is not None else ('token_ids' if input_tokens is not None else None),
         'output_count_source': 'usage' if reported_output is not None else ('token_ids' if output_tokens is not None else None),
     }

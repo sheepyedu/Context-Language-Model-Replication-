@@ -78,6 +78,14 @@ def generate_rollout(args, rollout_id, data_source, evaluation=False):
             args.clm_phase = previous
     if _served_policy_version != rollout_id:
         raise ValueError('Sampling policy version differs from the synchronized actor')
+    import os
+    if os.environ.get('CLM_RESUME_INITIAL_GATEWAY') == '1' and rollout_id == 0:
+        import httpx
+        response = httpx.post(args.polar_gateway_url.rstrip('/') + '/admin/inference/resume', timeout=10)
+        response.raise_for_status()
+        assert response.json()['paused'] is False
+        (Path(args.clm_audit_dir) / 'resumed-after-initial-policy-sync.json').write_text(
+            json.dumps({'policy_version': _served_policy_version, 'gateway': response.json()}))
     target = args.rollout_batch_size
     accepted = []
     audit = []
@@ -140,7 +148,7 @@ async def collect_candidate_groups(args, rollout_id, candidate_batch, data_sourc
     from slime.utils.types import Sample
 
     config = resolve_polar_slime_config(args)
-    semaphore = asyncio.Semaphore(config.max_concurrency)
+    semaphore = asyncio.Semaphore(int(args.clm_candidate_group_concurrency))
     directory = Path(args.clm_audit_dir) / f"rollout-{rollout_id:05d}" / f"candidate-{candidate_batch:03d}"
     directory.mkdir(parents=True, exist_ok=True)
     cursor_fields = ('epoch_id', 'sample_group_index', 'sample_index', 'sample_offset', 'metadata')
@@ -187,10 +195,15 @@ async def collect_candidate_groups(args, rollout_id, candidate_batch, data_sourc
                 result = TaskResult.model_validate_json(result_path.read_text())
             else:
                 while True:
-                    response = await client.get(config.rollout_server_url + '/rollout/task/' + payload['task_id'])
-                    response.raise_for_status()
-                    status = TaskStatus.model_validate(response.json())
-                    if status.status != 'running':
+                    progress = await client.get(config.rollout_server_url + '/rollout/status')
+                    progress.raise_for_status()
+                    task_status = progress.json()['tasks'].get(payload['task_id'])
+                    if task_status is None:
+                        raise ValueError('Existing canonical task disappeared; do not resubmit')
+                    if task_status != 'running':
+                        response = await client.get(config.rollout_server_url + '/rollout/task/' + payload['task_id'])
+                        response.raise_for_status()
+                        status = TaskStatus.model_validate(response.json())
                         result = TaskResult(task_id=status.task_id, status=status.status,
                                             results=status.results, result_paths=status.result_paths)
                         break
@@ -199,8 +212,11 @@ async def collect_candidate_groups(args, rollout_id, candidate_batch, data_sourc
                 temporary.write_text(result.model_dump_json(indent=2))
                 temporary.replace(result_path)
             try:
+                from .native_failures import training_view, restore_native_metadata
+                adapter_result, dispositions = training_view(result)
                 samples = rollout._convert_task_result_to_samples(
-                    config, result, group, max_tokens=rollout._resolve_max_tokens(args))
+                    config, adapter_result, group, max_tokens=rollout._resolve_max_tokens(args))
+                restore_native_metadata(samples, dispositions)
             except (ValueError, TypeError) as error:
                 return {'group_index': group[0].group_index, 'samples': [], 'rejection': str(error)}
             expected = {item.session_id: len(item.trajectory.traces) for item in result.results}

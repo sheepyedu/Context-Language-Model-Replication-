@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "scope": "causal language model only, vision and MTP excluded by original plan",
+  "language_parameters": 8953803264,
+  "native_equal_language_tensor_or_buffer_count_per_rank": [
+    332,
+    332
+  ],
+  "native_full_model_checker_status": "negative because excluded visual tensors were offloaded/zeroed before reload",
+  "native_visual_mismatches": 333,
+  "native_error_sha256": "abc46998ce4466ee8ee4eb086b283bd210e8cd1216a2e8e43f6965812ee65adf",
+  "matched_forward_calls": 4,
+  "matched_generated_positions": 1352,
+  "max_logprob_difference": 0,
+  "sampled_decode_vs_teacher_force_check": "retained negative; output uses temperature-scaled logprob, input teacher-forcing defaults unscaled",
+  "initial_actor_weights_synced": true,
+  "optimizer_updates": 0,
+  "created": 1794764670.7630777
+}

@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "created": 1794766381.5567017,
+  "session_id": "sk-polar-27f561ae-79f4-4c13-a9be-5b72eeb73cfb",
+  "original_source": "/tmp/session-sk-polar-igys6el7",
+  "interrupted_partial_preserved": "/mount-data/CLM-Replication/runs/session-artifacts/sk-polar-27f561ae-79f4-4c13-a9be-5b72eeb73cfb.partial",
+  "verified_existing_partial_files": 225,
+  "interrupted_copy_files": [
+    {
+      "name": "logs/agent/context_snapshots/turn-0010.json",
+      "copied_bytes": 0,
+      "original_bytes": 65989
+    }
+  ],
+  "recovered_files": 233,
+  "all_original_source_hashes_match": true,
+  "model_tool_or_judge_replay": 0,
+  "cause": "Gateway handoff checked terminal session registry before postrun archive worker finished"
+}

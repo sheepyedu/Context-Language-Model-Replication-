@@ -1,0 +1,5 @@
+{
+  "passed": 4,
+  "source_sha256": "0116d2382ae2e360ce953b6b5c46939502ba6978ec31c5440edeb7fe53f9d199",
+  "regression": "Empty registry while archive postrun worker is still active must not authorize process exit"
+}

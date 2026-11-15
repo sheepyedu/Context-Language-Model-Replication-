@@ -49,6 +49,7 @@ def grade_answer(question, answer, response, output, prompt_type="Single Answer"
     rubric = rubric_path.read_text()
     prompt = rubric.format(prompt=question, answer=answer, response=response, prompt_type=prompt_type)
     payload = {"model": MODEL, "temperature": 0, "max_tokens": 4096,
+               "thinking": {"type": "disabled"},
                "messages": [{"role": "user", "content": prompt}]}
     encoded = json.dumps(payload, ensure_ascii=False)
     intent = {"model": MODEL, 'call_id': uuid.uuid4().hex, "request_sha256": hashlib.sha256(encoded.encode()).hexdigest(),
@@ -71,7 +72,7 @@ def grade_answer(question, answer, response, output, prompt_type="Single Answer"
     except json.JSONDecodeError:
         raw = None
     record_tokens(output, call_id=intent['call_id'], role='judge', model_requested=MODEL,
-                  response=raw, scope=scope, error={'exit_code': process.returncode} if process.returncode else None)
+                  response=raw, scope={**(scope or {}), 'judge_revision': 'judge-no-thinking-v1'}, error={'exit_code': process.returncode} if process.returncode else None)
     if process.returncode:
         raise RuntimeError(f"Judge transport failure, exit={process.returncode}, evidence={output}")
     if raw is None:
@@ -81,7 +82,7 @@ def grade_answer(question, answer, response, output, prompt_type="Single Answer"
         raise RuntimeError("Judge generation is not complete")
     result = parse_grade(choice["message"]["content"])
     result.update({"reported_model": raw.get("model"), "response_id": raw.get("id"),
-                   "usage": raw["usage"], "model_requested": MODEL})
+                   "usage": raw["usage"], "model_requested": MODEL, "judge_revision": "judge-no-thinking-v1"})
     temporary = output / "RESULT.tmp"
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2))
     temporary.replace(result_path)

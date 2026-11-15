@@ -18,7 +18,7 @@
       "passed": true
     },
     {
-      "check": "no_training_claim",
+      "check": "rollout_started_optimizer_updates_explicit_zero",
       "passed": true
     },
     {
@@ -35,6 +35,10 @@
     },
     {
       "check": "document_has_source_index",
+      "passed": true
+    },
+    {
+      "check": "operational_edit_rule_limitation_disclosed",
       "passed": true
     }
   ]

@@ -1,6 +1,6 @@
 # 子任务二：CLM 原方法 RL 复现方案
 
-版本：v2，2026-11-15。性质：调研完成后的实施方案，未启动训练，未声称实现已通过 GPU 验收。
+版本为v3，2026-11-16。方法实施与验收同步版。正式rollout已启动，当前参数更新0/70，训练与对照效果尚待验收。v2的原调研内容与来源继续保留，以下默认值修订均明示。
 
 ## 0. 先用通俗的话说明要做什么
 
@@ -109,14 +109,14 @@
 | builder | per_request；之后仅在数值等价通过时启用严格prefix merging | P逐调用语义 + F现成实现；不以最终改写后的完整聊天重建旧输入 |
 | 策略同步 | 采样阶段固定版本，组全部结束后训练，一次更新后同步 | D保守同步；可同版本并发采样，不跨版本混组。异步优化另立配置 |
 | 参数精度 | 语言训练/推理BF16；奖励、logprob与关键统计FP32 | D；不用FP8/量化作主复现以减少变量；保留Gated DeltaNet结构 |
-| 并行起点 | CP=1、PP=1；TP=2训练、TP=2推理；训练4卡/推理4卡为8H20候选布局 | D候选，须真实测内存和兼容后冻结；不是现场资源读数 |
+| 实际并行 | 仅授权物理GPU4/5；训练与推理同置分时，TP=2、DP=1、CP=1、PP=1；CPU optimizer与offload | D实际验收布局；替代v2的8H20候选，保持256轨迹逻辑batch |
 | microbatch | 1个可容纳片段起步，梯度累计维持256条轨迹的逻辑batch | F/D；禁止以256个Trace冒256轨迹 |
 | seed | train1234、rollout42；种子派生包含step/group/sample | F初值 + D派生；主对照一致。扩展种子1235/1236单独分账 |
 | top_k、entropy、grad clip | -1、0、1.0 | F默认；不用模型卡另一套采样建议覆盖论文采样 |
 | Adam epsilon及依赖细节 | 使用锁定底座解析出的默认值，写入effective_config和锁文件 | D不猜未安装依赖的数值；实施第一步自动导出，非等待用户输入 |
 | eval/save节奏 | step0及每5个有效更新保存/验证；最后70也验证 | D；每5步较社区10步更细，但不是作者公开频率 |
 | 单标准误规则 | 对最高验证准确率p用sqrt(p(1-p)/500)，最早达到p-SE的checkpoint | P规则的D操作化；并列范围仅用于选模，不代替差异检验 |
-| judge生成 | temperature0；固定模板、版本和解析schema；长度上限4096 | D；不确定/格式失败不能默认判0。记录API返回的reported_model、请求ID、usage与原始响应；正式采样前用固定公开样例检查rubric解析一致性 |
+| judge生成 | temperature0；固定模板、版本和解析schema；长度上限4096；显式关闭thinking | D；不确定/格式失败不能默认判0。记录API返回的reported_model、请求ID、usage与原始响应；正式采样前用固定公开样例检查rubric解析一致性 |
 | 动态采样进度 | 每次16组，最多16批尝试凑齐8有效组；没有凑齐则保存状态、无optimizer更新 | D有限运行保护；已正常完成的组保留，同策略可续，不为凑数重复生成旧轨迹 |
 
 ### 3.3 需要明确披露的冲突与选择
@@ -127,7 +127,7 @@
 2. **28K与32K**：P为CLM运行预算，O的32K prompt/32K response是另层限制。D将28K解释为28672，传入官方 `context_budget_tokens=28672`、`reserve_tokens=2048`，代码的strict_target因此为26624。实际单次response4096，服务总窗口32768；超出服务窗口不截断历史送出。正文没有明确K单位及是否已含reserve，因此必须保留此解释；不要声称28672就是作者原CLI。
 3. **预算提示/回退**：未给完整RL harness命令，继承固定官方ClmAgent默认：nudge_ratios=.25/.5/.75，persistent_nudge=adaptive，max_num_retry_on_limit=50，command_timeout=120s，observation_max_chars=10000，edit gate=fit，finish=submit；将max_steps覆盖为80、max_tokens覆盖4096。`lm_call_cap=None`由代码按80推导184，但真正循环是否更早终止以实际出口记录。默认行为不是论文已验证的精确RL设置；尤其回退本身改变历史，所有被移除调用仍留审计与成本账。
 4. **计数器**：固定harness预算目前是tiktoken估计并默认用usage校准（CLM_TOK_RATIO=1），不是精确Qwen tokenizer。保留该官方默认以减少改动，另记录真实prompt token并实施服务最大长度检查。训练mask和FLOPs只能用真实token，不沿用估计数。若改精确预算计数器，另记实现变更并对所有对照一致应用。
-5. **纯编辑回合**：官方README给概念，harness还用真实变更、退出0、无stdout/stderr判断免费回合。本方案用该既有判定加“仅镜像编辑”的事件标签作效率mask候选；混合任务动作、查询、外存、未生效或无法明确归类的命令mask=0但仍保留任务通道。不禁止这些动作，不用受限动作菜单替代Bash。此保守边界属于D。
+5. **纯编辑回合**采用固定官方harness的可重算操作判据，即上下文镜像实际变更、命令退出0且stdout/stderr均空。该标签不能证明任意Bash没有静默的其他副作用。v2曾计划再加“仅镜像编辑”的语义分类，实施中未加入该分类，因为现有日志不足以可靠证明命令全部语义。v3明确采用官方操作判据并保留全部命令、输出和前后镜像供审计，查询但无镜像变更、非零退出或有输出的回合效率mask为0。任意Bash能力保持，未以受限菜单增加行为边界。此为D默认解释的修订，所有对照沿用相同规则，报告披露操作标签与语义纯编辑之间的局限。
 6. **惩罚文字差异**：P写失败工具调用/格式异常；O明确“无工具调用.3，格式失败.2，仅失败轨迹”。采用O更具体定义，每轨迹每类最多一次并相加；不擅自对每次非零Bash退出扣.3。原始成功字段、格式字段、惩罚和最终r分别保存。
 7. **零方差组**：依P/O和C已见实现，按任务奖励r判断；全成功且r相同，即使成本有差异也丢弃。记录因此丢失的效率信号。保留全成功组属于后续算法消融，不能偷偷改主复现。
 
@@ -293,3 +293,12 @@ reports/        配置偏离、方法结论、失败原因、可复算表格
 - C1：[Tiny CLM仓库](https://gitlab.com/sugix/tiny-clm)、[训练实现](https://gitlab.com/sugix/tiny-clm/-/blob/52a34a8120a7728cfaec523f48c4aa23af6a3f6d/rl/grpo_stepwise.py)、[结果](https://gitlab.com/sugix/tiny-clm/-/blob/52a34a8120a7728cfaec523f48c4aa23af6a3f6d/RESULTS.md)、[作者复现博客](https://blog.sugiv.fyi/tiny-clm-teaching-a-tiny-model-to-manage-its-own-memory)。
 - C2：[Hermes工程记录](https://github.com/John-MiracleWorker/hermes-clm-showcase/blob/main/docs/recovery-episode-cost-fix.md)。
 - 模型：[Qwen3.5-9B官方卡片](https://huggingface.co/Qwen/Qwen3.5-9B)。
+
+
+## 10. v3实施修订与当前证据
+
+2026-11-16 02:50，T01/T02/T04/T05达到各自接线与数值验收，T03完整有效组、T06真实参数更新与恢复、T07稳定性及后续效果验收继续进行。首个同题32轨迹组完整归档，937模型调用和20个操作判据编辑回合已重算。4条原评审因thinking占满4096而判词空，保留null并排除整个组，未重评。后续judge显式thinking disabled，2份新公开正反例校准通过、首正式新评审已完整返回。
+
+已闭模型工具超时若保有完整Token/logprob/工具闭合及原负奖励，只派生可训练序列视图，原native ERROR与原负奖励不变。API未知、轨迹不全或评审null保持invalid。真实原例664生成Token在旧适配器被清零的问题已用4个回归修复。全局Token账本覆盖所有候选、丢弃、失败及DeepSeek评审，账本以实际调用去重，模型训练重复读取Token另计。归档交接曾早于postrun完成退出，原临时目录233文件已全部恢复且逐SHA一致，原中断副本保留。
+
+当前实际优化器更新0/70，不能以本节的CPU、完整轨迹或归档验收替代训练完成。GPU仅4/5，70步、8×32、原任务/提示/公式/预算不变。正式运行与全部对照统一使用v3明示的评审和编辑判据。
