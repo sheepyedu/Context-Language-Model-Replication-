@@ -151,6 +151,23 @@ def update_policy_version(args, version):
     return update(args, version)
 
 
+async def wait_for_task_admission(args, rollout_id, candidate_batch, position):
+    gate = getattr(args, 'clm_admission_gate_path', None)
+    if not gate or not Path(gate).exists():
+        return
+    directory = Path(args.clm_audit_dir)
+    name = f'control-admission-{rollout_id:05d}-{candidate_batch:03d}-{position:03d}'
+    paused = directory / (name + '-paused.json')
+    if not paused.exists():
+        with paused.open('x') as handle:
+            json.dump({'gate': gate, 'rollout_id': rollout_id, 'candidate_batch': candidate_batch,
+                       'position': position, 'new_task_intent_created': False}, handle)
+    while Path(gate).exists():
+        await asyncio.sleep(.2)
+    with (directory / (name + '-resumed.json')).open('x') as handle:
+        json.dump({'gate': gate, 'position': position, 'admission_resumed': True}, handle)
+
+
 async def collect_candidate_groups(args, rollout_id, candidate_batch, data_source, required_groups):
     """Reuse Polar transport and conversion without speculative next-policy work."""
     import httpx
@@ -244,17 +261,19 @@ async def collect_candidate_groups(args, rollout_id, candidate_batch, data_sourc
     executed = []
     skipped = []
     eligible_count = 0
-    async with httpx.AsyncClient(timeout=httpx.Timeout(60)) as client:
-        for position, group in enumerate(groups):
-            started = (directory / f"group-{position:03d}-intent.json").exists()
-            if not should_admit_candidate(eligible_count, required_groups, started):
-                skipped.append(position)
-                continue
+    for position, group in enumerate(groups):
+        started = (directory / f"group-{position:03d}-intent.json").exists()
+        if not should_admit_candidate(eligible_count, required_groups, started):
+            skipped.append(position)
+            continue
+        if not started:
+            await wait_for_task_admission(args, rollout_id, candidate_batch, position)
+        async with httpx.AsyncClient(timeout=httpx.Timeout(60)) as client:
             candidate = await collect(position, group, client)
-            candidates.append(candidate)
-            executed.append(position)
-            keep, _, _ = candidate_decision(args, candidate)
-            eligible_count += int(keep)
+        candidates.append(candidate)
+        executed.append(position)
+        keep, _, _ = candidate_decision(args, candidate)
+        eligible_count += int(keep)
     admission = {
         'planned_positions': list(range(len(groups))),
         'executed_positions': executed,

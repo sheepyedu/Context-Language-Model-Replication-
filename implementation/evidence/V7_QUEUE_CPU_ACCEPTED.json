@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "red_original_expired_queue_clock": true,
+  "green_cases": 6,
+  "dispatch_queue_not_charged_as_execution": true,
+  "original_execution_timeout_retained": true,
+  "unknown_dispatch_effect_check_preserved": true,
+  "model_calls": 0,
+  "active_source_changed": false
+}

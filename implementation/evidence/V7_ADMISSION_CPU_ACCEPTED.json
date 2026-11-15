@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "gate_blocks_only_new_task_creation": true,
+  "existing_intents_bypass_gate": true,
+  "unchanged_scientific_functions_ast": 4,
+  "exact_original_task_payloads": 10,
+  "fresh_group_transport_after_gate": true,
+  "logical_batch": 256,
+  "target_updates": 70,
+  "model_calls": 0
+}

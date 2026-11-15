@@ -1,0 +1,21 @@
+{
+  "created": 1794779698.7483482,
+  "files": {
+    "terminal_coordinator.py": "f202ba24210b42f5408388e2b3e4a8ada565b7d7556407399b14078bc7f7de75",
+    "owned_coordinator.py": "6835b34612e26cfaaebdba110931725a44afdf2e446bcc6d89d5bc71c9792dc6",
+    "check_terminal_recovery.py": "4fb3a9c4907dda3f6e1361eef957d6f8da6c6b7bee53410e7741c57a2f183826",
+    "pipeline_queue_fixed.py": "abe3f8554941792cc799df90b1a72c085f1c75f368d562a99cd7738a41875117",
+    "export_snapshot.py": "0d680e49c27dcaad2ce2dca8484b4f181b67116d831358ce0d85596cb5565daa",
+    "training_cpu_regression.py": "6b4f950ccd46b9effe892a0545cd3de14849ccb08d0bc646af52d4c4dfffac73",
+    "check_admission.py": "a687aaa1cd234ea354e59c73bd826e412de6981beaefaee3c84d2c44ab26aec7",
+    "handoff_terminal.py": "b7860212ef3a5e0de0daa5d2ec9bbf767092f0ab5fdbe459ad01e24a2ef2aae7"
+  },
+  "external_files": {
+    "/mount-data/CLM-Replication/src/ProRL/src/polar/rollout/pipeline.py": "cbbe0968746cf8d48c08202325f8d1920436a40f96d1fede9dd383bcd6bcb73d",
+    "/mount-data/CLM-Replication/src/ProRL/src/polar/rollout/manager.py": "c8502e9a79f2031b7ff834d3ac9ed4c591b197ff412ac8221a3c09c6f6ce4d52",
+    "/mount-data/CLM-Replication/src/ProRL/src/polar/rollout/server.py": "dadd985bce33578bcac8b6b75decac4569ee210f06349dd07d98bf76aa6a27bd",
+    "/mount-data/CLM-Replication/src/ProRL/src/polar/rollout/models.py": "9511748eba9c593b22205202ca309f1bf2e5905a2d60b55dbfb1566b4a70fafd",
+    "/mount-data/CLM-Replication/management/handoff_training_v6.py": "559729e15428873045e9767987cde5f8df5f9b150fa3c76f5c78c077a17672df"
+  },
+  "mode": "closed-terminal-only recovery, active Qwen and training preserved"
+}
