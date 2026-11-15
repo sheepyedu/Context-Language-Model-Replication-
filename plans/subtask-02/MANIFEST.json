@@ -1,0 +1,20 @@
+{
+  "files": {
+    "CONFIG_SPEC.json": {
+      "bytes": 5361,
+      "sha256": "7cd0a2b41076c2ce381d739876e86d2c9417d9497bb6674f807bc714163c3c28"
+    },
+    "DOCUMENT_CHECKS.json": {
+      "bytes": 823,
+      "sha256": "6be7ce858a071c7cfcaad8108c9853ffd5c2f8277048eedf84ffd31ff40bbe22"
+    },
+    "PLAN.md": {
+      "bytes": 30711,
+      "sha256": "39076214a9ed6f4010f2a95a8f9bb2d9e699c11326048fa54139b2aa84a07ef9"
+    },
+    "RESEARCH_RECORD.json": {
+      "bytes": 1756,
+      "sha256": "55e34c5f8e6ee1fddfce5ff8bf7935ac897f1acd95bb22d59e24742784ede8e7"
+    }
+  }
+}
