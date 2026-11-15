@@ -1,0 +1,22 @@
+{
+  "created": 1794773471.2250924,
+  "configured_request_seed": null,
+  "per_request_seed_derivation_implemented": false,
+  "service_restart_resets_rng": true,
+  "evidence_scope": "effective arguments, native service log and one retained provider request plus transport source",
+  "attempt-05": {
+    "seed": 1234,
+    "rollout_seed": 1234,
+    "clm_source_revision": "training-v5"
+  },
+  "attempt-06": {
+    "seed": 1234,
+    "rollout_seed": 1234,
+    "clm_source_revision": "training-v6"
+  },
+  "observed_sglang_random_seed": 1234,
+  "request_sample": {
+    "path": "/mount-data/CLM-Replication/runs/provider-attempts/sk-polar-53b31010-0c14-4d2a-9449-c8d90725fe08/a0871cbef8f143dbb0e50500b8f00ec2/INTENT.json",
+    "seed": null
+  }
+}

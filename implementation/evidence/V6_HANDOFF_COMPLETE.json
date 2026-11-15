@@ -1,0 +1,10 @@
+{
+  "completed": 1794773267.536162,
+  "dispatch_exit": 0,
+  "previous_native_exit": {
+    "exit_code": 134,
+    "finished": 1794773260.600836,
+    "pid": 2462432
+  },
+  "model_tool_replay": 0
+}

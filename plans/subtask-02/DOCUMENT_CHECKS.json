@@ -40,6 +40,10 @@
     {
       "check": "operational_edit_rule_limitation_disclosed",
       "passed": true
+    },
+    {
+      "check": "planned16_lazy_prefix_and_started_work_retention_disclosed",
+      "passed": true
     }
   ]
 }

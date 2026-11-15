@@ -36,8 +36,18 @@
     "candidate_prompt_groups_per_batch": 16,
     "candidate_batches_per_attempt_cap": 16,
     "synchronous_policy_version": true,
-    "rollout_seed": 42,
-    "incomplete_group": "exclude_whole_group_preserve_evidence"
+    "rollout_seed": 1234,
+    "incomplete_group": "exclude_whole_group_preserve_evidence",
+    "candidate_admission": "ordered_lazy_prefix",
+    "preserve_all_previously_started": true,
+    "unstarted_suffix": "record_skipped_after_required_first_eligible_groups",
+    "dataset_cursor": "frozen_full_candidate_batch_after",
+    "selection_equivalence": "first8 IDs conditional on same outcomes; not a bitwise generation claim",
+    "sglang_global_seed": 1234,
+    "request_seed": null,
+    "request_seed_derivation_implemented": false,
+    "historical_design_rollout_seed": 42,
+    "service_restart_rng": "reset_native_global_state_recorded_per_attempt"
   },
   "harness": {
     "family": "official_clm_bash",
@@ -190,11 +200,11 @@
     "exact_rubric_artifact_sha": null,
     "note": "Resolved and pinned in T01-T03; not historical author values and not permission blockers."
   },
-  "version": "v3",
+  "version": "v4",
   "runtime_status": {
     "formal_optimizer_updates_at_revision": 0,
     "target_updates": 70,
-    "actual_source_revision": "training-v5",
-    "source_pins_sha256": "a2df10b51fd217f73cd75ecc921655ae94b6a19a00de42edcff5ac8a8e628271"
+    "actual_source_revision": "training-v6",
+    "source_pins_sha256": "532c8f3fce2b59ea3970b43486f86d92d67dce66fd2e878833a3316530346c40"
   }
 }

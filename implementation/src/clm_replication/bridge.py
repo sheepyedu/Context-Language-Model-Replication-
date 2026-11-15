@@ -64,6 +64,35 @@ def post_process_rewards(args, samples):
     return raw, normalized
 
 
+
+def candidate_decision(args, candidate):
+    group = candidate["samples"]
+    unique = {}
+    invalid_reason = None
+    try:
+        if candidate['rejection']:
+            raise ValueError(candidate['rejection'])
+        for sample in group:
+            if sample.status.name in ("FAILED", "ABORTED"):
+                raise ValueError("incomplete_session")
+            item = trajectory_outcome(sample)
+            unique[item.trajectory_id] = item
+        if len(unique) != args.n_samples_per_prompt:
+            raise ValueError("incomplete_group")
+        result = group_advantages(list(unique.values()))
+        keep = result["accepted"]
+        invalid_reason = result["reason"]
+    except (KeyError, TypeError, ValueError) as error:
+        keep = False
+        invalid_reason = str(error)
+    return keep, invalid_reason, len(unique)
+
+
+def should_admit_candidate(eligible_count, required_count, previously_started):
+    """Keep every started task, then admit only the required ordered prefix."""
+    return previously_started or eligible_count < required_count
+
+
 def generate_rollout(args, rollout_id, data_source, evaluation=False):
     from slime.rollout.base_types import RolloutFnTrainOutput
     from slime_bridge import rollout
@@ -91,31 +120,14 @@ def generate_rollout(args, rollout_id, data_source, evaluation=False):
     audit = []
     try:
         for candidate_batch in range(16):
-            candidates = asyncio.run(collect_candidate_groups(args, rollout_id, candidate_batch, data_source))
+            candidates = asyncio.run(collect_candidate_groups(args, rollout_id, candidate_batch, data_source, target - len(accepted)))
             for candidate in candidates:
                 group = candidate['samples']
-                unique = {}
-                invalid_reason = None
-                try:
-                    if candidate['rejection']:
-                        raise ValueError(candidate['rejection'])
-                    for sample in group:
-                        if sample.status.name in ("FAILED", "ABORTED"):
-                            raise ValueError("incomplete_session")
-                        item = trajectory_outcome(sample)
-                        unique[item.trajectory_id] = item
-                    if len(unique) != args.n_samples_per_prompt:
-                        raise ValueError("incomplete_group")
-                    result = group_advantages(list(unique.values()))
-                    keep = result["accepted"]
-                    invalid_reason = result["reason"]
-                except (KeyError, TypeError, ValueError) as error:
-                    keep = False
-                    invalid_reason = str(error)
+                keep, invalid_reason, trajectory_count = candidate_decision(args, candidate)
                 selected = keep and len(accepted) < target
                 audit.append({"candidate_batch": candidate_batch,
                               "group_index": candidate['group_index'],
-                              "trajectory_count": len(unique), "selected": selected,
+                              "trajectory_count": trajectory_count, "selected": selected,
                               "reason": invalid_reason if not keep else (None if selected else "batch_excess")})
                 if selected:
                     accepted.append(group)
@@ -139,7 +151,7 @@ def update_policy_version(args, version):
     return update(args, version)
 
 
-async def collect_candidate_groups(args, rollout_id, candidate_batch, data_source):
+async def collect_candidate_groups(args, rollout_id, candidate_batch, data_source, required_groups):
     """Reuse Polar transport and conversion without speculative next-policy work."""
     import httpx
     from slime_bridge import rollout
@@ -228,7 +240,35 @@ async def collect_candidate_groups(args, rollout_id, candidate_batch, data_sourc
                          if actual != expected else None)
             return {'group_index': group[0].group_index, 'samples': samples, 'rejection': rejection}
 
+    candidates = []
+    executed = []
+    skipped = []
+    eligible_count = 0
     async with httpx.AsyncClient(timeout=httpx.Timeout(60)) as client:
-        # gather preserves predetermined candidate order. It waits for every
-        # group before returning, leaving no background jobs across weight sync.
-        return await asyncio.gather(*(collect(i, g, client) for i, g in enumerate(groups)))
+        for position, group in enumerate(groups):
+            started = (directory / f"group-{position:03d}-intent.json").exists()
+            if not should_admit_candidate(eligible_count, required_groups, started):
+                skipped.append(position)
+                continue
+            candidate = await collect(position, group, client)
+            candidates.append(candidate)
+            executed.append(position)
+            keep, _, _ = candidate_decision(args, candidate)
+            eligible_count += int(keep)
+    admission = {
+        'planned_positions': list(range(len(groups))),
+        'executed_positions': executed,
+        'unstarted_skipped_positions': skipped,
+        'required_eligible_groups': required_groups,
+        'eligible_groups': eligible_count,
+        'all_started_groups_terminal_before_return': True,
+        'selection_order': 'frozen candidate order',
+        'cursor_after': batch['after'],
+    }
+    admission_path = directory / 'ADMISSION_RESULT.json'
+    if admission_path.exists() and json.loads(admission_path.read_text()) != admission:
+        raise ValueError('Recorded admission differs from completed candidate results')
+    temporary = admission_path.with_suffix('.tmp')
+    temporary.write_text(json.dumps(admission, indent=2))
+    temporary.replace(admission_path)
+    return candidates

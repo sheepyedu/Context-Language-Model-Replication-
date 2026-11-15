@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "exhaustive_selection_patterns": 196608,
+  "candidate_positions_per_batch": 16,
+  "target_eligible_groups": 8,
+  "same_first8_as_full16_filter": true,
+  "all_previous_intents_retained": true,
+  "archived_metadata_decision_checks": [
+    {
+      "source": "runs/c2-seed1234/audit/rollout-00000/candidate-000/group-000-result.json",
+      "keep": false,
+      "reason": "incomplete_session",
+      "unique_outcomes": 0
+    },
+    {
+      "source": "management/group004-terminal-snapshot.json",
+      "keep": true,
+      "reason": null,
+      "unique_outcomes": 32
+    },
+    {
+      "source": "management/group005-terminal-snapshot.json",
+      "keep": true,
+      "reason": null,
+      "unique_outcomes": 32
+    }
+  ],
+  "existing_payloads_exact": 9,
+  "logical_trajectories_per_update": 256,
+  "target_updates": 70,
+  "new_model_tool_or_judge_calls": 0,
+  "source_sha256": "a23566c61a43ce2e25cd6fc64ad697f39e60191bebb692d08bea8a1ef8a8229b"
+}
