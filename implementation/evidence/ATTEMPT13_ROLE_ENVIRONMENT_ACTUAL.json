@@ -1,0 +1,67 @@
+{
+  "accepted": true,
+  "created": 1794834063.0453134,
+  "owner": {
+    "pid": 3060432,
+    "created": 1794832558.4704704,
+    "argv": [
+      "/mount-data/CLM-Replication/env/rl/bin/python",
+      "/mount-data/CLM-Replication/management/owned_training_v14.py",
+      "--attempt",
+      "13"
+    ],
+    "attempt": 13,
+    "directory": "/mount-data/CLM-Replication/runs/c2-seed1234/attempt-13"
+  },
+  "role_environment": [
+    {
+      "pid": 3063077,
+      "uid": 0,
+      "start_ticks": 51934144,
+      "raw_sha256": "84164c42bba473f7eaeab4f1f1b6079f2210bd8013668aa2bfce4343dfaa48f4",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "4,5,6,7",
+        "PYTHONPATH": "/mount-data/CLM-Replication/env/tilelang-0115:/mount-data/CLM-Replication/env/attention-fa283:/mount-data/CLM-Replication/source-revisions/training-v10:/mount-data/CLM-Replication/src:/mount-data/CLM-Replication/src/ProRL/src:/mount-data/CLM-Replication/src/slime:/mount-data/CLM-Replication/src/Megatron-LM",
+        "POLAR_DUAL_CHANNEL_W_EFF": "0.25",
+        "FLA_TILELANG": "1"
+      }
+    },
+    {
+      "pid": 3063559,
+      "uid": 0,
+      "start_ticks": 51936835,
+      "raw_sha256": "84164c42bba473f7eaeab4f1f1b6079f2210bd8013668aa2bfce4343dfaa48f4",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "4,5,6,7",
+        "PYTHONPATH": "/mount-data/CLM-Replication/env/tilelang-0115:/mount-data/CLM-Replication/env/attention-fa283:/mount-data/CLM-Replication/source-revisions/training-v10:/mount-data/CLM-Replication/src:/mount-data/CLM-Replication/src/ProRL/src:/mount-data/CLM-Replication/src/slime:/mount-data/CLM-Replication/src/Megatron-LM",
+        "POLAR_DUAL_CHANNEL_W_EFF": "0.25",
+        "FLA_TILELANG": "1"
+      }
+    },
+    {
+      "pid": 3063561,
+      "uid": 0,
+      "start_ticks": 51936836,
+      "raw_sha256": "84164c42bba473f7eaeab4f1f1b6079f2210bd8013668aa2bfce4343dfaa48f4",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "4,5,6,7",
+        "PYTHONPATH": "/mount-data/CLM-Replication/env/tilelang-0115:/mount-data/CLM-Replication/env/attention-fa283:/mount-data/CLM-Replication/source-revisions/training-v10:/mount-data/CLM-Replication/src:/mount-data/CLM-Replication/src/ProRL/src:/mount-data/CLM-Replication/src/slime:/mount-data/CLM-Replication/src/Megatron-LM",
+        "POLAR_DUAL_CHANNEL_W_EFF": "0.25",
+        "FLA_TILELANG": "1"
+      }
+    },
+    {
+      "pid": 3063562,
+      "uid": 0,
+      "start_ticks": 51936836,
+      "raw_sha256": "84164c42bba473f7eaeab4f1f1b6079f2210bd8013668aa2bfce4343dfaa48f4",
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "4,5,6,7",
+        "PYTHONPATH": "/mount-data/CLM-Replication/env/tilelang-0115:/mount-data/CLM-Replication/env/attention-fa283:/mount-data/CLM-Replication/source-revisions/training-v10:/mount-data/CLM-Replication/src:/mount-data/CLM-Replication/src/ProRL/src:/mount-data/CLM-Replication/src/slime:/mount-data/CLM-Replication/src/Megatron-LM",
+        "POLAR_DUAL_CHANNEL_W_EFF": "0.25",
+        "FLA_TILELANG": "1"
+      }
+    }
+  ],
+  "scope": "four currently running native C2 train roles, no GPU or model API operation"
+}

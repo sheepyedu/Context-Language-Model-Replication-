@@ -1,0 +1,16 @@
+{
+  "created": 1794834126.3824942,
+  "prepared_only": true,
+  "C1_training_dispatched": false,
+  "baseline_source_pins_sha256": "f62a2b87571097ea4b254a896e84dbc24a2f2d2c9732e83745f75b337972fce4",
+  "baseline_package": "training-v10",
+  "files": {
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/EFFECTIVE_DIFF.json": "596b7bac02c54ccd8a36fac22c43075955558c25b971673c4d6f319ada9bf512",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/CPU_ACCEPTED.json": "35cd0fbc896f7053f7f4bd74d1385e085d40c106735edd5450dcae08de1939d9",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/train-c1-tp4.sh": "741ddd69c990d554c3a42ff83be14255e082834d1f2508fd0a2f54aed9df719b",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/prepare_c1.py": "a7b3122cecf4260478e3b31fc4a2194ac234c7190eb9136860554df36fc0f8da",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/train-config-c1.yaml": "5384ab0bfb05fcd19afad79418b33530b03737073ffe8c2e75f6edd042914938",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/CONFIG_ACCEPTED.json": "794fca090f38821b0f33ed519ab76c7a831f59e23de46e47f71d2d4a430db0d0",
+    "/mount-data/CLM-Replication/management/conditions-c1-tp4-v2/check_c1_environment.py": "9172eda641205a308163b980ee940de8b56607fd73183bcec6d1aa5a8cb0682e"
+  }
+}
