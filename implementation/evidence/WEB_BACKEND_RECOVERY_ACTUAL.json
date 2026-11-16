@@ -1,0 +1,13 @@
+{
+  "created": 1794810576.3069649,
+  "closed_retrievals_since_resume": 471,
+  "latest_action": "search",
+  "latest_url": "https://www.bing.com/search?format=rss&q=Brown%20University%20founder%20Rhode%20Island%20College%20Brown%20family%201764%20established",
+  "latest_finished": 1794810576.102286,
+  "body_sha256_matches": true,
+  "raw_bytes": 4589,
+  "returned_text_characters": 0,
+  "truncated": null,
+  "new_validation_tool_or_model_requests": 0,
+  "scope": "One actual retained retrieval after resumption, not whole-backend availability"
+}

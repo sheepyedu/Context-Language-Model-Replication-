@@ -1,0 +1,11 @@
+{
+  "created": 1794809528.5314631,
+  "paused_at": 1794784774.792815,
+  "resumed_at": 1794808734.044349,
+  "admission_wait_seconds": 23959.251533985138,
+  "closed_receipts_during_wait": 0,
+  "receipts": [],
+  "derived_two_card_allocation_hours": 13.31069529665841,
+  "allocation_hours_scope": "Derived from retaining the original two-card serving process across the admission wait, not a billing measurement",
+  "money": null
+}

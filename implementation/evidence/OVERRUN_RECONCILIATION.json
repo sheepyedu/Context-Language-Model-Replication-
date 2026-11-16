@@ -1,0 +1,9 @@
+{
+  "created": 1794808988.788488,
+  "pause_marker_mtime": 1794784774.792815,
+  "resume_marker_mtime": 1794808734.044349,
+  "task11_intent_present": true,
+  "source_revision": "training-v7",
+  "merge_activated": false,
+  "actual_admission_wait_seconds": 23959.251533985138
+}

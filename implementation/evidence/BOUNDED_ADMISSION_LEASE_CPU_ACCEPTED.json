@@ -1,0 +1,42 @@
+{
+  "accepted": true,
+  "created": 1794809380.1396306,
+  "cases": [
+    {
+      "case": "native_wait_resumes_on_alarm",
+      "accepted": true,
+      "native_wait_seconds": 1.013866258028429,
+      "native_exit": 0
+    },
+    {
+      "case": "SIGKILL_closes_descriptor_and_native_wait",
+      "accepted": true,
+      "native_wait_seconds": 0.0004303559544496238,
+      "native_exit": -9
+    },
+    {
+      "case": "new_lease_replaces_only_dangling_link",
+      "accepted": true,
+      "native_wait_seconds": 1.0139393039862625,
+      "native_exit": 0
+    },
+    {
+      "case": "collision_preserves_live_lease_and_explicit_release",
+      "accepted": true,
+      "collision_exit": 1,
+      "native_exit": 0
+    },
+    {
+      "case": "excessive_duration_rejected_before_gate",
+      "accepted": true,
+      "native_exit": 1
+    }
+  ],
+  "all_test_owners_exactgone": true,
+  "active_source_changed": false,
+  "native_wait_source_file": "/mount-data/CLM-Replication/source-revisions/training-v7/clm_replication/bridge.py",
+  "native_wait_source_sha256": "4fc17622ead1111d7813d82d9a05dea16584e8353af4b79384a0812fce581740",
+  "new_model_tool_or_judge_calls": 0,
+  "production_gate_used": false,
+  "compatibility": "Current training-v7 native path-exists admission loop"
+}
