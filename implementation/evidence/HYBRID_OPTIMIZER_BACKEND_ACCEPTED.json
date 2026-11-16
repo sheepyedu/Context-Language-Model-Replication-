@@ -1,0 +1,29 @@
+{
+  "accepted": true,
+  "created": 1794819544.23727,
+  "physical_gpu": 4,
+  "optimizer_class": "native HybridDeviceOptimizer",
+  "cpu_class": "torch.optim.AdamW fused=True",
+  "offload_fraction": 1.0,
+  "pin_cpu_grads": true,
+  "pin_cpu_params": true,
+  "overlap": false,
+  "hyperparameters": {
+    "lr": 1e-06,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "eps": 1e-08
+  },
+  "synthetic_backend_updates": 3,
+  "parameter_count": 4096,
+  "reference_max_abs_error": 0,
+  "state_serialization_bytes": 50816,
+  "peak_allocated_bytes": 32768,
+  "formal_model_parameters_touched": false,
+  "formal_optimizer_updates": 0,
+  "new_generation_calls": 0,
+  "distributed_optimizer_checkpoint_restore": "pending"
+}
