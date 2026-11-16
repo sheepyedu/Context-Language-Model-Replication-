@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "created": 1794833268.1704621,
+  "identity": {
+    "pid": 3060432,
+    "uid": 0,
+    "start_ticks": 51919204,
+    "argv": [
+      "/mount-data/CLM-Replication/env/rl/bin/python",
+      "/mount-data/CLM-Replication/management/owned_training_v14.py",
+      "--attempt",
+      "13"
+    ],
+    "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+  },
+  "helper_sha256": "75d9b08c1f2681060531ab220576b93393f2a2d365175378c6bedf87ba4121cb",
+  "actual_optimizer_updates_checked": false,
+  "new_model_or_http_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "checks": [
+    "attempt13_owner_v14_exact_argv_accepted",
+    "reused_pid_start_rejected",
+    "pointer_launch_attempt_mismatch_rejected",
+    "incorrect_source_version_rejected",
+    "extra_argv_rejected",
+    "zombie_rejected",
+    "native_update_metric_parsed",
+    "finite_positive_language_difference_parsed"
+  ],
+  "total": 8,
+  "actual_model_optimizer_updates": 0,
+  "network_calls": 0
+}

@@ -1,0 +1,11 @@
+# 首次实际更新验收入口
+
+当前正式训练仍为原未合并数据，训练/模型代码保持原配置。此修正仅影响管理端的只读验收助手。
+
+原v3助手将attempt编号当作owner实现版本号，构造owned_training_v{attempt}.py。实际attempt13使用owned_training_v14.py，因此会在模型查询前误拒绝正确进程。v4改为读取原LAUNCH.json，并绑定canonical pointer的同一PID、attempt和完整argv，核/proc的真实start、完整NUL分隔argv、非zombie和UID0，完成模型查询后再次核相同身份和pointer。
+
+原有限正梯度/有限loss解析、语言权重有限正变化解析和HTTP读取函数AST完全相同。8个CPU回归在Mac和Node均通过，覆盖attempt13/owner-v14合法、PID重用、pointer/launch冲突、错误版本、额外argv、zombie，以及原生指标和权重差异解析。实际运行owner的/proc身份检查也通过，调用模型或HTTP均0。CPU证明不构成实际更新验收。
+
+仅在原生真实optimizer指标出现且SGLang同步weight_version2后，运行first_update_acceptance_v4.py，参数取当前实际attempt和owner start。它执行原生只读weights_checker compare、保存原响应和SHA、确认有限正语言权重变化与serving版本稳定。该目录采用O_EXCL登记INTENT，回执不明时先核实际效果。
+
+即使首次更新验收通过，T06还需要真实模型/optimizer/RNG/data cursor的checkpoint恢复，T07仍需连续3次有效更新。正式更新当前0/70，Goal active。
