@@ -1,0 +1,18 @@
+{
+  "accepted": true,
+  "created": 1794840678.931019,
+  "scope": "CPU protocol preparation only",
+  "CPU_checks": 14,
+  "invalid_prefix_cases": 13,
+  "native_metric_parser_reused_by_exact_SHA": true,
+  "native_weight_checker_sha256": "f4abd88453badd664676f47d967b7eb2bbfbf155a5147b5135ccef9d3038d1de",
+  "diagnostic_actions": [
+    "snapshot",
+    "compare"
+  ],
+  "new_live_diagnostic_actions": 0,
+  "model_or_judge_calls": 0,
+  "production_policy_INTENTs": 0,
+  "first_update_and_live_adjacent_deltas_pending": true,
+  "full_stability_not_established": true
+}

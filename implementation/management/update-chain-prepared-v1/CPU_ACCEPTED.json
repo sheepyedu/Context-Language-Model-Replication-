@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "created": 1794840594.6607692,
+  "checks": [
+    "first_anchor_requires_accepted_first_real_update",
+    "adjacent_second_update_accepted",
+    "duplicate_identical_metric_rows_count_once",
+    "native_first_step_number_is_preserved",
+    "thirteen_invalid_acceptance_or_version_prefixes_rejected",
+    "complete_native_response_and_intent_saved",
+    "existing_intent_prevents_repeated_action",
+    "transport_failure_retains_partial_and_unknown_without_acceptance",
+    "HTTP_failure_body_and_integer_status_preserved",
+    "parameter_mutation_action_refused_before_intent",
+    "reused_pinned_native_finite_metric_parser",
+    "reused_parser_rejects_zero_negative_nonfinite_and_missing_loss",
+    "main_refuses_missing_first_acceptance_before_HTTP_or_intent",
+    "two_update_main_flow_saves_adjacent_evidence_with_CPU_fake_responses"
+  ],
+  "count": 14,
+  "invalid_prefix_cases": 13,
+  "actual_HTTP_GPU_or_model_calls": 0,
+  "first_real_update_and_live_chain_pending": true
+}
