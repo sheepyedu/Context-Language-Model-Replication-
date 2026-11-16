@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "created": 1794838597.1682968,
+  "checks": [
+    "live_owner_without_exit_refused",
+    "live_owner_refused_even_with_integer_exit_sidecar",
+    "zombie_original_process_requires_reaping",
+    "gone_owner_original_integer_exit_preserved",
+    "unknown_string_and_boolean_exits_refused",
+    "missing_original_exit_refused",
+    "reused_PID_is_distinguished_by_original_start",
+    "predecessor_inspection_creates_no_C1_run_or_intent",
+    "concurrent_attempt_admission_excluded_by_native_file_lock",
+    "admission_lock_released_after_return"
+  ],
+  "count": 10,
+  "actual_network_model_GPU_or_dispatch_operations": 0,
+  "scope": "predecessor admission predicates only, actual C1 launch pending"
+}

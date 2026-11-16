@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "created": 1794838597.8984246,
+  "actual_entry_integer_exit": 1,
+  "expected_live_predecessor_refusal": true,
+  "C1_run_tree_unchanged": true,
+  "C1_dispatch_intents": 0,
+  "new_model_or_judge_calls": 0,
+  "current_C2_owner": 3060432,
+  "launcher_sha256": "c0714c13308b7e11c44509733e2bef59426ffe6c26bc3d96eb213e791ab26e31",
+  "source": "main CLI admission path refused before pins/network/GPU/dispatch"
+}

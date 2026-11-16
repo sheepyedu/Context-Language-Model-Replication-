@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "created": 1794838403.9847589,
+  "prepared_only": true,
+  "base_owner_sha256": "d46569e5c95dcdeaed038c3f5fc4ee0ee4b2ed58e5f88b4bdaa13849d637044d",
+  "candidate_owner_sha256": "750605b4872900eb9014cefae317829602e41e00c960e7248f0aa39d93791351",
+  "changes": [
+    "C1 run directory",
+    "accepted C1 task-only launch script"
+  ],
+  "original_router_wait_and_exit_collection_unchanged": true,
+  "new_model_or_judge_calls": 0
+}

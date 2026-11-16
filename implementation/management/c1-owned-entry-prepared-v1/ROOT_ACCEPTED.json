@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "created": 1794838658.5711355,
+  "scope": "prepared C1 controller, predecessor predicates/dispatch-lock CPU and actual live-owner refusal only",
+  "CPU_checks": 10,
+  "actual_expected_refusal_exit": 1,
+  "model_or_GPU_operations": 0,
+  "C1_dispatch_intents": 0,
+  "actual_C1_GPU_owner_and_full_resource_admission_pending": true
+}
