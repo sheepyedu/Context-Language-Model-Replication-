@@ -1,0 +1,23 @@
+{
+  "files": {
+    "README.md": "616ed5b75a29456b904610b4d0709dc95f132a97e4759b5de38aa079fece979f",
+    "summary_context.py": "6cef1ddcbb6df82f2b4f98dea4904537d8a8f1bf358a096b362f11d0a0fb80cd",
+    "summary_loop.py": "f56691610eccbd31486a542327f240f2b8cac5371faa99498a4227985478b678",
+    "summary_runner.py": "3667a364c9c737ac64fde0558b8e376208042babbda50939d956b6f83b1863f2",
+    "summary_polar_agent.py": "dbdd2b9e97ae2767de8e51ad267d4fa4e4e4d81b44b2c1dbefa6b935b51d049f",
+    "check_summary_host.py": "5f3c66e5435a9f8e859885bf0534f68a82ef71597545d1356d5022a0fd31197f",
+    "check_summary_loop.py": "ad502bacc8f75beb5bfcaf40bd0a2469714155e13d5314ef31595e8cd020c2e4",
+    "prepare_summary_assets.py": "d82087e7018ddbafac3f227ff2cf68816a4c64228831e0da3fd1c6e5cc92a3c9",
+    "prepare_summary_host_source.py": "706a9285555148a33b9740d31d398ed06b86256edc56972d3289c4fd42d54fbe",
+    "run_cpu_container_r4.py": "d018abc76138faa36cad0b72cac12fa8a209c0ab0912c656779ba4f9b615a0b6",
+    "prepare_summary_bundle_r4.py": "e549ca7df9975584caffac9abd873bb2c7160271956f4902d36541ab71af1f37",
+    "HOST_CPU_ACTUAL.json": "cc853adea0599e11e31bc9cdc04dd42e8b5e0ffea1bde723ccb923415e75ea01",
+    "HOST_SOURCE_PREPARED.json": "a26b124e05f784b40fe5d8322d5d85bdae2b9c282625cf32ad5bd62425fd51eb",
+    "BUNDLE_R4_PREPARED.json": "b771fc448252403695346bb78e914173e8a50986cdc522316721931a31fab6a2",
+    "LOOP_CPU_R4_ACCEPTED.json": "77c39a824f044338a80c97df69fe30ac64ac9bbd0bb38f16c26288b27abb6eaf",
+    "ASSET_SUMMARY.json": "6de79b237e256d56a73ec4955d2fdffe926289b15dc63c99cbb7679bf772f57e",
+    "s0-task-config.yaml": "50143dd1597c591f5e7ac15cce6242e0278ec7fc2c8771b5f6ca604e753c1805",
+    "s1-task-config.yaml": "9a5fd037b0b725a68bb23f37c6280131a7674e2993f84f18a799e56eddf7a9fb"
+  },
+  "scope": "isolated prepared Summary v4, not active"
+}

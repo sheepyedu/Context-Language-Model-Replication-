@@ -1,0 +1,51 @@
+{
+  "created": 1794822424.2674415,
+  "packages": {
+    "transformers": {
+      "version": "5.3.0",
+      "source": "/mount-data/CLM-Replication/env/rl/lib/python3.11/site-packages/transformers",
+      "binary_abi": "pure_python"
+    },
+    "tokenizers": {
+      "version": "0.23.0rc0",
+      "source": "/mount-data/CLM-Replication/env/rl/lib/python3.11/site-packages/tokenizers",
+      "binary_abi": "abi3"
+    },
+    "safetensors": {
+      "version": "0.9.0rc1",
+      "source": "/mount-data/CLM-Replication/env/rl/lib/python3.11/site-packages/safetensors",
+      "binary_abi": "abi3"
+    }
+  },
+  "tokenizer_files": {
+    "config.json": {
+      "bytes": 3126,
+      "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+    },
+    "tokenizer_config.json": {
+      "bytes": 16710,
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+    },
+    "tokenizer.json": {
+      "bytes": 12807982,
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+    },
+    "vocab.json": {
+      "bytes": 6722759,
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+    },
+    "merges.txt": {
+      "bytes": 3353259,
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+    },
+    "chat_template.jinja": {
+      "bytes": 7756,
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+    }
+  },
+  "new_model_calls": 0,
+  "active_C2_source_changed": false,
+  "prepared": true,
+  "full_manifest_sha256": "6709dd7df67083f1cc2d3fd8cdba40336e6a6fc2e17c9ebedaf0b02ebbacc76a",
+  "dependency_file_count": 2229
+}

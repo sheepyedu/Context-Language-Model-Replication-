@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "tests": 4,
+  "failures": 0,
+  "errors": 0,
+  "native_builder_and_evaluator": true,
+  "judge_is_mocked": true,
+  "model_calls": 0,
+  "actual_S0_S1_tasks": 0,
+  "real_Polar_transport_trial": "pending",
+  "S1_efficiency_weight_requires_native_actor_env_proof": 0
+}

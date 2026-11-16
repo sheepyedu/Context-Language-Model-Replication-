@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "source": "CPU fixtures with real native Bash and tokenizer",
+  "actual_model_generation_calls": 0,
+  "actual_S0_S1_tasks": 0,
+  "complete_native_Polar_trial": "pending"
+}

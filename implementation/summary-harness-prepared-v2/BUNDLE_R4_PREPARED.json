@@ -1,0 +1,21 @@
+{
+  "prepared": true,
+  "created": 1794823441.5183654,
+  "bundle_sha256": {
+    "__init__.py": "9f0cfc37cddafbc7504213563878b6b3fc71d7478ca2a1cc3330b2b67d10f2f5",
+    "agent_runner.py": "4f4390f9d490ea65ef5ff00fc80a7b051388497883156b5df90f79f5ec4fb335",
+    "summary_context.py": "6cef1ddcbb6df82f2b4f98dea4904537d8a8f1bf358a096b362f11d0a0fb80cd",
+    "summary_loop.py": "f56691610eccbd31486a542327f240f2b8cac5371faa99498a4227985478b678",
+    "summary_polar_agent.py": "dbdd2b9e97ae2767de8e51ad267d4fa4e4e4d81b44b2c1dbefa6b935b51d049f",
+    "summary_prompts/SOURCE.json": "4dc4644b4a1c8dce4e689231c9a00a7cda038e230d3e116e46ea7a41abdee999",
+    "summary_prompts/UPSTREAM_LICENSE": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+    "summary_prompts/prompt.md": "ab0c334d4faca17e3afbb9b16967c1b2fdcc7242a9a0880af57949fa236d6d07",
+    "summary_prompts/summary_prefix.md": "e9b088e794a6bb9082ac053fcc760bd818d7e720ee4bcdc72c6e480de7b7cb0e",
+    "summary_runner.py": "3667a364c9c737ac64fde0558b8e376208042babbda50939d956b6f83b1863f2",
+    "web.py": "c1b5a1a1b49b53ffab8abe35d1f22f9fe2eb2c9216e76037f0d48b0b905f0f6c"
+  },
+  "dependency_source": "ASSETS_PREPARED.json",
+  "new_model_calls": 0,
+  "active_C2_source_changed": false,
+  "reason": "token counter normalizes tool argument strings with the same valid-JSON object normalization as SGLang, using the existing Python standard library, preserving the wire messages"
+}

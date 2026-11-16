@@ -1,0 +1,25 @@
+{
+  "prepared": true,
+  "files": {
+    "__init__.py": "9f0cfc37cddafbc7504213563878b6b3fc71d7478ca2a1cc3330b2b67d10f2f5",
+    "accounting.py": "2b8f1b98ab2462b22d7e23bdd8544a85dcb7ac94a077c52e3d483c650373adcf",
+    "advantages.py": "e4256b86f570d38c31a325934be703306a1aace8f434122451c29d6c168c0d21",
+    "agent_runner.py": "4f4390f9d490ea65ef5ff00fc80a7b051388497883156b5df90f79f5ec4fb335",
+    "bridge.py": "b68579dd2140ee8855db9859654b9fa734a1fdc0dec77894dc6661278f1e87df",
+    "evaluator.py": "75b9cda850ec83fbee916b93321da037fba2b4054bb411ab0ba62635ecc93939",
+    "gateway.py": "1314e11a86e5ec02eae0b1b3ae757b54e015bcf30d6e5d2056f882c229613f91",
+    "judge.py": "e202004f0afcd3ca499638f4fb273d6938c90efa5df4437d3f2099fabab17949",
+    "judge_rubric.txt": "401717896284e8fcdbf0b59a96820eb0766e10bd440d4e80a0e6cff2cdc7b02e",
+    "native_failures.py": "055cefd135e5f109733e8429c67d8d70c1107f1ed850af76e7c1fabbe4844e43",
+    "polar_agent.py": "1f85b711d61c598d690ac147914972be048c09f8a507f4a25141090a21c3e7db",
+    "preflight.py": "62b739ac48c2e812e25074cafd4b41341b0a337b43a4dc32233d3867b2e21eb2",
+    "rewards.py": "20bbc579e2e3f09c42c14f0167b4d59e7b980001be296202dcb58a8be873356f",
+    "summary_polar_agent.py": "dbdd2b9e97ae2767de8e51ad267d4fa4e4e4d81b44b2c1dbefa6b935b51d049f",
+    "train.py": "8c47c11e5ec67e1ac81eb71363ecf6067ad5fd85de3cbc470456463157b5cd46",
+    "web.py": "c1b5a1a1b49b53ffab8abe35d1f22f9fe2eb2c9216e76037f0d48b0b905f0f6c",
+    "weight_provenance.py": "ca62e9743c53294bd4634db469804b212b131dcec0779e292beaa971b7a482ea"
+  },
+  "parent_source": "training-v10",
+  "production_source_changed": false,
+  "new_models": 0
+}
