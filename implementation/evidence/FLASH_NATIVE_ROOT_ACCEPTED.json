@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "created": 1794813429.257712,
+  "pid": 2815080,
+  "flash_attention_version": "2.8.3",
+  "torch_version": "2.9.1+cu128",
+  "cudnn_version": 91002,
+  "layout": "native THD, BF16 GQA 8/2, D256, independent trailing padding sequence",
+  "reference": "float32 PyTorch SDPA forced MATH backend",
+  "forward_max_abs_error": 0.008010387420654297,
+  "gradient_max_abs_errors": [
+    0.125,
+    0.125,
+    0.25
+  ],
+  "all_D256_gradient_channels_nonzero": true,
+  "new_generation_calls": 0,
+  "physical_gpus": [
+    4,
+    5
+  ]
+}

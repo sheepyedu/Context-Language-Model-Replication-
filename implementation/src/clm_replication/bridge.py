@@ -148,7 +148,11 @@ def update_policy_version(args, version):
     global _served_policy_version
     _served_policy_version = int(version)
     from slime_bridge.rollout import update_policy_version as update
-    return update(args, version)
+    result = update(args, version)
+    if version == 0:
+        from .weight_provenance import capture_initial_snapshot
+        capture_initial_snapshot(args)
+    return result
 
 
 async def wait_for_task_admission(args, rollout_id, candidate_batch, position):

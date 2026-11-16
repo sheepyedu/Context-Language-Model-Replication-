@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "diff": {
+    "save_debug_rollout_data": {
+      "before": "/mount-data/CLM-Replication/runs/c2-seed1234/training/rollout-{rollout_id}.pt",
+      "after": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt08/rollout-{rollout_id}.pt"
+    },
+    "save_debug_train_data": {
+      "before": "/mount-data/CLM-Replication/runs/c2-seed1234/training/train-{rollout_id}.pt",
+      "after": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt08/train-{rollout_id}.pt"
+    }
+  },
+  "all_scientific_arguments_unchanged": true
+}

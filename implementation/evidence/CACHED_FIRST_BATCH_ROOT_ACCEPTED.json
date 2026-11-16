@@ -1,0 +1,25 @@
+{
+  "accepted": true,
+  "samples": 11095,
+  "logical_trajectories": 256,
+  "prompt_groups": 8,
+  "all_native_sample_fields_identical": true,
+  "new_model_tool_judge_or_network_calls": 0,
+  "selected_groups": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "cursor_after": {
+    "epoch_id": 0,
+    "sample_group_index": 16,
+    "sample_index": 512,
+    "sample_offset": 16,
+    "metadata": {}
+  }
+}

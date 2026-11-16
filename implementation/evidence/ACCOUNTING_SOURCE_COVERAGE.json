@@ -1,0 +1,162 @@
+{
+  "accepted": true,
+  "created": 1794813190.6847367,
+  "canonical_receipts": 12710,
+  "by_role": {
+    "rollout": 12454,
+    "judge": 245,
+    "conversion_validation": 8,
+    "merging_numerical_validation": 2,
+    "judge_calibration": 1
+  },
+  "retained_source_receipts_all_match": true,
+  "rollout_intents": 12420,
+  "unaccounted_rollout_intents": 0,
+  "temporary_judge_sources_resolved_to_verified_CPFS_archive": 240,
+  "legacy_engineering_requests_verified_from_original_completions": 34,
+  "source_file_counts": [
+    {
+      "role": "conversion_validation",
+      "file": "INTENT.json",
+      "count": 8
+    },
+    {
+      "role": "conversion_validation",
+      "file": "RESULT.json",
+      "count": 8
+    },
+    {
+      "role": "conversion_validation",
+      "file": "TOKEN_RECEIPT.json",
+      "count": 8
+    },
+    {
+      "role": "conversion_validation",
+      "file": "request.json",
+      "count": 8
+    },
+    {
+      "role": "conversion_validation",
+      "file": "response.raw",
+      "count": 8
+    },
+    {
+      "role": "judge",
+      "file": "INTENT.json",
+      "count": 242
+    },
+    {
+      "role": "judge",
+      "file": "RECEIPT.json",
+      "count": 242
+    },
+    {
+      "role": "judge",
+      "file": "RESULT.json",
+      "count": 238
+    },
+    {
+      "role": "judge",
+      "file": "TOKEN_RECEIPT.json",
+      "count": 245
+    },
+    {
+      "role": "judge",
+      "file": "request.json",
+      "count": 242
+    },
+    {
+      "role": "judge",
+      "file": "response.raw",
+      "count": 242
+    },
+    {
+      "role": "judge",
+      "file": "stderr.txt",
+      "count": 242
+    },
+    {
+      "role": "judge_calibration",
+      "file": "ACCEPTED.json",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "INTENT.json",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "RECEIPT.json",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "TOKEN_RECEIPT.json",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "request.json",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "response.raw",
+      "count": 1
+    },
+    {
+      "role": "judge_calibration",
+      "file": "stderr.txt",
+      "count": 1
+    },
+    {
+      "role": "merging_numerical_validation",
+      "file": "INTENT.json",
+      "count": 2
+    },
+    {
+      "role": "merging_numerical_validation",
+      "file": "RESULT.json",
+      "count": 2
+    },
+    {
+      "role": "merging_numerical_validation",
+      "file": "TOKEN_RECEIPT.json",
+      "count": 2
+    },
+    {
+      "role": "merging_numerical_validation",
+      "file": "request.json",
+      "count": 2
+    },
+    {
+      "role": "merging_numerical_validation",
+      "file": "response.raw",
+      "count": 2
+    },
+    {
+      "role": "rollout",
+      "file": "ERROR.json",
+      "count": 1
+    },
+    {
+      "role": "rollout",
+      "file": "INTENT.json",
+      "count": 12420
+    },
+    {
+      "role": "rollout",
+      "file": "RESPONSE.json",
+      "count": 12419
+    },
+    {
+      "role": "rollout",
+      "file": "TOKEN_RECEIPT.json",
+      "count": 12454
+    }
+  ],
+  "new_model_tool_or_judge_calls": 0,
+  "originals_deleted": false,
+  "missing_usage_calls": 1
+}
