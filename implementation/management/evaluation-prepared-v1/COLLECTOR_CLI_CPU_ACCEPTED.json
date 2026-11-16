@@ -1,0 +1,23 @@
+{
+  "accepted": true,
+  "created": 1794843585.004866,
+  "checks": [
+    "GET_only_export_preserves_original_bytes_hash_and_encoded_task_ID",
+    "closed_task_and_identical_index_reused_without_another_GET",
+    "capture_directory_bound_to_exact_manifest_SHA",
+    "concurrent_one_shot_export_excluded_by_native_lock",
+    "missing_original_task_preserves_HTTP_body_without_fabricating_score",
+    "real_process_alarm_bounds_stalled_read_and_retains_partial_receipt",
+    "actual_aggregation_CLI_reads_hash_bound_original_task_files",
+    "actual_selection_CLI_uses_declared_schedule_and_counts",
+    "CLI_refuses_modified_original_response_before_writing_a_report"
+  ],
+  "count": 9,
+  "actual_cli_integer_exits": [
+    0,
+    0
+  ],
+  "intentional_corruption_refusal_checked": true,
+  "actual_network_GPU_or_model_calls": 0,
+  "synthetic_fixture_only": true
+}

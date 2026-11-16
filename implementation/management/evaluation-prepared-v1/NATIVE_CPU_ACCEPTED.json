@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "created": 1794843858.2191415,
+  "checks": [
+    "manifest_task_ids_equal_original_native_eval_producer",
+    "native_producer_preserves_typed_raw_question_ids",
+    "labels_are_not_in_native_policy_instruction_or_agent_configuration",
+    "native_TaskStatus_and_SessionResult_JSON_feed_question_accuracy",
+    "fixture_zero_traces_are_explicit_without_claiming_model_execution",
+    "native_legacy_eval_ID_collision_for_changed_run_ID_reproduced_before_dispatch",
+    "unstarted_run_ID_namespacing_removes_collision_without_changing_questions",
+    "CUDA_not_initialized_and_actual_HTTP_guard_never_triggered"
+  ],
+  "count": 8,
+  "synthetic_fixture_questions": 2,
+  "original_native_eval_producer_called": true,
+  "HTTP_submit_and_trace_conversion_are_CPU_stubs": true,
+  "actual_HTTP_GPU_or_model_calls": 0,
+  "actual_500_question_validation_pending": true
+}

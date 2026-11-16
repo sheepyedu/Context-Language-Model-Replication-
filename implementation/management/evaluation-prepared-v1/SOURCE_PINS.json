@@ -1,0 +1,23 @@
+{
+  "created": 1794844179.684572,
+  "prepared_only": true,
+  "files": {
+    "management/evaluation-prepared-v1/EXPECTED_C2_POLICY5_VALIDATION.json": "91f841c3ca65675aa8040230273812460e38d34dea92bfd4115caa16ea84953b",
+    "management/evaluation-prepared-v1/question_metrics.py": "00f2eac209ed58fba6ab165613c02ac79e70e98b9561cd651897e57fc41c86e4",
+    "management/evaluation-prepared-v1/NATIVE_METRIC_UNIT_ACTUAL.json": "a22dac84607b4b829a54b5b731a8b060175c9aee820b4f2f1111b90e978a6f43",
+    "management/evaluation-prepared-v1/check_native_integration_cpu_r1.py": "94acf08bbeb5188d01970581cfbc3a998b39bf93b58a28d63487d27bb05dbd9a",
+    "management/evaluation-prepared-v1/collect_task_results.py": "3b77753319ecf1cf540795eaa0d59db7c1e9984b70b61931138b5f4a6f721668",
+    "management/evaluation-prepared-v1/COLLECTOR_CLI_CPU_ACCEPTED.json": "8b0ee932064afb50f4193491e5dd131df96f7ef8bf3fb97f483b6299ebebcf8f",
+    "management/evaluation-prepared-v1/CPU_ACCEPTED.json": "efc631540e511bb079cd042cfb47a8d11375c437adef22bd1966c0d8e61940c7",
+    "management/evaluation-prepared-v1/check_question_metrics_cpu.py": "3991871fe411312fba614eab013b298228b4f712c72aa730449e6a6d9b687519",
+    "management/evaluation-prepared-v1/ROOT_ACCEPTED.json": "b499c8c9790b89c32b861ec4e753ddc256cda016d2a73764a5f66ff27b34fc09",
+    "management/evaluation-prepared-v1/evaluate_records.py": "c17839296df7c29130d2d26710077e864b43fbce139cb26bfd84c36ee818d030",
+    "management/evaluation-prepared-v1/check_native_integration_cpu.py": "137ebfb7e40dee768c3c6a790434cb3ffcf85c072b4c5f3cf422da94e391a4ab",
+    "management/evaluation-prepared-v1/compile_manifest.py": "c2b07cc7a21733ca6ab68e3964ba60c34606fbb0fa98db2d23a0c8542bdbad55",
+    "management/evaluation-prepared-v1/R1_DISPOSITION.json": "e63b0b6228973eb13abcc9576457b68863f3c00212e379fc548cb0ff39eeb3ec",
+    "management/evaluation-prepared-v1/NATIVE_CPU_ACCEPTED.json": "e63ad740300419a42ef5b0cfbfe679f83a472180c059cbcfddf7e5fe50bbe20b",
+    "management/evaluation-prepared-v1/README.md": "ade1e4a32f91044bf274af21802f7fa81bb0b15b63933ea5d443b0c83112fef4",
+    "management/evaluation-prepared-v1/check_collector_cli_cpu.py": "1937bce547c255b6452800b501f013054cb742709f04a4e2304db52fb0b0f52d",
+    "src/ProRL/src/slime_bridge/rollout.py": "896126dd8afdf7e179a576b25b445bcb2898ce804df4c5dd2a34b3259c9ca09f"
+  }
+}

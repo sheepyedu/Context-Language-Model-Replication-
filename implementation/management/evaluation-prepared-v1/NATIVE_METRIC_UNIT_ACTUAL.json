@@ -1,0 +1,18 @@
+{
+  "observed": 1794841630.68461,
+  "scope": "native CPU synthetic metric-unit fixture only, actual validation has not run",
+  "native_source": "/mount-data/CLM-Replication/src/ProRL/src/slime_bridge/rollout.py",
+  "native_source_sha256": "896126dd8afdf7e179a576b25b445bcb2898ce804df4c5dd2a34b3259c9ca09f",
+  "questions": 2,
+  "complete_sessions": 2,
+  "call_samples": 10,
+  "native_rewards_length": 10,
+  "native_call_weighted_reward_mean": 0.1,
+  "existing_deduplicated_completed_session_metric": 0.5,
+  "synthetic_question_accuracy": 0.5,
+  "missing_reward_default": 0.0,
+  "selected_checkpoint_changed": false,
+  "training_source_changed": false,
+  "new_model_or_judge_calls": 0,
+  "needed_for_plan": "500 question validation accuracy with one-binomial-SE checkpoint selection requires question/session-level objective outcomes, original diagnostic metrics retained separately"
+}

@@ -1,0 +1,8 @@
+{
+  "created": 1794842673.606869,
+  "actual_integer_exit": 1,
+  "original_helper_sha256": "94acf08bbeb5188d01970581cfbc3a998b39bf93b58a28d63487d27bb05dbd9a",
+  "failure": "Native TaskStatus validator rejected lowercase trajectory.status=completed. Session/trajectory terminal states require uppercase COMPLETED, ERROR or TIMEOUT. TaskStatus.status remains lowercase.",
+  "repair_scope": "synthetic CPU fixture status only",
+  "actual_HTTP_GPU_or_model_calls": 0
+}

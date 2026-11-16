@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "created": 1794844179.6660242,
+  "scope": "question-level analysis, native producer/schema and bounded collector CLI CPU preparation",
+  "pure_CPU_checks": 24,
+  "native_CPU_checks": 8,
+  "collector_CLI_CPU_checks": 9,
+  "total_check_groups": 41,
+  "real_validation_manifest_cases": 500,
+  "manifest_contains_only_qid_and_task_id_per_case": true,
+  "manifest_is_expected_requests_only": true,
+  "native_generator_source_sha256": "896126dd8afdf7e179a576b25b445bcb2898ce804df4c5dd2a34b3259c9ca09f",
+  "dataset_sha256": "8e557ec1f576bc64f8d1c8651b18adc26019971eff07a574028dcc1d3c7678c5",
+  "actual_model_GPU_or_Judge_calls": 0,
+  "actual500_validation_pending": true,
+  "actual830_final_test_pending": true,
+  "known_followups": [
+    "measure original step0 baseline before final0,5,...,70 selection",
+    "namespace additional unstarted seed configurations before dispatch"
+  ],
+  "R1_synthetic_status_schema_failure_retained": true
+}
