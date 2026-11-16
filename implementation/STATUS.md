@@ -1,3 +1,7 @@
+# 2026-11-16 20:37 当前状态
+
+两项可选优化均未通过各自固定梯度门，已撤回。原v11配置/training-v10科学包继续原256轨迹/11095样本，实际attempt13于20:35:58单次启动，当前模型初始化。原最大微批反向证明复用，无新普通暂停gate。正式更新0/70、5/10，Goal active。完整发现与原数值见management/STRICT_MERGE_NATIVE_REJECTION.md。下方为历史时点记录。
+
 # 当前状态更新
 
 2026-11-16 20:21 严格前缀合并真实TP4首片段未通过逐参数梯度阈值，已拒绝启用。原256轨迹/11095调用样本保留，正式attempt12单次启动，继续未合并数据。只改变activation checkpoint重计算分组1→4，须在原最大微批通过紧梯度与显存验收后进入原参考/PPO训练。正式optimizer仍0/70、5/10，Goal active。详见management/STRICT_MERGE_NATIVE_REJECTION.md。下方均为各自时点的历史记录。

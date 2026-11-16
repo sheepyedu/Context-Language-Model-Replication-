@@ -31,3 +31,14 @@ v3的Bash变量形式源码路径未切换导致实际CLI导入旧包，v4诊断
 ## 账本
 
 已知12710份闭回执合计149681317 Token，DeepSeek评审334772 Token。原辅助HTTP缺usage和全部货币未知保持null。GPU离线teacher-force和重复训练Token occurrence分账，没有当作新的API生成。后续真实update/参数变化同步/checkpoint恢复与3次稳定更新仍待。
+
+
+## 20:37 继续更新
+
+重计算分组1/4对照在所有rank的loss均为0.19044674932956696，但每rank354–361个张量超过提前固定的紧容差，最大绝对差0.01018–0.015625。原权重SHA相同，RNG恢复和梯度清理完成，真实child exit1，原owner/worker gone，四卡释放，正式optimizer0。精确数值来源尚未通过额外对照证实。该候选已撤回。首个分组1为冷态，分组4后运行，时间不用于加速声明。
+
+已恢复原已接受的v11训练配置，科学包仍training-v10、recompute_num_layers1、未合并样本。原最大34816-token反向证明按SHA复用，取消重复可选诊断hook。仅更换本次debug输出路径，未修改任务、预算、奖励或任何optimizer参数。20:35:58正式attempt13单次启动，当前模型初始化。4111文件PINS f62a2b87571097ea4b254a896e84dbc24a2f2d2c9732e83745f75b337972fce4。停止继续在首个正式更新前叠加可选优化。
+
+缓存archive二进制SHA不同，初始比对不能宣称逐字节同。已发现pickle中metadata字典键顺序不同，并进一步对恢复前后的全部11095个Sample全部字段做排序规范哈希，逐条完全一致，8组/256轨迹保留，规范摘要ab88abb88e96700020fcfde8b5eb40964ad1f77d49fdbeb1dadb5875b58105c1。原archive和初次差异记录均保留。
+
+原生缓存重新材料化的perf/tokens_per_gpu_per_sec等指标含已保存输出，不能当本次新生成速度。正式模型更新仍0/70、5/10、Goal active。近期可选优化验证增加等待，已向用户明确披露。下一步完成原批真实optimizer、参数变化/同步和checkpoint恢复，连续3个有效更新后转30分钟监督。
