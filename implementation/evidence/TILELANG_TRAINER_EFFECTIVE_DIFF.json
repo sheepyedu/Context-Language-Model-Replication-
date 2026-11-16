@@ -1,0 +1,20 @@
+{
+  "save_debug_rollout_data": {
+    "before": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt10/rollout-{rollout_id}.pt",
+    "after": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt11/rollout-{rollout_id}.pt"
+  },
+  "save_debug_train_data": {
+    "before": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt10/train-{rollout_id}.pt",
+    "after": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt11/train-{rollout_id}.pt"
+  },
+  "train_env_vars": {
+    "before": {
+      "CUDA_DEVICE_MAX_CONNECTIONS": "1"
+    },
+    "after": {
+      "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+      "PYTHONPATH": "/mount-data/CLM-Replication/env/tilelang-0115:/mount-data/CLM-Replication/env/attention-fa283:/mount-data/CLM-Replication/source-revisions/training-v10:/mount-data/CLM-Replication/src:/mount-data/CLM-Replication/src/ProRL/src:/mount-data/CLM-Replication/src/slime:/mount-data/CLM-Replication/src/Megatron-LM",
+      "FLA_TILELANG": "1"
+    }
+  }
+}
