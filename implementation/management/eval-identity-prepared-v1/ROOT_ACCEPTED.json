@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "created": 1794845848.3110821,
+  "source_pins_sha256": "f9665d7200b6e1ad8b1d44203cd1f0231fc85c3a7212360e3400a2da0a9f2cee",
+  "native_CPU_groups": 9,
+  "future_IDs_compiled": 2500,
+  "active_IDs_preserved": 500,
+  "active_config_sha256": "67867116891309550f8541b56a943ced0804021c8cf74a02d793e5bc4bef9142",
+  "actual_validation_or_model_calls": 0,
+  "prepared_only": true,
+  "later_config_and_owned_dispatch_acceptance_pending": true
+}
