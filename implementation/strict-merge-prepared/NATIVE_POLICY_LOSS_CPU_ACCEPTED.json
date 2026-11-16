@@ -1,0 +1,38 @@
+{
+  "accepted": true,
+  "cases": [
+    {
+      "old_offset": 0.015,
+      "reference_offset": -0.012,
+      "gradient_max_abs": 1.3877787807814457e-17,
+      "loss_abs_diff": 0.0
+    },
+    {
+      "old_offset": 0.7,
+      "reference_offset": 0.2,
+      "gradient_max_abs": 1.3877787807814457e-17,
+      "loss_abs_diff": 7.450580596923828e-09
+    },
+    {
+      "old_offset": -0.7,
+      "reference_offset": -0.2,
+      "gradient_max_abs": 5.421010862427522e-20,
+      "loss_abs_diff": 7.450580596923828e-09
+    },
+    {
+      "old_offset": 0,
+      "reference_offset": 0,
+      "gradient_max_abs": 2.0816681711721685e-17,
+      "loss_abs_diff": 0.0
+    }
+  ],
+  "tolerance_abs_and_relative": 1e-06,
+  "actual_native_loss_function": true,
+  "actual_native_policy_loss_TIS_KL_reducers": true,
+  "vocabulary_logprobs": "CPU reference replacement, not GPU vocabulary kernel",
+  "model": "small causal attention fixture, not full Qwen/Megatron",
+  "production_activated": false,
+  "new_model_generation_calls": 0,
+  "actual_optimizer_updates": 0,
+  "full_Qwen_Megatron_gradient_equivalence": "pending"
+}

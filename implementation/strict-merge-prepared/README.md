@@ -24,3 +24,12 @@
 - strict_training.py提供候选rollout包装、奖励复用和生命周期接口。
 - check_native_integration_r2.py检查原首批和原生CPU入口，包括DP1及真实优势hook。
 - NATIVE_INTEGRATION_CPU_R2_ACCEPTED.json记录当前CPU与小模型梯度证明。
+
+
+## 原生 PPO 损失接线的补充 CPU 检查
+
+`check_native_policy_loss_cpu.py` 直接调用当前固定源码的 `loss_function`、`policy_loss_function`、TIS、KL 和 token-sum reducer，覆盖四组 old/reference 偏差和剪裁区间。词表 logprob 的底层 kernel 用 CPU 参考替换，模型仍为小型因果 attention fixture。原生动态 batch、完整 Qwen/Megatron 与 GPU 词表路径没有被此检查替代。
+
+四例全部通过，loss 最大绝对差7.45e-9，全部参数梯度最大差2.09e-17，预定义绝对/相对容差1e-6。原样本和合并视图的实际原生 loss normalizer 都为6。新增模型生成、optimizer 和生产激活均为0。证明为 `NATIVE_POLICY_LOSS_CPU_ACCEPTED.json`。
+
+18:52当前原训练参考前向4194/4194通过，正式actor train开始，32微批观测约8.11秒/微批，日志当时估计剩余约9小时。完整GPU梯度验收需同四卡资源，已按用户10点后决断安排送出一次选择问询。答复前原owner继续训练，候选保持准备状态。
