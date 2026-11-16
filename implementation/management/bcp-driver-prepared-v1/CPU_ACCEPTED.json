@@ -1,0 +1,33 @@
+{
+  "accepted": true,
+  "created": 1794837621.5915709,
+  "count": 14,
+  "checks": [
+    "native_payload_preserves_original_question",
+    "native_driver_metadata_selects_fixed_corpus",
+    "native_payload_routes_to_fixed_backend",
+    "label_only_in_evaluator_configuration",
+    "native_single_session_and_task_identity",
+    "fixed_harness_describes_actual_tool_contract",
+    "actual_heredoc_preserves_question_without_shell_expansion",
+    "original_answer_artifact_contract_preserved",
+    "default_and_explicit_public_model_instruction_bytes_equal",
+    "unknown_harness_profile_rejected",
+    "final_test_identity_separate_from_training",
+    "candidate_agent_bundle_read_only_mount",
+    "original_runtime_image_and_task_budget_preserved",
+    "rendering_does_not_mutate_template"
+  ],
+  "generated_instruction_script_integer_exits": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_or_judge_calls": 0,
+  "production_activation": false,
+  "actual_model_consumer_pending": true,
+  "payload_fixture_only": true,
+  "dataset_test_answers_used_in_fixture": false
+}

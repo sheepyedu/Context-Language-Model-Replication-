@@ -1,0 +1,14 @@
+{
+  "prepared_only": true,
+  "created": 1794837579.9470723,
+  "production_activation": false,
+  "dataset_path": "/mount-data/CLM-Replication/data/browsecomp-plus-chat.jsonl",
+  "dataset_sha256": "bd1f496296899971f345cb2d4dfa766ac70cfbab243944c493a6527193292b96",
+  "count": 830,
+  "original_rows_changed": false,
+  "gold_evidence_documents_added": false,
+  "model_calls": 0,
+  "base_harness_sha256": "1f85b711d61c598d690ac147914972be048c09f8a507f4a25141090a21c3e7db",
+  "candidate_harness_sha256": "638be80385b4712a534df07dcb8c83517dbbb1cfadfa67f3e5f775071e426f24",
+  "gateway_matches_accepted_candidate": true
+}

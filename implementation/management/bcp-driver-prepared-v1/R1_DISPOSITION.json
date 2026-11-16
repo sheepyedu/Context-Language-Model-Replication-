@@ -1,0 +1,8 @@
+{
+  "created": 1794837619.722914,
+  "actual_integer_exit": 1,
+  "model_or_judge_calls": 0,
+  "reason": "CPU test compared shell command serialization; the retrieval notice uses a different Python quote spelling. Model-visible instruction equality still requires actual generated-script verification.",
+  "original_helper_sha256": "0d44b29b51d4cf773c7af45395420f3a3eac39e97551d8cd29518a5877cb0a5c",
+  "candidate_source_changed": false
+}

@@ -1,0 +1,32 @@
+{
+  "created": 1794837681.529841,
+  "prepared_only": true,
+  "files": {
+    "CPU_ACCEPTED.json": "0477fc8b915e55a37cf993646b5ee92d0c10cd3094283dd87b5d1c3cfe05963e",
+    "browsecomp-plus-final.yaml": "614c900819911453676cbf818537054a315db9bd50a238613fe397dc0e35cbd2",
+    "ROOT_ACCEPTED.json": "eacaaf8ff3190008354d3cb80eddd72bbbace6a6df2ba2464e3f50d0d3246ae6",
+    "check_bcp_driver_cpu_r1.py": "0d44b29b51d4cf773c7af45395420f3a3eac39e97551d8cd29518a5877cb0a5c",
+    "prepare_bcp_driver.py": "54660c1f000945f504ac7f312f07ab873d35d0ac546f20b52eea35ba8644d281",
+    "PREPARED.json": "c245124e5588f74a8e05e6738c1352e5c9723cefda4a0e73c515e90a4e94a59f",
+    "R1_DISPOSITION.json": "5f1764d16832869f6bcbefb24e57d58597086d656b5b17f8514df2cbde27e135",
+    "README.md": "29a7939a61d717ec9ddce82423cbcf1c09ba3d604727515d8db30f8dcd10629e",
+    "check_bcp_driver_cpu.py": "f469ea92f36cb2782c372f51ffee0f880a5244797c91b817f68036ea8f2a6027",
+    "source/clm_replication/agent_runner.py": "4f4390f9d490ea65ef5ff00fc80a7b051388497883156b5df90f79f5ec4fb335",
+    "source/clm_replication/rewards.py": "20bbc579e2e3f09c42c14f0167b4d59e7b980001be296202dcb58a8be873356f",
+    "source/clm_replication/accounting.py": "2b8f1b98ab2462b22d7e23bdd8544a85dcb7ac94a077c52e3d483c650373adcf",
+    "source/clm_replication/judge_rubric.txt": "401717896284e8fcdbf0b59a96820eb0766e10bd440d4e80a0e6cff2cdc7b02e",
+    "source/clm_replication/weight_provenance.py": "ca62e9743c53294bd4634db469804b212b131dcec0779e292beaa971b7a482ea",
+    "source/clm_replication/evaluator.py": "75b9cda850ec83fbee916b93321da037fba2b4054bb411ab0ba62635ecc93939",
+    "source/clm_replication/__init__.py": "9f0cfc37cddafbc7504213563878b6b3fc71d7478ca2a1cc3330b2b67d10f2f5",
+    "source/clm_replication/gateway.py": "d9142301418091f3690349adc73f3f8688835a8d280400ea975a3dd3406ba194",
+    "source/clm_replication/preflight.py": "62b739ac48c2e812e25074cafd4b41341b0a337b43a4dc32233d3867b2e21eb2",
+    "source/clm_replication/bridge.py": "b68579dd2140ee8855db9859654b9fa734a1fdc0dec77894dc6661278f1e87df",
+    "source/clm_replication/native_failures.py": "055cefd135e5f109733e8429c67d8d70c1107f1ed850af76e7c1fabbe4844e43",
+    "source/clm_replication/train.py": "8c47c11e5ec67e1ac81eb71363ecf6067ad5fd85de3cbc470456463157b5cd46",
+    "source/clm_replication/advantages.py": "e4256b86f570d38c31a325934be703306a1aace8f434122451c29d6c168c0d21",
+    "source/clm_replication/judge.py": "e202004f0afcd3ca499638f4fb273d6938c90efa5df4437d3f2099fabab17949",
+    "source/clm_replication/polar_agent.py": "638be80385b4712a534df07dcb8c83517dbbb1cfadfa67f3e5f775071e426f24",
+    "source/clm_replication/retrieval_routing.py": "e2e5ea5286585e28f3927a224b9fe3908217f9f43b42a7246130977f4fad65cc",
+    "source/clm_replication/web.py": "c1b5a1a1b49b53ffab8abe35d1f22f9fe2eb2c9216e76037f0d48b0b905f0f6c"
+  }
+}
