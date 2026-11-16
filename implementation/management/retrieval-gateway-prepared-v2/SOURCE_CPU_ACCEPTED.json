@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "created": 1794836035.6917233,
+  "base_gateway_sha256": "1314e11a86e5ec02eae0b1b3ae757b54e015bcf30d6e5d2056f882c229613f91",
+  "candidate_gateway_sha256": "d9142301418091f3690349adc73f3f8688835a8d280400ea975a3dd3406ba194",
+  "only_changed_native_function": "public_web",
+  "other_package_files_equal": true,
+  "source": "source-revisions/training-v10",
+  "package": "/mount-data/CLM-Replication/management/retrieval-gateway-prepared-v2/source/clm_replication",
+  "active_production_gateway_changed": false,
+  "model_calls": 0
+}

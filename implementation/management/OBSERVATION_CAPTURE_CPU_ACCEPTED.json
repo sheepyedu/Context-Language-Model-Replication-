@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "checks": [
+    "complete_JSON_published_after_transport_finishes",
+    "JSONDecodeError_preserves_previous_complete_observation",
+    "CalledProcessError_preserves_previous_complete_observation",
+    "TimeoutExpired_preserves_previous_complete_observation"
+  ],
+  "count": 4,
+  "actual_network_or_model_calls": 0
+}

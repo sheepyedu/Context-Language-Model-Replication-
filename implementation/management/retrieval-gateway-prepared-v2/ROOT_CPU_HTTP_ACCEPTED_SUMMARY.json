@@ -1,0 +1,25 @@
+{
+  "accepted": true,
+  "created": 1794837035.607051,
+  "scope": "CPU native gateway/registry/web-CLI/real corpus transport only",
+  "HTTP_checks": 18,
+  "parent_integer_exit": 0,
+  "test_process_exactgone": true,
+  "temporary_ports_all_closed": true,
+  "CLI_integer_waits": [
+    0,
+    0,
+    0
+  ],
+  "raw_corpus_receipts_verified": 4,
+  "CLI_backend_parsed_bodies_equal": true,
+  "native_base_gateway_sha256": "1314e11a86e5ec02eae0b1b3ae757b54e015bcf30d6e5d2056f882c229613f91",
+  "candidate_gateway_sha256": "d9142301418091f3690349adc73f3f8688835a8d280400ea975a3dd3406ba194",
+  "other_source_package_bytes_equal": true,
+  "model_calls": 0,
+  "production_activation": false,
+  "real_BCP_model_consumer_pending": true,
+  "driver_BCP_metadata_config_pending": true,
+  "original_failed_R1_retained": true,
+  "prepared_source_pins_sha256": "570475ebbb283e0e3fc96fb2a9239125500c631153c0a4c07e91f55b65b81a92"
+}
