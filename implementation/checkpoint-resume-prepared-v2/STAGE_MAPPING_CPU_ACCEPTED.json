@@ -1,0 +1,29 @@
+{
+  "accepted": true,
+  "source_sha256": "619372b671877f93fcc35af3b182e3b3574b8fef37718deae372f7a219ffeb6e",
+  "checks": [
+    {
+      "checkpoint_iteration": 0,
+      "next_policy": 1,
+      "dataset_cursor_index": 0
+    },
+    {
+      "checkpoint_iteration": 4,
+      "next_policy": 5,
+      "dataset_cursor_index": 4
+    },
+    {
+      "checkpoint_iteration": 9,
+      "next_policy": 10,
+      "dataset_cursor_index": 9
+    },
+    {
+      "checkpoint_iteration": 69,
+      "next_policy": 70,
+      "dataset_cursor_index": 69
+    }
+  ],
+  "mocked_rank_indices_consistent": true,
+  "new_model_calls": 0,
+  "actual_model_or_optimizer_restored": false
+}

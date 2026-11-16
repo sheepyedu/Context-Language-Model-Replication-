@@ -1,0 +1,19 @@
+# 检查点恢复候选第二版
+
+当前生产仍使用冻结的training-v10与trainer-tilelang-v11。此目录仅准备后续恢复，正式恢复尚未执行。
+
+旧prepared bridge文件基于较早源码，缺失当前惰性队列准入和初始权重snapshot，不能整份复制到新版本。第二版以当前冻结bridge SHA b68579dd2140ee8855db9859654b9fa734a1fdc0dec77894dc6661278f1e87df为基线，只修改generate_rollout里的恢复边界与审计文件名，其他函数AST保持相同。
+
+## 具体修订
+
+恢复服务后，首次采样需要在当前start_rollout_id完成权重同步后解除gateway暂停。原条件仅识别rollout_id=0，无法处理已保存模型的非零恢复点。新条件为rollout_id==args.start_rollout_id，保留先核_served_policy_version的顺序。
+
+恢复回执按逻辑policy及实际进程PID保存，使用独占新文件，保留原有initial-policy审计。新路径为resumed-after-policy-sync-{policy:05d}-{pid}.json。该变化属于控制及审计，模型请求、奖励、已完成rollout及工具均不重放。
+
+36个隔离AST执行检查覆盖恢复点0/5/70、相邻rollout、enabled开关和错误的已同步policy。真实HTTP请求和模型调用均0。完整训练RNG/optimizer/cursor及参数恢复仍需原生检查点验证。
+
+当前Slime训练循环从rollout_id=0开始。第五次更新对应保存调用rollout_id=4，其数据游标文件为rollout/global_dataset_state_dict_4.pt，恢复逻辑policy为5。目录与iteration值最终从真实checkpoint核对。恢复前需核no_load_optim/no_load_rng与finetune，防止误走初始权重加载分支。
+
+parser-only-fixture仅用于CLM_VALIDATE_CONFIG的CPU参数检查，没有模型和optimizer shard，禁止用于训练。当前生产checkpoint目录、当前owner与源码均未修改。
+
+原生parser fixture已确认no_load_optim/null、no_load_rng/null、finetune/false、start_rollout_id/null，按后续实际checkpoint加载后决定恢复policy。实际create_training_models函数的CPU actor桩检查确认checkpoint iteration4→逻辑policy5→dataset cursor4，另覆盖0/9/69。所有模型/optimizer恢复仍未执行。

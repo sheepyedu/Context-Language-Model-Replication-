@@ -1,6 +1,6 @@
 # 子任务二：CLM 原方法 RL 复现方案
 
-版本为v4，2026-11-16。方法实施与验收同步版。正式rollout已启动，当前参数更新0/70，训练与对照效果尚待验收。v2的原调研内容与来源继续保留，以下默认值修订均明示。
+版本为v5，2026-11-16。方法实施与验收同步版，纳入当日用户授权的四卡资源修订。正式rollout已启动，当前参数更新0/70，训练与对照效果尚待验收。v2的原调研内容与来源继续保留，以下默认值修订均明示。
 
 ## 0. 先用通俗的话说明要做什么
 
@@ -109,7 +109,7 @@
 | builder | per_request；之后仅在数值等价通过时启用严格prefix merging | P逐调用语义 + F现成实现；不以最终改写后的完整聊天重建旧输入 |
 | 策略同步 | 采样阶段固定版本，组全部结束后训练，一次更新后同步 | D保守同步；可同版本并发采样，不跨版本混组。异步优化另立配置 |
 | 参数精度 | 语言训练/推理BF16；奖励、logprob与关键统计FP32 | D；不用FP8/量化作主复现以减少变量；保留Gated DeltaNet结构 |
-| 实际并行 | 仅授权物理GPU4/5；训练与推理同置分时，TP=2、DP=1、CP=1、PP=1；CPU optimizer与offload | D实际验收布局；替代v2的8H20候选，保持256轨迹逻辑batch |
+| 实际并行 | 用户11月16日新增授权GPU6/7后使用物理GPU4/5/6/7；训练与推理同置分时，TP=4、DP=1、CP=1、PP=1；CPU optimizer与offload | D实际验收布局；原TP2最大微批OOM后扩为TP4，保持256轨迹逻辑batch |
 | microbatch | 1个可容纳片段起步，梯度累计维持256条轨迹的逻辑batch | F/D；禁止以256个Trace冒256轨迹 |
 | 实际seed | 训练1234、题单shuffle1234、SGLang服务全局1234；逐请求seed缺省 | F/D实际解析值；纠正旧稿42与逐请求派生的未实施描述。服务重启重置全局随机状态，不宣称跨恢复逐Token复现；扩展1235/1236单独分账 |
 | top_k、entropy、grad clip | -1、0、1.0 | F默认；不用模型卡另一套采样建议覆盖论文采样 |
@@ -313,3 +313,14 @@ reports/        配置偏离、方法结论、失败原因、可复算表格
 196608个穷尽选择模式覆盖全部16位有效性组合与三种已有intent集合，验证给定同一组结果时，新收集器选出的前8个有效ID与全批过滤完全一致，并且所有已启动组都会收口。原9个payload逐字段匹配，7项训练通路回归通过。该结论针对选择语义，实际随机生成的逐Token一致性没有被证明，也不作为效果结论。优化器更新与模型效用仍需原T06—T10验收。
 
 v3的全批执行记录作为历史条件保留。切换前等待原gateway全部六项队列/inflight指标为0，精确退役采样等待中的旧控制器，从原policy0检查点与原BATCH/结果/预算续接，新source独立PINS冻结。此阶段没有新增actor或评审探针。
+
+
+## 11月16日四卡资源与恢复边界补充
+
+用户允许两卡不足时加入物理GPU6、7，实际TP4使用4、5、6、7，其余科学超参数与70更新目标保持。原两卡失败、费用和全部原轨迹保留。官方FA2.8.3与原生logprob chunk512已完成数值/梯度校验，训练worker单独启用TileLang0.1.15支持Hopper上GDN反向。四rank真实34816-token微批的前后向、有限正梯度、参数不变与RNG恢复已经验收。诊断optimizer为0，正式首次完整更新仍待。当前source为training-v10复用与trainer-tilelang-v11配置，PINS 3c01867204986cc3a276be33f5d3deebadbfffbeb6e11bbe87062ea2dafee0dd。
+
+T06中的“第五次更新检查点”按当前Slime源码实际约定处理。训练循环rollout_id从0开始，第五次更新保存的是rollout_id=4。恢复的逻辑policy应为5，数据游标文件是rollout/global_dataset_state_dict_4.pt。不能仅按目录数字5猜测其更新计数。实际checkpoint目录名、iteration、optimizer/scheduler步数与模型更新数需从真实产物核对。
+
+当前初始启动在checkpoint不存在时由原生parser设置no_load_optim/no_load_rng/finetune并回落到初始权重。恢复训练时必须从真实存在的checkpoint tracker及shard启动，确认这些参数不再跳过optimizer和RNG。全局数据游标、模型、optimizer、scheduler与RNG共同闭合后才能验收恢复。服务端全局生成RNG随重建重置的已知差异保持披露。
+
+旧checkpoint-resume准备文件早于queue修复与初始snapshot，不可整份覆盖当前源。新版候选只基于当前冻结bridge做恢复边界和审计文件名修订，其他函数AST逐项一致。当前运行源未改，完整原生恢复仍待。

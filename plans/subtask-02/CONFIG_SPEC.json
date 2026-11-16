@@ -178,19 +178,30 @@
     "proposal_only": false,
     "physical_gpu_indices": [
       4,
-      5
+      5,
+      6,
+      7
     ],
     "layout": "colocated offload",
-    "policy_gpus": 2,
-    "rollout_gpus": 2,
+    "policy_gpus": 4,
+    "rollout_gpus": 4,
     "devices_shared": true,
-    "policy_tp": 2,
+    "policy_tp": 4,
     "policy_dp": 1,
     "policy_cp": 1,
     "policy_pp": 1,
-    "rollout_tp": 2,
+    "rollout_tp": 4,
     "cpu_optimizer": true,
-    "current_resources_observed": true
+    "current_resources_observed": true,
+    "authorization_amendment": "user_2026-11-16_add_physical_6_7_after_two_card_OOM",
+    "prior_layout": {
+      "physical_gpu_indices": [
+        4,
+        5
+      ],
+      "policy_tp": 2,
+      "rollout_tp": 2
+    }
   },
   "unresolved_at_design_time": {
     "runtime_image_digest": null,
@@ -200,11 +211,11 @@
     "exact_rubric_artifact_sha": null,
     "note": "Resolved and pinned in T01-T03; not historical author values and not permission blockers."
   },
-  "version": "v4",
+  "version": "v5",
   "runtime_status": {
     "formal_optimizer_updates_at_revision": 0,
     "target_updates": 70,
-    "actual_source_revision": "training-v6",
-    "source_pins_sha256": "532c8f3fce2b59ea3970b43486f86d92d67dce66fd2e878833a3316530346c40"
+    "actual_source_revision": "training-v10-reused-trainer-tilelang-v11",
+    "source_pins_sha256": "3c01867204986cc3a276be33f5d3deebadbfffbeb6e11bbe87062ea2dafee0dd"
   }
 }

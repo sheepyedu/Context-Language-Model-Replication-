@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "kind": "native parser-only fixture, not model checkpoint loading",
+  "effective_flags": {
+    "load": "/mount-data/CLM-Replication/management/checkpoint-resume-candidate-v2/parser-only-fixture",
+    "ref_load": "/mount-data/CLM-Replication/checkpoints/qwen35-9b-initial",
+    "no_load_optim": null,
+    "no_load_rng": null,
+    "finetune": false,
+    "start_rollout_id": null,
+    "save_interval": 5,
+    "async_save": false,
+    "rollout_global_dataset": true
+  },
+  "new_model_calls": 0,
+  "actual_checkpoint_restore": "pending"
+}

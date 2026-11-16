@@ -1,0 +1,10 @@
+{
+  "base_source": "training-v10",
+  "base_sha256": "b68579dd2140ee8855db9859654b9fa734a1fdc0dec77894dc6661278f1e87df",
+  "candidate_sha256": "1bb8f25dda4bdc09a479f932296324f20f2d72401d0d5bf12349a2a8fea4dada",
+  "changed_function": "generate_rollout",
+  "retained_functions_identical": true,
+  "active": false,
+  "current_owner_untouched": true,
+  "old_prepared_missing_queue_and_snapshot": true
+}

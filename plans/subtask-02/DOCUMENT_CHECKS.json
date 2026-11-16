@@ -44,6 +44,22 @@
     {
       "check": "planned16_lazy_prefix_and_started_work_retention_disclosed",
       "passed": true
+    },
+    {
+      "check": "authorized_four_card_layout",
+      "passed": true
+    },
+    {
+      "check": "scientific_logical_batch_and_target_preserved",
+      "passed": true
+    },
+    {
+      "check": "fifth_update_checkpoint_index_explicit",
+      "passed": true
+    },
+    {
+      "check": "full_checkpoint_restore_still_pending",
+      "passed": true
     }
   ]
 }
