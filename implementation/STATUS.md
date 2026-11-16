@@ -1,3 +1,7 @@
+# 当前状态更新
+
+2026-11-16 20:21 严格前缀合并真实TP4首片段未通过逐参数梯度阈值，已拒绝启用。原256轨迹/11095调用样本保留，正式attempt12单次启动，继续未合并数据。只改变activation checkpoint重计算分组1→4，须在原最大微批通过紧梯度与显存验收后进入原参考/PPO训练。正式optimizer仍0/70、5/10，Goal active。详见management/STRICT_MERGE_NATIVE_REJECTION.md。下方均为各自时点的历史记录。
+
 # 实施状态
 
 最新完整观测为北京时间2026-11-16 16:47。待办5/10，真实优化器更新0/70。当前attempt11，owner2874641/start50427236，四rank真实34816-token微批前向与反向均通过。峰值allocated每rank68064294400B、reserved77332480000B，有限正梯度、参数未变、RNG恢复及清理通过。该诊断optimizer0。正式参考前向267/4194，热态约1.99s/微批，仅此段预计剩约2h10。完整optimizer、参数变化和checkpoint恢复仍待验收。

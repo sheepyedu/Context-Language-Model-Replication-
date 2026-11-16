@@ -1,0 +1,59 @@
+{
+  "rejected": true,
+  "created": 1794831492.0111454,
+  "all_owned_gone": true,
+  "owner_pid": 3042365,
+  "original_child_integer_exit": 1,
+  "actual_optimizer_updates": 0,
+  "new_generation_calls": 0,
+  "full_suite_completed": false,
+  "rejection_scope": "first retained short two-call case exceeded fixed per-parameter gradient tolerance; later cases not evaluated",
+  "rank_evidence": [
+    {
+      "rank": 0,
+      "case_sha256": "0fb022bff177111aee063de23ded92d94aa30b7d75c7fcc6646cd1f32217aadb",
+      "logprob_max_abs": 0.0,
+      "loss_abs_diff": 6.873328406431511e-08,
+      "gradient_relative_l2": 0.01360427605869559,
+      "failing_tensors": 20,
+      "total_tensors": 379,
+      "worst_ratio": 3.7097230555791207,
+      "warm_subset_speedup": 2.260264088301935
+    },
+    {
+      "rank": 1,
+      "case_sha256": "a3f95757652dcb464d97c4fb7a9861c6fd70bfd7afdb9e29a34987935c0a8724",
+      "logprob_max_abs": 0.0,
+      "loss_abs_diff": 6.873328406431511e-08,
+      "gradient_relative_l2": 0.014132083288821456,
+      "failing_tensors": 21,
+      "total_tensors": 379,
+      "worst_ratio": 3.7097230555791207,
+      "warm_subset_speedup": 1.9996908043746155
+    },
+    {
+      "rank": 2,
+      "case_sha256": "0f587087cda9031f111aaafa7918949c38f4193194176f77f89c1a3cc7ad4673",
+      "logprob_max_abs": 0.0,
+      "loss_abs_diff": 6.873328406431511e-08,
+      "gradient_relative_l2": 0.014459948393330948,
+      "failing_tensors": 23,
+      "total_tensors": 379,
+      "worst_ratio": 3.7097230555791207,
+      "warm_subset_speedup": 2.153962572155788
+    },
+    {
+      "rank": 3,
+      "case_sha256": "2753fe02fbb683b5aa2bfe1f6b6ea46fd197e9b9a52e531bb92f41b10bc1ebe7",
+      "logprob_max_abs": 0.0,
+      "loss_abs_diff": 6.873328406431511e-08,
+      "gradient_relative_l2": 0.014457393355653828,
+      "failing_tensors": 23,
+      "total_tensors": 379,
+      "worst_ratio": 3.7097230555791207,
+      "warm_subset_speedup": 2.308865305778379
+    }
+  ],
+  "production_merge_active": false,
+  "proposed_followup": "continue unmerged retained batch, validate recomputation-group-only memory optimization before reference/PPO"
+}
