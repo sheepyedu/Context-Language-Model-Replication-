@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "created": 1794859479.1891193,
+  "management_source_pins_sha256": "cc66e1dbc2d4d39f13b8e0fe4f1579b7e07372462181e1e1eb2bd141d410c487",
+  "current_owner_identity_matches": true,
+  "owner_pid": 3060432,
+  "owner_start": 51919204,
+  "Mac_CPU_checks": 12,
+  "Node_CPU_checks": 12,
+  "actual_monitor_observation_accepted": 1794859390.6087985,
+  "full_scan_snapshot_bytes": 1009829,
+  "model_or_judge_calls": 0,
+  "scientific_training_or_source_changed": false
+}

@@ -1,0 +1,40 @@
+{
+  "accepted": true,
+  "created": 1794859390.1235118,
+  "checks": {
+    "check_monitor_training_v2_cpu.py": {
+      "accepted": true,
+      "checks": [
+        "RED_old_128KiB_tail_loses_metric_GREEN_bounded_full_scan_preserves_it",
+        "output_remains_last_three_rows_while_coverage_scans_all_original_bytes",
+        "both_native_metric_keys_must_be_in_the_same_original_line",
+        "empty_native_log_has_explicit_zero_byte_coverage",
+        "time_budget_expiry_is_incomplete_coverage_not_proof_of_zero_updates",
+        "concurrent_appends_do_not_extend_the_frozen_scan_boundary",
+        "truncated_log_is_incomplete_coverage",
+        "raw_invalid_UTF8_has_visible_replacement_without_crashing_scan"
+      ],
+      "count": 8,
+      "actual_network_GPU_or_model_calls": 0
+    },
+    "check_observation_capture_cpu.py": {
+      "accepted": true,
+      "checks": [
+        "complete_JSON_published_after_transport_finishes",
+        "JSONDecodeError_preserves_previous_complete_observation",
+        "CalledProcessError_preserves_previous_complete_observation",
+        "TimeoutExpired_preserves_previous_complete_observation"
+      ],
+      "count": 4,
+      "actual_network_or_model_calls": 0
+    }
+  },
+  "total_checks": 12,
+  "actual_network_GPU_or_model_calls": 0,
+  "source_hashes": {
+    "monitor_training_current_v2.py": "4c770825fe6d6b04092b95ec6efd625f3074e9204ad7120b2a0c0495d635d225",
+    "check_monitor_training_v2_cpu.py": "53dd14ce04a70e92d18f8c320f4599bf8a1253a102e29f03fcbfd7b97e864d43",
+    "capture_training_observation.py": "29c24d580e1e83714d14d5b389729f6c074795f8eb2b4b8d8b4e426d42de1f64",
+    "check_observation_capture_cpu.py": "da2b031ece091ee4d012fa62f4f041c283b111a2cdd74f0cd362d0d4b27b90a9"
+  }
+}

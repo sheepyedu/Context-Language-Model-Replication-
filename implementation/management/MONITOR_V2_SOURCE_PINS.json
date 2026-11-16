@@ -1,0 +1,14 @@
+{
+  "created": 1794859429.846197,
+  "scope": "management monitor v2 only",
+  "files": {
+    "monitor_training_current_v2.py": "4c770825fe6d6b04092b95ec6efd625f3074e9204ad7120b2a0c0495d635d225",
+    "check_monitor_training_v2_cpu.py": "53dd14ce04a70e92d18f8c320f4599bf8a1253a102e29f03fcbfd7b97e864d43",
+    "capture_training_observation.py": "29c24d580e1e83714d14d5b389729f6c074795f8eb2b4b8d8b4e426d42de1f64",
+    "check_observation_capture_cpu.py": "da2b031ece091ee4d012fa62f4f041c283b111a2cdd74f0cd362d0d4b27b90a9",
+    "MONITOR_V2_CPU_LOCAL.json": "e092981aaee64a52bb16834a9db9f097126b29cb862dbb799d0e7822b10d2101",
+    "MONITOR_V2_CPU_NODE.json": "1b45aa1e1cd912eb1089234224ce572eb439cdb5f30b2a38bee54ca22302bf76",
+    "MONITOR_V2_ACCEPTED.json": "d899d0f9df978fe74ec7619eab07fab37f57be400b53c0f871cdbfa45a3339ad",
+    "MONITOR_V2.md": "4ec8b1b6f83086e0bcf6d13577fdba14c7f9004327beabfcbbfdc62f16baa372"
+  }
+}

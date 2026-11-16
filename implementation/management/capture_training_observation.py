@@ -7,7 +7,7 @@ import time
 ROOT = Path(__file__).resolve().parent
 COMMAND = ['ssh', '-o', 'BatchMode=yes', '-o', 'ConnectTimeout=15', 'h20-direct',
            '/mount-data/CLM-Replication/env/rl/bin/python',
-           '/mount-data/CLM-Replication/management/monitor_training_current.py']
+           '/mount-data/CLM-Replication/management/monitor_training_current_v2.py']
 
 
 def capture(root=ROOT):

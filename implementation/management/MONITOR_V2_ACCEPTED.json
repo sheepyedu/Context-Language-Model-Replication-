@@ -1,0 +1,31 @@
+{
+  "accepted": true,
+  "created": 1794859429.8459678,
+  "Mac_CPU_checks": 12,
+  "Node_CPU_checks": 12,
+  "actual_monitor_observed": 1794859390.6087985,
+  "owner": {
+    "pid": 3060432,
+    "uid": 0,
+    "start_ticks": 51919204,
+    "state": "S",
+    "cmdline": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/management/owned_training_v14.py --attempt 13 ",
+    "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+  },
+  "optimizer_metrics_scan": {
+    "complete": true,
+    "scanned_bytes": 1009829,
+    "snapshot_bytes": 1009829,
+    "matching_lines": 0,
+    "matching_lines_are_not_an_accepted_optimizer_update_count": true
+  },
+  "native_progress": [
+    "actor train:  56%|\u2588\u2588\u2588\u2588\u2588\u258c    | 2345/4194 [5:06:50<3:55:08,  7.63s/microbatch]"
+  ],
+  "actual_native_optimizer_metrics": [],
+  "scope": "bounded native logging evidence and observation transport only; optimizer parameter change and checkpoint still pending",
+  "scientific_training_changed": false,
+  "original_capture_sha256": "217d94785a07b0f1e2b1905f93bd5f32811de528cae3ab4e31c807574a9696e6",
+  "current_capture_sha256": "29c24d580e1e83714d14d5b389729f6c074795f8eb2b4b8d8b4e426d42de1f64",
+  "new_model_or_Judge_calls": 0
+}
