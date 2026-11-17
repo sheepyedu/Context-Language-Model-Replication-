@@ -1,0 +1,10 @@
+{
+  "created": 1794883967.823143,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_archive_failure_preserves_response (__main__.RetentionCPU.test_archive_failure_preserves_response) ... ok\ntest_dns_error (__main__.RetentionCPU.test_dns_error) ... ok\ntest_empty_request (__main__.RetentionCPU.test_empty_request) ... ok\ntest_http403 (__main__.RetentionCPU.test_http403) ... ok\ntest_invalid_json (__main__.RetentionCPU.test_invalid_json) ... ok\ntest_oversized_request_is_not_read (__main__.RetentionCPU.test_oversized_request_is_not_read) ... ok\ntest_success_unchanged (__main__.RetentionCPU.test_success_unchanged) ... ok\ntest_timeout (__main__.RetentionCPU.test_timeout) ... ok\ntest_unicode (__main__.RetentionCPU.test_unicode) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.160s\n\nOK\n",
+  "source_closure_passed": true,
+  "science_owner_exact_live": true,
+  "active_source_modified": false,
+  "new_external_requests": 0
+}

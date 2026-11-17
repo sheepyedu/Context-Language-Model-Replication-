@@ -1,0 +1,28 @@
+{
+  "created": 1794883989.260106,
+  "scope": "frozen gateway log prefix and prepared error-retention CPU validation",
+  "gateway_prefix_bytes": 15489540,
+  "gateway_prefix_sha256": "892fb71758171396adf305fbedd89d13f22f0b70833dd9e7e613d7d90c701456",
+  "correct_web_path_status_counts": {
+    "200": 6850,
+    "500": 585
+  },
+  "counts_are_cumulative_gateway_log_not_one_batch": true,
+  "broker_error_response_became_gateway500": true,
+  "underlying_historical_error_bodies_missing_in_inspected_artifacts": true,
+  "five_original_cli_failures_not_uniquely_bound_to_concurrent_gateway_requests": true,
+  "current_broker_location": "Mac loopback through existing SSH reverse tunnel",
+  "prepared_source_pins_sha256": "179aba87d0314d10ba15bd639df9b5a7e5062d445e9fb3f64b7f61a5db68e252",
+  "Mac_CPU_passed": 9,
+  "Node_CPU_passed": 9,
+  "unchanged_retrieval_function_AST": true,
+  "actual_candidate_error_capture_deployed": false,
+  "new_external_web_model_Judge_requests": 0,
+  "current_scientific_owner_unchanged": true,
+  "pending": "deploy only at controlled no-inflight boundary; then verify actual original error receipt",
+  "limits": [
+    "upstream HTTP body is not read by this preparation",
+    "storage hang and power loss not exhaustively tested",
+    "original historical missing bytes remain unavailable"
+  ]
+}
