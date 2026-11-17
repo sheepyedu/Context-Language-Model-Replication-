@@ -1,0 +1,73 @@
+{
+  "accepted": true,
+  "created": 1794875079.32754,
+  "formal_optimizer_updates": 1,
+  "target_optimizer_updates": 70,
+  "native_first_commit_BJT": "2026-11-17 07:53:45",
+  "first_parameter_acceptance_epoch": 1794874496.817252,
+  "policy1_anchor_acceptance_epoch": 1794874884.444959,
+  "native_metrics": [
+    {
+      "train/loss": -0.07324456639022886,
+      "train/pg_loss": -0.07324456639022886,
+      "train/entropy_loss": 0.21595186616047,
+      "train/pg_clipfrac": 0.0,
+      "train/ppo_kl": 0.0,
+      "train/train_rollout_logprob_abs_diff": 0.008403125643228095,
+      "train/kl_loss": 0.0,
+      "train/ois": 1.0,
+      "train/tis": 0.9999840200883616,
+      "train/tis_clipfrac": 2.345675102887174e-06,
+      "train/tis_abs": 0.008386860539646015,
+      "train/grad_norm": 0.2782789233033863,
+      "train/lr-pg_0": 1e-06,
+      "train/lr-pg_1": 1e-06,
+      "train/step": 0
+    }
+  ],
+  "owner_identity": {
+    "pid": 3060432,
+    "uid": 0,
+    "start_ticks": 51919204,
+    "argv": [
+      "/mount-data/CLM-Replication/env/rl/bin/python",
+      "/mount-data/CLM-Replication/management/owned_training_v14.py",
+      "--attempt",
+      "13"
+    ],
+    "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+  },
+  "raw_serving_version": "2",
+  "language_weight_records": 1816,
+  "unique_language_weight_names": 227,
+  "max_observed_language_weight_difference": 1.9073486328125e-06,
+  "first_v4_client_exit": 1,
+  "original_HTTP_status": 400,
+  "original_client_HTTP_body_missing": true,
+  "first_parameter_evidence_type": "original_native_server_comparison_exception_log",
+  "original_server_log_slice_sha256": "f9d53e8e56dc3a13575b6d637edc29c45d68a3065c7e21d3ff7590d41646e6b4",
+  "original_server_log_slice_bytes": 2230848,
+  "first_full_acceptance_sha256": "26a9e1cd7f40cde2a005fe22b613de8a3f10d9d76fe5dbc7abad4d83b165c463",
+  "policy1_anchor_full_acceptance_sha256": "c170f4191bcc553b97cabf47448daa646cde5064a4ec1d1c23078ae5ccefe8d7",
+  "policy1_snapshot_and_equal_comparison_HTTP_statuses": [
+    200,
+    200
+  ],
+  "CPU_checks_per_environment": {
+    "native_weight_evidence": 8,
+    "adjacent_update_chain": 17
+  },
+  "new_scientific_model_or_Judge_calls_for_verification": 0,
+  "actual_diagnostic_POSTs": {
+    "original_compare_M0_to_M1": 1,
+    "snapshot_M1": 1,
+    "compare_M1_anchor": 1
+  },
+  "new_POSTs_for_original_comparison_reconciliation": 0,
+  "checkpoint_restore_accepted": false,
+  "training_stability_complete": false,
+  "T06_complete": false,
+  "formal_todos_completed": 5,
+  "formal_todos_total": 10,
+  "goal_complete": false
+}

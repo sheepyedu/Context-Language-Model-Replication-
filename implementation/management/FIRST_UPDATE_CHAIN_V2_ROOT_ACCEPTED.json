@@ -1,0 +1,32 @@
+{
+  "accepted": true,
+  "created": 1794875297.6279628,
+  "source_pins_sha256": "fbee681c5a681294b32dc6b9dfba9b6c8569bfcb2250b9ad5ceda80c4ac1d9c3",
+  "formal_optimizer_updates": 1,
+  "target_optimizer_updates": 70,
+  "original_HTTP400_client_body_missing": true,
+  "first_comparison_evidence_type": "original_native_server_comparison_exception_log",
+  "policy1_anchor_accepted": true,
+  "actual_model_version": "2",
+  "owner_identity": {
+    "pid": 3060432,
+    "uid": 0,
+    "start_ticks": 51919204,
+    "argv": [
+      "/mount-data/CLM-Replication/env/rl/bin/python",
+      "/mount-data/CLM-Replication/management/owned_training_v14.py",
+      "--attempt",
+      "13"
+    ],
+    "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+  },
+  "native_dependency_source_sha256": {
+    "weight_checker": "f4abd88453badd664676f47d967b7eb2bbfbf155a5147b5135ccef9d3038d1de",
+    "http_server": "10444fc690914b7d0a0c44b1bfc3b60184e6485372a682156e9f07a48980895d",
+    "native_model": "60b00905037611c751b2c44f956c82b065a25001dc6a3b9b6f8bf37eb797c050"
+  },
+  "CPU_groups_per_environment": 25,
+  "T06_complete": false,
+  "stability_complete": false,
+  "checkpoint_restore_accepted": false
+}

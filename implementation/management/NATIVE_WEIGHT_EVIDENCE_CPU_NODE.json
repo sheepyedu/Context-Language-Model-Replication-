@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "created": 1794874487.2107584,
+  "count": 8,
+  "checks": [
+    "physical_native_and_explicit_language_weight_names_preserved",
+    "HTTP400_requires_actual_positive_finite_language_inequality",
+    "existing_200_inequality_fixture_contract_preserved",
+    "successful_snapshot_and_equal_comparison_remain_200",
+    "unrelated_errors_visual_changes_and_buffers_do_not_prove_language_parameter_changes",
+    "original_finite_and_positive_difference_thresholds_preserved",
+    "original_saved_four_rank_comparison_proves_language_head_and_layer_weight_changes",
+    "wrong_intent_time_rank_completion_or_intervening_snapshot_rejected"
+  ],
+  "actual_original_language_weight_records": 1816,
+  "actual_original_unique_language_weight_names": 227,
+  "actual_HTTP_GPU_or_model_calls": 0,
+  "original_client_HTTP_body_missing_preserved": true
+}

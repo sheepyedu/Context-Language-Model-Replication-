@@ -1,0 +1,28 @@
+{
+  "accepted": true,
+  "created": 1794874873.6126208,
+  "checks": [
+    "original_version_owner_and_native_step_prefix_gate_AST_unchanged",
+    "first_anchor_requires_accepted_first_real_update",
+    "adjacent_second_update_accepted",
+    "duplicate_identical_metric_rows_count_once",
+    "native_first_step_number_is_preserved",
+    "thirteen_invalid_acceptance_or_version_prefixes_rejected",
+    "complete_native_response_and_intent_saved",
+    "existing_intent_prevents_repeated_action",
+    "transport_failure_retains_partial_and_unknown_without_acceptance",
+    "HTTP_failure_body_and_integer_status_preserved",
+    "unrelated_HTTP400_body_retained_and_rejected",
+    "partial_HTTP400_preserves_original_bytes_and_unknown_receipt",
+    "parameter_mutation_action_refused_before_intent",
+    "reused_pinned_native_finite_metric_parser",
+    "reused_parser_rejects_zero_negative_nonfinite_and_missing_loss",
+    "main_refuses_missing_first_acceptance_before_HTTP_or_intent",
+    "two_update_main_flow_preserves_native_HTTP400_body_and_accepts_actual_language_inequality"
+  ],
+  "count": 17,
+  "invalid_prefix_cases": 13,
+  "actual_HTTP_GPU_or_model_calls": 0,
+  "actual_live_chain_tested": false,
+  "first_real_update_evidence": "separate native v5 reconciliation proof"
+}
