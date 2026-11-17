@@ -1,0 +1,8 @@
+{
+  "accepted": true,
+  "scope": "Mac AST/syntax only",
+  "unchanged_core_functions": 3,
+  "python_files_compiled": 5,
+  "original_source_sha256": "b2a56be45125bb2bc6012ea291aafe2c066c8b36c99a209276665cec15abc77b",
+  "candidate_sha256": "5a7bbd0b69922792423a043d55c5473cad0880f86be8d314dc65b12b37f89c73"
+}

@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "scope": "CPU and CLI preparation only",
+  "Node_unique_checks": 26,
+  "Node_row_checks": 15,
+  "Node_batch_checks": 7,
+  "Node_CLI_checks": 4,
+  "Mac_scope": "3 core function AST matches and5 Python syntax checks only",
+  "scientific_owner_exact_live": true,
+  "source_pins_sha256": "4386d9bca4d610a57941af23685c23deb4365511bec3b77ab8465b951f09fde7",
+  "actual_second_native_data_audit_accepted": false,
+  "parameter_update_accepted": false,
+  "pending": "original train-1.pt after native training; then one owned read-only audit with original rollout-1.pt",
+  "science_source_changed": false,
+  "model_tool_judge_replay": 0
+}

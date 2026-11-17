@@ -1,0 +1,28 @@
+{
+  "created": 1794903475.5188913,
+  "accepted": true,
+  "results": [
+    {
+      "file": "check_row_cpu.py",
+      "returncode": 0,
+      "stdout": "{\"accepted\": true, \"checks\": 15, \"invalid_fields\": [\"response_length\", \"sample_index\", \"tokens\", \"total_length\", \"loss_mask\", \"rollout_log_probs\", \"role_mask\", \"efficiency\", \"reward\", \"raw_reward\", \"ref_log_probs\", \"kl\", \"advantages\", \"returns\"], \"cuda_initialized\": false, \"scope\": \"CPU fixtures for single-row acceptance; actual native data is separate\"}\n",
+      "stderr": ""
+    },
+    {
+      "file": "check_batch_cpu.py",
+      "returncode": 0,
+      "stdout": "{\"accepted\": true, \"checks\": 7, \"synthetic_complete_batch\": \"8x32\", \"synthetic_samples\": 256, \"policy\": 1, \"cuda_initialized\": false, \"actual_native_buffer_audit\": false, \"new_model_tool_judge_calls\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "file": "check_cli_cpu.py",
+      "returncode": 0,
+      "stdout": "{\"accepted\": true, \"checks\": 4, \"scope\": \"synthetic CPU CLI input only\", \"actual_native_buffer_audit\": false, \"scientific_owner_unchanged\": true, \"new_model_tool_judge_calls\": 0, \"cuda_initialized\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "source_closure": true,
+  "scientific_owner_exact_live": true,
+  "new_model_tool_judge_calls": 0,
+  "actual_native_batch_audit_pending": true
+}

@@ -1,0 +1,11 @@
+# 按实际更新索引核验训练数据
+
+原首更新审计将rollout0、policy0、11095个Sample及owner身份写为固定值。第二批原生rollout1已经形成，微批数3339，Sample数会随真实轨迹变化。继续复用首批常数会拒绝正常的新批。
+
+本目录复用原单行校验、摘要和进程身份函数，三者AST相同。只将run目录、零起点rollout索引、owner身份与输出目录改为显式CLI参数，将Sample数核验改为原rollout实际长度与原生dynamic_global_batch_size相等。8组各32逻辑轨迹、原policy、原客观/标准化奖励、效率系数0.25、Token/logprob/mask、逐Tokenadvantages/returns及有限数检查保持原规则。来源文件读取前后大小/mtime不变，两个原件均记录SHA。
+
+单行CPU15组、完整8x32合成CPU7组及真实CLI4组，共26组Node检查。CLI检查使用合成256 Sample输入，覆盖新policy1、不同Sample数、错误owner身份、重复输出拒绝、owned实际child0与gone。Mac仅做3个核心函数AST与5文件语法检查。结果不代表实际第二批已经完成数据审计。
+
+owned_audit.py保留stdout/stderr、输入intent、实际child退出。子审计300秒上界、父等待330秒。当前科学owner保持运行，无模型/工具/Judge重放。实际train-1.pt尚未生成，应在原生保存后再一次执行真实数据审计。原保留文件名仍无rank，各rank单独buffer缺口保持。
+
+输出只接受数据对应关系，parameter_update_accepted恒为false。实际参数变化、权重同步、checkpoint恢复和三次稳定需要各自原生证据。CPU准备与真数据结果分开保存，旧首批原证不重复执行。

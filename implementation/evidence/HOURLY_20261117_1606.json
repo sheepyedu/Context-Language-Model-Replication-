@@ -1,0 +1,321 @@
+{
+  "observation": {
+    "observed": 1794902809.8336978,
+    "owner": {
+      "pid": 3060432,
+      "created": 1794832558.4704704,
+      "argv": [
+        "/mount-data/CLM-Replication/env/rl/bin/python",
+        "/mount-data/CLM-Replication/management/owned_training_v14.py",
+        "--attempt",
+        "13"
+      ],
+      "attempt": 13,
+      "directory": "/mount-data/CLM-Replication/runs/c2-seed1234/attempt-13"
+    },
+    "actual_owner": {
+      "pid": 3060432,
+      "uid": 0,
+      "start_ticks": 51919204,
+      "state": "S",
+      "cmdline": "/mount-data/CLM-Replication/env/rl/bin/python /mount-data/CLM-Replication/management/owned_training_v14.py --attempt 13 ",
+      "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+    },
+    "exit": null,
+    "preflight": [],
+    "native_progress": [
+      "ref forward:  18%|█▊        | 610/3339 [19:54<1:27:40,  1.93s/microbatch]"
+    ],
+    "native_optimizer_metrics": [
+      "\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m [2026-11-17 07:53:45] model.py:779 - step 0: {'train/loss': -0.07324456639022886, 'train/pg_loss': -0.07324456639022886, 'train/entropy_loss': 0.21595186616047, 'train/pg_clipfrac': 0.0, 'train/ppo_kl': 0.0, 'train/train_rollout_logprob_abs_diff': 0.008403125643228095, 'train/kl_loss': 0.0, 'train/ois': 1.0, 'train/tis': 0.9999840200883616, 'train/tis_clipfrac': 2.345675102887174e-06, 'train/tis_abs': 0.008386860539646015, 'train/grad_norm': 0.2782789233033863, 'train/lr-pg_0': 1e-06, 'train/lr-pg_1': 1e-06, 'train/step': 0}"
+    ],
+    "optimizer_metrics_scan": {
+      "complete": true,
+      "scanned_bytes": 13109887,
+      "snapshot_bytes": 13109887,
+      "matching_lines": 1,
+      "matching_lines_are_not_an_accepted_optimizer_update_count": true
+    },
+    "log_bytes": 13109887,
+    "log_tail": "\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 596/3339 [19:27<1:28:06,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 597/3339 [19:29<1:28:05,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 598/3339 [19:30<1:28:02,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 599/3339 [19:32<1:27:59,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 600/3339 [19:34<1:27:54,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 601/3339 [19:36<1:27:53,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 602/3339 [19:38<1:27:51,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 603/3339 [19:40<1:27:49,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 604/3339 [19:42<1:27:51,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 605/3339 [19:44<1:27:46,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 606/3339 [19:46<1:27:42,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 607/3339 [19:48<1:27:41,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 608/3339 [19:50<1:27:39,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 609/3339 [19:52<1:27:35,  1.93s/microbatch]\n\u001b[36m(MegatronTrainRayActor pid=3063077)\u001b[0m \rref forward:  18%|█▊        | 610/3339 [19:54<1:27:40,  1.93s/microbatch]\n",
+    "gpus": "4, GPU-101b4bf3-3f4e-5706-eef9-7e3d38ba4ea3, 100 %, 55340 MiB\n5, GPU-c64fa322-ea6c-ed73-b81b-67bddfd2ad9e, 100 %, 54764 MiB\n6, GPU-d75359c6-2336-10a8-5eb5-379d8c05d1d0, 100 %, 54770 MiB\n7, GPU-0e09fed4-3dc8-937b-5d89-95ba16b5edbb, 99 %, 53810 MiB\n"
+  },
+  "phase": {
+    "created": 1794902972.4561076,
+    "node": {
+      "observed": 1794902972.269869,
+      "hostname": "dsw-556082-75966ff79-6qp6m",
+      "uid": 0,
+      "cpu_affinity_count": 184,
+      "cgroup_memory_limit": "1932735283200",
+      "CPFS_source": "rund:zYyiercu:cpfs-03001u70faecthn4bkib9-000001.cn-beijing.cpfs.aliyuncs.com:/",
+      "visible_physical_GPU_count": 8,
+      "CPFS_available_bytes": 4450831826944
+    },
+    "closed_by_rollout": {
+      "rollout-00001": 12,
+      "rollout-00000": 12
+    },
+    "current_groups": [],
+    "model_version": "2",
+    "model_path": "/mount-data/Models/Qwen3.5-9B",
+    "version_source_endpoint": "/model_info",
+    "version_source_field": "weight_version",
+    "training_files": {
+      "train-0.pt": {
+        "bytes": 1667898759,
+        "mtime_ns": 1794873242321441355
+      },
+      "rollout-0.pt": {
+        "bytes": 977354681,
+        "mtime_ns": 1794832909653061322
+      },
+      "rollout-1.pt": {
+        "bytes": 791030521,
+        "mtime_ns": 1794901514345775779
+      }
+    },
+    "policy1_admission": {
+      "/mount-data/CLM-Replication/runs/c2-seed1234/audit/rollout-00001/candidate-000/ADMISSION_RESULT.json": {
+        "planned_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "executed_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "unstarted_skipped_positions": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "required_eligible_groups": 8,
+        "eligible_groups": 8,
+        "all_started_groups_terminal_before_return": true,
+        "selection_order": "frozen candidate order",
+        "cursor_after": {
+          "epoch_id": 0,
+          "sample_group_index": 32,
+          "sample_index": 1024,
+          "sample_offset": 32,
+          "metadata": {}
+        }
+      }
+    },
+    "evidence": "/mount-data/CLM-Replication/management/HOURLY_PHASE_1794902972456121360.json"
+  },
+  "accounting": {
+    "created": 1794903004.8018863,
+    "all": {
+      "provider_attempts": 25369,
+      "known_input_tokens": 284001881,
+      "complete_input_tokens": null,
+      "missing_input_tokens_calls": 14,
+      "known_output_tokens": 4091303,
+      "complete_output_tokens": null,
+      "missing_output_tokens_calls": 14,
+      "known_total_tokens": 288093184,
+      "complete_total_tokens": null,
+      "missing_total_tokens_calls": 14,
+      "known_cached_input_tokens_subset": 247296,
+      "missing_cached_input_tokens_subset_calls": 24800,
+      "known_reasoning_output_tokens_subset": 1471897,
+      "missing_reasoning_output_tokens_subset_calls": 890,
+      "money": null
+    },
+    "by_role": {
+      "rollout": {
+        "provider_attempts": 24790,
+        "known_input_tokens": 283502610,
+        "complete_input_tokens": null,
+        "missing_input_tokens_calls": 14,
+        "known_output_tokens": 3940338,
+        "complete_output_tokens": null,
+        "missing_output_tokens_calls": 14,
+        "known_total_tokens": 287442948,
+        "complete_total_tokens": null,
+        "missing_total_tokens_calls": 14,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 24790,
+        "known_reasoning_output_tokens_subset": 1402984,
+        "missing_reasoning_output_tokens_subset_calls": 880,
+        "money": null
+      },
+      "judge": {
+        "provider_attempts": 568,
+        "known_input_tokens": 472280,
+        "complete_input_tokens": 472280,
+        "missing_input_tokens_calls": 0,
+        "known_output_tokens": 150960,
+        "complete_output_tokens": 150960,
+        "missing_output_tokens_calls": 0,
+        "known_total_tokens": 623240,
+        "complete_total_tokens": 623240,
+        "missing_total_tokens_calls": 0,
+        "known_cached_input_tokens_subset": 247296,
+        "missing_cached_input_tokens_subset_calls": 0,
+        "known_reasoning_output_tokens_subset": 68913,
+        "missing_reasoning_output_tokens_subset_calls": 0,
+        "money": null
+      },
+      "conversion_validation": {
+        "provider_attempts": 8,
+        "known_input_tokens": 22236,
+        "complete_input_tokens": 22236,
+        "missing_input_tokens_calls": 0,
+        "known_output_tokens": 0,
+        "complete_output_tokens": 0,
+        "missing_output_tokens_calls": 0,
+        "known_total_tokens": 22236,
+        "complete_total_tokens": 22236,
+        "missing_total_tokens_calls": 0,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 8,
+        "known_reasoning_output_tokens_subset": 0,
+        "missing_reasoning_output_tokens_subset_calls": 8,
+        "money": null
+      },
+      "merging_numerical_validation": {
+        "provider_attempts": 2,
+        "known_input_tokens": 4720,
+        "complete_input_tokens": 4720,
+        "missing_input_tokens_calls": 0,
+        "known_output_tokens": 0,
+        "complete_output_tokens": 0,
+        "missing_output_tokens_calls": 0,
+        "known_total_tokens": 4720,
+        "complete_total_tokens": 4720,
+        "missing_total_tokens_calls": 0,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 2,
+        "known_reasoning_output_tokens_subset": 0,
+        "missing_reasoning_output_tokens_subset_calls": 2,
+        "money": null
+      },
+      "judge_calibration": {
+        "provider_attempts": 1,
+        "known_input_tokens": 35,
+        "complete_input_tokens": 35,
+        "missing_input_tokens_calls": 0,
+        "known_output_tokens": 5,
+        "complete_output_tokens": 5,
+        "missing_output_tokens_calls": 0,
+        "known_total_tokens": 40,
+        "complete_total_tokens": 40,
+        "missing_total_tokens_calls": 0,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 0,
+        "known_reasoning_output_tokens_subset": 0,
+        "missing_reasoning_output_tokens_subset_calls": 0,
+        "money": null
+      }
+    },
+    "by_request_kind": {
+      "provider_model_request": {
+        "provider_attempts": 25355,
+        "known_input_tokens": 284001881,
+        "complete_input_tokens": 284001881,
+        "missing_input_tokens_calls": 0,
+        "known_output_tokens": 4091303,
+        "complete_output_tokens": 4091303,
+        "missing_output_tokens_calls": 0,
+        "known_total_tokens": 288093184,
+        "complete_total_tokens": 288093184,
+        "missing_total_tokens_calls": 0,
+        "known_cached_input_tokens_subset": 247296,
+        "missing_cached_input_tokens_subset_calls": 24786,
+        "known_reasoning_output_tokens_subset": 1471897,
+        "missing_reasoning_output_tokens_subset_calls": 876,
+        "money": null
+      },
+      "non_chat_payload_schema_rejection": {
+        "provider_attempts": 13,
+        "known_input_tokens": 0,
+        "complete_input_tokens": null,
+        "missing_input_tokens_calls": 13,
+        "known_output_tokens": 0,
+        "complete_output_tokens": null,
+        "missing_output_tokens_calls": 13,
+        "known_total_tokens": 0,
+        "complete_total_tokens": null,
+        "missing_total_tokens_calls": 13,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 13,
+        "known_reasoning_output_tokens_subset": 0,
+        "missing_reasoning_output_tokens_subset_calls": 13,
+        "money": null
+      },
+      "accepted_ancillary_http_schema_rejection": {
+        "provider_attempts": 1,
+        "known_input_tokens": 0,
+        "complete_input_tokens": null,
+        "missing_input_tokens_calls": 1,
+        "known_output_tokens": 0,
+        "complete_output_tokens": null,
+        "missing_output_tokens_calls": 1,
+        "known_total_tokens": 0,
+        "complete_total_tokens": null,
+        "missing_total_tokens_calls": 1,
+        "known_cached_input_tokens_subset": 0,
+        "missing_cached_input_tokens_subset_calls": 1,
+        "known_reasoning_output_tokens_subset": 0,
+        "missing_reasoning_output_tokens_subset_calls": 1,
+        "money": null
+      }
+    },
+    "all_dimensions_reconcile": true,
+    "csv_all_roles_reconcile": true,
+    "owner_child_gone": true
+  },
+  "data_audit_prepared": {
+    "accepted": true,
+    "scope": "CPU and CLI preparation only",
+    "Node_unique_checks": 26,
+    "Node_row_checks": 15,
+    "Node_batch_checks": 7,
+    "Node_CLI_checks": 4,
+    "Mac_scope": "3 core function AST matches and5 Python syntax checks only",
+    "scientific_owner_exact_live": true,
+    "source_pins_sha256": "4386d9bca4d610a57941af23685c23deb4365511bec3b77ab8465b951f09fde7",
+    "actual_second_native_data_audit_accepted": false,
+    "parameter_update_accepted": false,
+    "pending": "original train-1.pt after native training; then one owned read-only audit with original rollout-1.pt",
+    "science_source_changed": false,
+    "model_tool_judge_replay": 0
+  },
+  "actual_updates": 1,
+  "goal_complete": false,
+  "formal_todos": {
+    "child_completed": 5,
+    "child_total": 10,
+    "root_completed": 9,
+    "root_total": 14
+  },
+  "next_monitor_not_before_unix": 1794906409.8336978
+}
