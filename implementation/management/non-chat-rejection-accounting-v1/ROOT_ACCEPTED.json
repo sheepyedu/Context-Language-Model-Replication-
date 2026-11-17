@@ -1,0 +1,23 @@
+{
+  "accepted": true,
+  "created": 1794878285.2115428,
+  "source_pins_sha256": "9d435a335acbbd44ee923d81ebeb090b2db67b867826ea4734d6fc4f527726b1",
+  "private_rejection_evidence_sha256": "759f439250b913a0e14d989fc7e9ae90efa0c72685f22e25f2053ab777763301",
+  "token_report_sha256": "b83053e89425a091420d435d008f0fa1f7bd14d8bc6dedff6cb2f614fc2ecf5d",
+  "canonical_receipts": 15321,
+  "model_and_engineering_receipts": 15313,
+  "model_receipt_missing_usage": 0,
+  "original_ancillary_HTTP_requests": 1,
+  "new_non_chat_schema_rejections": 7,
+  "all_original_missing_usage_preserved": 8,
+  "known_total_tokens": 177587670,
+  "judge_known_tokens": 408595,
+  "money": null,
+  "caller_command_provenance": "pending original session artifact completion",
+  "original_v4_unchanged": true,
+  "scientific_owner_live": true,
+  "new_model_tool_judge_calls": 0,
+  "formal_updates": 1,
+  "checkpoint_restore_accepted": false,
+  "stable": false
+}

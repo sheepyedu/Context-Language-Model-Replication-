@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "CPU_checks": 14,
+  "checks": [
+    "valid_search",
+    "valid_fetch",
+    "messages_present",
+    "wrong_action",
+    "wrong_model",
+    "wrong_error_code",
+    "response_exists",
+    "raw_receipt_mismatch",
+    "known_usage",
+    "directory_escape",
+    "error_before_request",
+    "missing_source",
+    "wrong_request_type",
+    "wrong_error_body_type"
+  ],
+  "model_or_judge_calls": 0,
+  "original_receipts_modified": false
+}

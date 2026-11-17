@@ -1,0 +1,15 @@
+{
+  "created": 1794878238.533579,
+  "files": {
+    "classify_non_chat_rejection.py": "17fe777eff170a274b327680ddf6035e5b7ae76da3e1ad7f3ffc464f205f8851",
+    "check_classifier_cpu.py": "8e9697f341909fcd72d3c723d5ad1706fc58264f9b91b01a76ea6af2b0fae515",
+    "token_report_v5.py": "7bf98cd311449c974f8ce598a7683ef077c49a294d7019aed4b12dd4cac774a6",
+    "CPU_LOCAL_ACCEPTED.json": "b42f40908b22ef8d5b356cac406c0e4f390e92a78f589e14992526e4ebf75306",
+    "CPU_NODE_ACCEPTED.json": "b42f40908b22ef8d5b356cac406c0e4f390e92a78f589e14992526e4ebf75306",
+    "REPORT_REMAINDER_AST_ACCEPTED.json": "fa9ff4f3085931fb7d8d9d2cc20759976103785f268cfcd9807450beee5dd76a",
+    "ACTUAL_TOKEN_REPORT.json": "b83053e89425a091420d435d008f0fa1f7bd14d8bc6dedff6cb2f614fc2ecf5d",
+    "README.md": "0be172902d4943ac8ad0a09aa40d08aa08c6725adcd1a718d6688f48c7943b8e"
+  },
+  "base_token_report_v4_sha256": "d9035cae4c8c51c6f1f290caf2d4259195ab53c5b3b3c843d09412ed4e0db936",
+  "scope": "offline request-kind accounting, no scientific execution changes"
+}
