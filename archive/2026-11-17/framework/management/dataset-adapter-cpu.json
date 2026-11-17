@@ -1,0 +1,6 @@
+{
+  "training_count": 3040,
+  "exact_question_roundtrip": true,
+  "maximum_raw_question_tokens": 356,
+  "processor_input_form": "single user message list"
+}

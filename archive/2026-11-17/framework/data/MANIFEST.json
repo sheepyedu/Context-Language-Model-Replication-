@@ -1,0 +1,51 @@
+{
+  "training_count": 3040,
+  "validation_count": 500,
+  "original_split_counts": {
+    "rl": 3051,
+    "sft": 3051
+  },
+  "excluded_missing_attachment_qids": {
+    "rl": [
+      0,
+      218,
+      422,
+      1195,
+      3337,
+      4245,
+      7310,
+      8480,
+      9682,
+      9866,
+      9895
+    ],
+    "sft": [
+      255,
+      516,
+      710,
+      1106,
+      1177,
+      3933,
+      4167,
+      4266,
+      4427,
+      5192,
+      6727,
+      7879,
+      8910,
+      9039,
+      9114
+    ]
+  },
+  "selection": "exclude unavailable attachment references; validation random seed1234 from distinct sft split",
+  "paper_exact_ids_confirmed": false,
+  "normalized_question_overlap": 0,
+  "sha256": {
+    "validation.jsonl": "1892079c4d8f2501764d76ff0c3254347b882e9add8c7a1897a257d4c60ad89e",
+    "train.jsonl": "11913531459da8613446fba702eda95ff6dc699219ada7e1a4ec53c21857b48d"
+  },
+  "source_sha256": {
+    "sft-00000-of-00001.parquet": "38fa3c79ed0a8f2077df99d046da6c68b9fac38634329a32a6091f8e66cd7333",
+    "rl-00000-of-00001.parquet": "a033e74f9ce5fc16151f46d2c7076ae4b201ff5972d5aaeeff4b36c6078f511e"
+  }
+}

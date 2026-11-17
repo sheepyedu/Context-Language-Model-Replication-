@@ -1,0 +1,20 @@
+{
+  "created": 1794928149.6466823,
+  "selected_count": 320,
+  "forced_kill_pids": [
+    3048818,
+    3049072
+  ],
+  "remaining_matching_live_pids": [],
+  "actual_owner_exit": {
+    "exit_code": -15,
+    "finished": 1794928134.8375502,
+    "pid": 3060630
+  },
+  "gpus_after": "4, GPU-101b4bf3-3f4e-5706-eef9-7e3d38ba4ea3, 0 MiB, 0 %\n5, GPU-c64fa322-ea6c-ed73-b81b-67bddfd2ad9e, 0 MiB, 0 %\n6, GPU-d75359c6-2336-10a8-5eb5-379d8c05d1d0, 0 MiB, 0 %\n7, GPU-0e09fed4-3dc8-937b-5d89-95ba16b5edbb, 0 MiB, 0 %\n",
+  "applications_after": "GPU-29fbff28-1179-98a5-41cc-9e2980005df8, 1823979\nGPU-29fbff28-1179-98a5-41cc-9e2980005df8, 1821641\nGPU-5c212b69-0b96-3189-05af-49a8ad375cdb, 1824052\nGPU-5c212b69-0b96-3189-05af-49a8ad375cdb, 1821643\nGPU-744eb5bf-cb6e-49d3-c0b6-8759bd2d4248, 1824023\nGPU-744eb5bf-cb6e-49d3-c0b6-8759bd2d4248, 1821642\nGPU-4e5caf63-c61d-182f-326a-80f3c3fd2d17, 1823989\nGPU-4e5caf63-c61d-182f-326a-80f3c3fd2d17, 1821644\n",
+  "formal_updates": 1,
+  "training_complete": false,
+  "archive_stop": true,
+  "all_original_files_preserved": true
+}

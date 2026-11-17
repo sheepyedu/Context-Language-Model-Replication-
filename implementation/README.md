@@ -1,3 +1,5 @@
+> 2026-11-17封存更新。用户已提前结束本次复现，实际验收1/70次更新，第二批提交前取消，专属作业停止。完整冻结框架、证据与缺口见 [封存包](../archive/2026-11-17/README.md)。以下内容保留其历史版本与观测时间。
+
 # CLM逐调用参数RL实现
 
 本目录是持续实施版本。有效优化器更新与端到端验收进度见[STATUS.md](STATUS.md)。
@@ -26,3 +28,4 @@ PYTHONPATH=implementation/src python -m unittest discover -s implementation/test
 
 
 当前training-v5新增 `native_failures.py`，只为有完整原证的模型工具超时派生训练视图。原任务状态和负奖励保留。`management/train-v5.sh`/`train-config-v5.yaml` 记录当前服务器入口，部署时将本目录源安装到对应版本路径并复用固定上游源码。不要运行历史launcher来覆盖活跃任务。当前judge显式关闭thinking，全部新对照保持一致。详细变更、失败和未完成项见 `STATUS.md`。
+

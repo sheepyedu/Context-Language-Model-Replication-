@@ -1,0 +1,14 @@
+{
+  "train": {
+    "count": 3040,
+    "source_sha256": "11913531459da8613446fba702eda95ff6dc699219ada7e1a4ec53c21857b48d",
+    "envelope_sha256": "84571faf3d40b94a2a83e0641b067146fea40f386ee8a8a8ce4c1fb952acdcb1",
+    "exact_instruction_label_metadata_roundtrip": true
+  },
+  "validation": {
+    "count": 500,
+    "source_sha256": "1892079c4d8f2501764d76ff0c3254347b882e9add8c7a1897a257d4c60ad89e",
+    "envelope_sha256": "8e557ec1f576bc64f8d1c8651b18adc26019971eff07a574028dcc1d3c7678c5",
+    "exact_instruction_label_metadata_roundtrip": true
+  }
+}

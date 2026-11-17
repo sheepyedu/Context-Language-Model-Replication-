@@ -1,0 +1,23 @@
+rollout:
+  host: 127.0.0.1
+  port: 19170
+  public_url: http://127.0.0.1:19170
+  save_dir: /mount-data/CLM-Replication/runs/c0-initial/polar
+gateway:
+  heartbeat_interval_seconds: 15
+  completion_persistence:
+    enabled: true
+    max_field_bytes: 67108864
+    queue_size: 1024
+  nodes:
+  - id: clm-gpu45-training-v7
+    host: 0.0.0.0
+    port: 19171
+    public_url: http://172.17.0.1:19171
+    max_init_workers: 1
+    max_run_workers: 4
+    max_postrun_workers: 1
+    model_served: qwen35-clm
+    inference:
+      engine: sglang
+      base_url: http://127.0.0.1:19174

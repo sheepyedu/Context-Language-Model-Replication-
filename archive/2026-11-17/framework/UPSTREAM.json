@@ -1,0 +1,22 @@
+{
+  "server_git_metadata_available": false,
+  "reason": "remote dependencies were unpacked source assets; git queries returned no repository metadata",
+  "provenance_basis": "frozen source hashes and original project research/source records",
+  "CLM": {
+    "repository": "https://github.com/facebookresearch/context-language-models",
+    "revision": "483198229ab7b90c0eed4651306ab3b3505aaf50"
+  },
+  "ProRL": {
+    "repository": "https://github.com/NVIDIA-NeMo/ProRL-Agent-Server",
+    "recipe_revision": "8bc67cc32607c31988406a2de460b350970efc88"
+  },
+  "Slime": {
+    "repository": "https://github.com/THUDM/slime",
+    "recipe_revision": "bf9b1a3bc5dd493000ae8518f737fb606bbe36e7"
+  },
+  "Megatron": {
+    "exact_git_revision": "not established by this archive export",
+    "installed_version": "see training-packages.lock",
+    "frozen_native_files": "see SOURCE_PINS.training-v14.json"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "checks": [
+    "complete public file coverage including nested manifests",
+    "published file sizes and SHA256",
+    "all archived Python syntax",
+    "all archived JSON structures",
+    "archive documentation relative links",
+    "partial scientific completion disclosed",
+    "actual owner exit and four-card release",
+    "known token and role totals with original nulls",
+    "771 public accounting rows reconcile",
+    "public accounting identifiers anonymized and no-model count explicit",
+    "native first-update trajectory and efficiency counts",
+    "actual consumer source entrypoints present",
+    "actual launcher scientific configuration",
+    "archive control state"
+  ],
+  "check_count": 14,
+  "manifest_files": 85,
+  "python_files": 42,
+  "new_model_tool_judge_calls": 0,
+  "scope": "public artifact consistency and syntax only"
+}

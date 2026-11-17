@@ -1,0 +1,36 @@
+{
+  "created": 1794928612.1832993,
+  "assets": [
+    {
+      "path": "/mount-data/CLM-Replication/runs/provider-attempts",
+      "files": 74268,
+      "bytes": 3325809254,
+      "file_contents_sha256_all_refreshed": false
+    },
+    {
+      "path": "/mount-data/CLM-Replication/runs/session-artifacts",
+      "files": 188832,
+      "bytes": 3612381614,
+      "file_contents_sha256_all_refreshed": false
+    },
+    {
+      "path": "/mount-data/CLM-Replication/runs/token-ledger",
+      "files": 25369,
+      "bytes": 23081332,
+      "file_contents_sha256_all_refreshed": false
+    },
+    {
+      "path": "/mount-data/CLM-Replication/runs/web-retrieval",
+      "files": 26434,
+      "bytes": 333615005,
+      "file_contents_sha256_all_refreshed": false
+    },
+    {
+      "path": "/mount-data/CLM-Replication/runs/c2-seed1234",
+      "files": 294,
+      "bytes": 16468496627,
+      "file_contents_sha256_all_refreshed": false
+    }
+  ],
+  "originals_retained_on_CPFS": true
+}

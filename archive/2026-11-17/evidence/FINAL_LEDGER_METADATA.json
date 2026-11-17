@@ -1,0 +1,8 @@
+{
+  "created": 1794928358.145363,
+  "receipt_files": 25369,
+  "directory_mtime": 1794901403.999682,
+  "complete_snapshot": "/mount-data/CLM-Replication/runs/token-reports/1794903004443684138",
+  "current_new_entries_since_snapshot": false,
+  "scope": "directory metadata equality only, receipt contents not re-audited"
+}
