@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "native_CPU_checks": 4,
+  "checks": [
+    "native_full_cursor_round_trip_and_guard",
+    "native_epoch_shuffle_restored",
+    "native_missing_file_silent_reset_detected",
+    "native_missing_fields_silent_defaults_detected"
+  ],
+  "native_source_sha256": "446595578aff88fac1637b8956a245853db1167e7964896bbab2fff61b1db616",
+  "CUDA_initialized": false,
+  "actual_model_optimizer_rng_restored": false,
+  "production_checkpoint_read_or_modified": false
+}

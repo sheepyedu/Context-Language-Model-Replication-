@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "base_prepared_bridge_sha256": "1bb8f25dda4bdc09a479f932296324f20f2d72401d0d5bf12349a2a8fea4dada",
+  "candidate_bridge_sha256": "c8d50c05be6cf9d058f65b431fe79842e80d034036d2cb138c8dd12e430fc342",
+  "unmodified_other_functions_AST_identical": true,
+  "only_deltas": [
+    "remember first actually synchronized policy in receiver process",
+    "use first synchronized policy for resume boundary",
+    "verify actual loaded cursor before nonzero resume"
+  ],
+  "live_source_modified": false,
+  "actual_training_checkpoint_restore": false
+}

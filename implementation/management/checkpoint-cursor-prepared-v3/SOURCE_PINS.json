@@ -1,0 +1,23 @@
+{
+  "created": 1794880353.3349319,
+  "scope": "future checkpoint cursor and first synchronized policy admission; active source remains training-v10",
+  "files": {
+    "bridge.py": "c8d50c05be6cf9d058f65b431fe79842e80d034036d2cb138c8dd12e430fc342",
+    "checkpoint_cursor.py": "d849ede82338f3ca2acf299f571bc0d971bae931319f6648e13987e0d0d61279",
+    "BASE_PREPARED_V2.py": "1bb8f25dda4bdc09a479f932296324f20f2d72401d0d5bf12349a2a8fea4dada",
+    "check_cursor_cpu.py": "db80aa9d84d3030ed42b3fed7b8679b2f490af2893715696b5a4c795e8738f0d",
+    "check_resume_boundary.py": "c11e92b4c5845e9c9392e86e141f55e8a067e452e1508fcbe6d69b0bf242dbed",
+    "check_native_cursor_cpu.py": "7adbed5fb30234fa27bdda6081502568da2198c76f14fdbf6dd5662beab5755f",
+    "check_ray_boundary_cpu.py": "20928d693e33419c306b0f8f76cc690f85f1d9cffc75604c5a0bc98c64d967d0",
+    "CPU_LOCAL_ACCEPTED.json": "29577fcf03607fa52f3500e6e54248a0ca3cefb54bd3ec8816f5ee5a2ff48c08",
+    "BOUNDARY_CPU_LOCAL_ACCEPTED.json": "b35f016e1f0f106d0f3240aecf57613b4876b708ef17d2e52920f35fe94093a2",
+    "CPU_NODE_ACCEPTED.json": "29577fcf03607fa52f3500e6e54248a0ca3cefb54bd3ec8816f5ee5a2ff48c08",
+    "BOUNDARY_CPU_NODE_ACCEPTED.json": "b35f016e1f0f106d0f3240aecf57613b4876b708ef17d2e52920f35fe94093a2",
+    "NATIVE_CPU_ACCEPTED.json": "079baefcf2c005307bbac3894141bce2f796040c2b57a7065b7ee1e365ca40b4",
+    "RAY_CPU_ACCEPTED.json": "8e43ce00dbd1185c440ae8acdd46a98bbaa954a223ef68e0de7077eab06378c9",
+    "SOURCE_DELTA.json": "5bdf1d8c5f44c4cad6aeb10c5751eaa4b111d017ef763abefe97b53c0a5a41c8",
+    "README.md": "3941ffd99a76725d54845230c2dc7a5ae5d49a734da601af5a6cd5f4934881fe"
+  },
+  "native_training_checkpoint_restore": false,
+  "future_owned_source_binding_pending": true
+}

@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "created": 1794880355.905507,
+  "source_pins_sha256": "ab411d1ae880e5fabd81961de6161e16710dffd26d46c6edd3cad7f076bee9ee",
+  "files_verified": 15,
+  "candidate_bridge_sha256": "c8d50c05be6cf9d058f65b431fe79842e80d034036d2cb138c8dd12e430fc342",
+  "active_scientific_bridge_unchanged": true,
+  "scientific_owner_live": true,
+  "CPU_cursor_checks_per_environment": 24,
+  "CPU_boundary_checks_per_environment": 37,
+  "native_CPU_save_load_checks": 4,
+  "actual_CPU_Ray_boundary_accepted": true,
+  "CPU_Ray_actor_exactgone": true,
+  "active_admission_gate_present": false,
+  "production_checkpoint_tracker_exists": false,
+  "production_checkpoint_tracker_value": null,
+  "actual_model_optimizer_rng_restored": false,
+  "future_owned_source_binding_pending": true,
+  "new_model_tool_judge_calls": 0,
+  "formal_updates": 1,
+  "stable": false
+}

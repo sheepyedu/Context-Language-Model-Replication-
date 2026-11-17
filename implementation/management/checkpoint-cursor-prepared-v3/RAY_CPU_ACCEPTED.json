@@ -1,0 +1,37 @@
+{
+  "accepted": true,
+  "created": 1794880106.9467783,
+  "actual_CPU_Ray_copy_and_hook": {
+    "old": {
+      "HTTP_resume_calls": 0,
+      "cursor_checks": [],
+      "hook_versions": [
+        5,
+        6,
+        7
+      ],
+      "initial_synced_policy": null,
+      "latest_synced_policy": 7
+    },
+    "new": {
+      "HTTP_resume_calls": 1,
+      "cursor_checks": [
+        5
+      ],
+      "hook_versions": [
+        5,
+        6,
+        7
+      ],
+      "initial_synced_policy": 5,
+      "latest_synced_policy": 7
+    },
+    "pid": 3397427,
+    "start_ticks": 56673750,
+    "CUDA_VISIBLE_DEVICES": "",
+    "assigned_GPU_ids": []
+  },
+  "actual_CPU_actor_exactgone": true,
+  "native_model_or_optimizer_loaded": false,
+  "new_HTTP_or_model_requests": 0
+}

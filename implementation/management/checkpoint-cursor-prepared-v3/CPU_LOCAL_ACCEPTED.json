@@ -1,0 +1,32 @@
+{
+  "accepted": true,
+  "CPU_checks": 24,
+  "checks": [
+    "round_trip",
+    "repeat_same_proof",
+    "explicit_older_iteration",
+    "serialized_start_is_none",
+    "missing_load",
+    "wrong_explicit_iteration",
+    "missing_file",
+    "release_tracker",
+    "wrong_iteration",
+    "wrong_start",
+    "finetune",
+    "no_load_optim",
+    "no_load_rng",
+    "invalid_counter",
+    "missing_sample_offset",
+    "missing_epoch_id",
+    "missing_sample_group_index",
+    "missing_sample_index",
+    "missing_metadata",
+    "loaded_wrong_sample_offset",
+    "loaded_wrong_epoch_id",
+    "loaded_wrong_sample_group_index",
+    "loaded_wrong_sample_index",
+    "loaded_wrong_metadata"
+  ],
+  "model_tool_judge_calls": 0,
+  "actual_model_restore": false
+}

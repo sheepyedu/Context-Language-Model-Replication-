@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "checks": 37,
+  "source_sha256": "c8d50c05be6cf9d058f65b431fe79842e80d034036d2cb138c8dd12e430fc342",
+  "sync_guard_before_resume": true,
+  "loaded_cursor_before_HTTP_for_nonzero_resume": true,
+  "policy_specific_receipt": true,
+  "new_HTTP_requests": 0,
+  "new_model_calls": 0,
+  "active_source_changed": false,
+  "production_checkpoint_restore": "pending"
+}
