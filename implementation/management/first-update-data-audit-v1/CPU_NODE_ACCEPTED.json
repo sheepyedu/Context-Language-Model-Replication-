@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "checks": 15,
+  "invalid_fields": [
+    "response_length",
+    "sample_index",
+    "tokens",
+    "total_length",
+    "loss_mask",
+    "rollout_log_probs",
+    "role_mask",
+    "efficiency",
+    "reward",
+    "raw_reward",
+    "ref_log_probs",
+    "kl",
+    "advantages",
+    "returns"
+  ],
+  "cuda_initialized": false,
+  "scope": "CPU fixtures for single-row acceptance; actual native data is separate"
+}

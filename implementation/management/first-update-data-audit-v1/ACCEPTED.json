@@ -1,0 +1,126 @@
+{
+  "accepted": true,
+  "created": 1794876265.9135892,
+  "rollout_id": 0,
+  "logical_policy_before_update": 0,
+  "formal_update": 1,
+  "logical_trajectories": 256,
+  "groups": [
+    {
+      "group_index": 4,
+      "trajectories": 32,
+      "successes": 6,
+      "rewards": {
+        "-0.0": 25,
+        "1.0": 6,
+        "-0.2": 1
+      },
+      "task_reward_std": 0.4011575991488117
+    },
+    {
+      "group_index": 5,
+      "trajectories": 32,
+      "successes": 0,
+      "rewards": {
+        "-0.0": 30,
+        "-0.2": 2
+      },
+      "task_reward_std": 0.04918693768379648
+    },
+    {
+      "group_index": 6,
+      "trajectories": 32,
+      "successes": 0,
+      "rewards": {
+        "-0.0": 19,
+        "-0.2": 13
+      },
+      "task_reward_std": 0.09979818344716922
+    },
+    {
+      "group_index": 7,
+      "trajectories": 32,
+      "successes": 18,
+      "rewards": {
+        "1.0": 18,
+        "-0.0": 13,
+        "-0.2": 1
+      },
+      "task_reward_std": 0.5123868875963212
+    },
+    {
+      "group_index": 8,
+      "trajectories": 32,
+      "successes": 19,
+      "rewards": {
+        "1.0": 19,
+        "-0.0": 13
+      },
+      "task_reward_std": 0.49899091723584604
+    },
+    {
+      "group_index": 9,
+      "trajectories": 32,
+      "successes": 0,
+      "rewards": {
+        "-0.2": 23,
+        "-0.0": 9
+      },
+      "task_reward_std": 0.09136068187983487
+    },
+    {
+      "group_index": 10,
+      "trajectories": 32,
+      "successes": 0,
+      "rewards": {
+        "-0.0": 27,
+        "-0.2": 5
+      },
+      "task_reward_std": 0.07378040652569472
+    },
+    {
+      "group_index": 11,
+      "trajectories": 32,
+      "successes": 0,
+      "rewards": {
+        "-0.0": 30,
+        "-0.2": 2
+      },
+      "task_reward_std": 0.04918693768379648
+    }
+  ],
+  "counts": {
+    "samples": 11095,
+    "input_token_occurrences": 132464479,
+    "output_tokens": 1705266,
+    "loss_tokens": 1705266,
+    "edit_role_tokens": 177610,
+    "nonzero_efficiency_role_tokens": 10697
+  },
+  "inputs": {
+    "rollout-0.pt": {
+      "path": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt13/rollout-0.pt",
+      "sha256": "ec1fe92e19bebfb2edce3a585aff371c846a1c619e1114ffc506e7769445af7b",
+      "bytes": 977354681
+    },
+    "train-0.pt": {
+      "path": "/mount-data/CLM-Replication/runs/c2-seed1234/training-attempt13/train-0.pt",
+      "sha256": "f9b2f06bfc7d84a4dd6109b940eb3f1af6474d371abbb2a60a8b76bc37a163e0",
+      "bytes": 1667898759
+    }
+  },
+  "owner": {
+    "pid": 3060432,
+    "uid": 0,
+    "start_ticks": 51919204,
+    "raw_sha256": "336761ab09adce6296a5fd5d20491a4c1fc9b37ad46a47f9f3fb3f33ae09013e"
+  },
+  "saved_rank": 1,
+  "scope": "one actually retained native rank buffer and all original rollout samples",
+  "other_rank_buffers": "not separately retained by current filename template",
+  "checkpoint_restore_accepted": false,
+  "three_update_stability_accepted": false,
+  "cuda_initialized": false,
+  "new_model_tool_judge_calls": 0,
+  "elapsed_seconds": 46.45192217826843
+}

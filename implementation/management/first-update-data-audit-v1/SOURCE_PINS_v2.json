@@ -1,0 +1,15 @@
+{
+  "created": 1794876456.757466,
+  "files": {
+    "audit_first_update_data.py": "b2a56be45125bb2bc6012ea291aafe2c066c8b36c99a209276665cec15abc77b",
+    "check_data_audit_cpu.py": "6fca5e873ce86581739156c4dd335a4a2a0b1b1ee1022ae7ed6c44e99ed1df0c",
+    "owned_audit.py": "6e5b394e2bf29b29e5c5b3a21cd82454cc65032354fb3fd335f6c0b87c01cde2",
+    "CPU_NODE_ACCEPTED.json": "ef91a875b7f8be9de80a23e3341c9b3b84db72a679e0ef8b6fee833d453938a3",
+    "ACCEPTED.json": "1cd2604a36c2725dff5ae226ba968ed2fb1c1497d1480c2003a9b42d530bc3fd",
+    "OWNER_EXIT.json": "be46c0897d97e069d2f0699f69457abaa04db087d18d2ff55e6b1d08fcdfc97d",
+    "EXIT.json": "950cb441202659dc3fa50126b1992c4015be596f38f2c1887b3d99b0d84e662c",
+    "REPORT.md": "fbaa4ff2a87bd8acf3b21d10ed16c4b71fe0d1bffdd9907ac7cc6dddf909e35d"
+  },
+  "scope": "first actual update, retained native rank1 buffer and full original rollout samples",
+  "earlier_root_sha_mismatch_preserved": true
+}
