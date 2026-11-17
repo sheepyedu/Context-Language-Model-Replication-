@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "CPU_checks": 16,
+  "native_writer_ranks": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "actual_training_launches": 0,
+  "model_or_judge_calls": 0
+}

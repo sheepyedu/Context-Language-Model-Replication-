@@ -1,0 +1,11 @@
+{
+  "prepared": true,
+  "input": "/mount-data/CLM-Replication/management/train-v14.sh",
+  "output": "/mount-data/CLM-Replication/management/train-dump-namespace-prepared-v1/train-v14-rank-debug.sh",
+  "input_sha256": "3e289d4b40700f8d191c80fe5d67afc597997032d8e42c33112283722b81d366",
+  "output_sha256": "573cdd622e3170bc646e5574e9db1be9c22930ffd90c6aa8fdb8fbeb668fab60",
+  "old_template": "$RUN/training-attempt13/train-{rollout_id}.pt",
+  "new_template": "$RUN/training-attempt13/train-{rollout_id}-rank-{rank}.pt",
+  "scope": "diagnostic output filenames only; apply at a future owned launch",
+  "launch_performed": false
+}
