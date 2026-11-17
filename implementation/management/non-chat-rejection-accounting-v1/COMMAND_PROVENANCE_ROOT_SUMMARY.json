@@ -1,0 +1,61 @@
+{
+  "accepted": true,
+  "created": 1794882772.6041334,
+  "private_provenance_sha256": "c60dd9fb99728cc4f7eafcaf8a808bb2b6300cfc732f42239a2283640423f560",
+  "schema_requests": 7,
+  "command_window_matches": 7,
+  "command_steps": [
+    "0021",
+    "0022",
+    "0023",
+    "0027",
+    "0030",
+    "0032",
+    "0033"
+  ],
+  "HTTP_schema_rejection_usage_remains_null": true,
+  "caught_exception_command_return_code": 0,
+  "correct_CLI_successes": [
+    {
+      "step": "0001",
+      "stdout_sha256": "968cce427ebd4577f978e150af0ca0a3316c8742f8cb847247e55563e194c43d",
+      "result_sha256": "e07862b78f036ead9f7d665e9c95a9f0b7dcb5b6d694fa4c9418e504b2253994"
+    },
+    {
+      "step": "0034",
+      "stdout_sha256": "9d2874a9317d218ebc9d86f749f3b709833b8fb166a0cb86ebaba8385b53f615",
+      "result_sha256": "ea70c5c95d227fc8859bd013ac3d6b64556bb8eb68e66a0f1e176fcccc768ffd"
+    },
+    {
+      "step": "0035",
+      "stdout_sha256": "d45bc0d6300dde95e5176303d6f7664ff593878b1ccdbb1974cc948e80b5c806",
+      "result_sha256": "ba145c7ce9b782ea664c56cc8dd9655944620c349a470fb8ff8dbb81ebf8e7a8"
+    }
+  ],
+  "earlier_correct_CLI_HTTP500": [
+    {
+      "step": "0003",
+      "stderr_sha256": "fcf78ccbc481318a8ead0f4159d10298237a1964a27649b2c27fbacef3fc5c72"
+    },
+    {
+      "step": "0004",
+      "stderr_sha256": "fcf78ccbc481318a8ead0f4159d10298237a1964a27649b2c27fbacef3fc5c72"
+    },
+    {
+      "step": "0005",
+      "stderr_sha256": "fcf78ccbc481318a8ead0f4159d10298237a1964a27649b2c27fbacef3fc5c72"
+    },
+    {
+      "step": "0006",
+      "stderr_sha256": "fcf78ccbc481318a8ead0f4159d10298237a1964a27649b2c27fbacef3fc5c72"
+    },
+    {
+      "step": "0014",
+      "stderr_sha256": "fcf78ccbc481318a8ead0f4159d10298237a1964a27649b2c27fbacef3fc5c72"
+    }
+  ],
+  "underlying_HTTP500_error_body_available": false,
+  "provided_web_CLI_sha256": "c1b5a1a1b49b53ffab8abe35d1f22f9fe2eb2c9216e76037f0d48b0b905f0f6c",
+  "new_model_tool_web_judge_calls": 0,
+  "original_scientific_outcomes_changed": false
+}

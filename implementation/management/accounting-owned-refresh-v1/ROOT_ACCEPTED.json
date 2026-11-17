@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "created": 1794882395.3452373,
+  "source_sha256": "5b8129b19749494771242b84c37d34c8b3bbe15d606fd9e0a21876a567887425",
+  "source_pins_sha256": "aafa04798943fc865b92c324457dbfa858642b2159f329fc99f5981290fb28af",
+  "child_actual_exit_code": 0,
+  "publication_exit_code": 0,
+  "owner_and_child_exactgone": true,
+  "actual_duration_seconds": 26.09091019630432,
+  "snapshot_sha256": "cc6d4a8fb6e72cd82e7acf139a81f70830bcf7fba9a52f206ace25c28e776725",
+  "canonical_receipts": 17031,
+  "known_total_tokens": 197564915,
+  "judge_known_tokens": 422518,
+  "original_missing_usage": 11,
+  "model_receipt_missing_usage": 0,
+  "scientific_owner_live": true,
+  "formal_updates": 1,
+  "all_failure_branches_tested": false,
+  "new_model_tool_judge_calls": 0
+}

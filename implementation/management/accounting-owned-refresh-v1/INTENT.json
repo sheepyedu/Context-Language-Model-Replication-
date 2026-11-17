@@ -1,0 +1,14 @@
+{
+  "created": 1794881629.7943113,
+  "owner": {
+    "pid": 3414268,
+    "uid": 0,
+    "start_ticks": 56826321,
+    "argv_sha256": "6ef6fd6312e3531cd8e0cdad61ae1309381ea6f6d9a4851fbfba282e497b12a0"
+  },
+  "script": "/mount-data/CLM-Replication/management/non-chat-rejection-accounting-v1/token_report_v5.py",
+  "script_sha256": "7bf98cd311449c974f8ce598a7683ef077c49a294d7019aed4b12dd4cac774a6",
+  "child_alarm_seconds": 290,
+  "parent_wait_seconds": 310,
+  "new_model_tool_judge_calls": 0
+}

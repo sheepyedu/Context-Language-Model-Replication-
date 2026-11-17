@@ -1,0 +1,13 @@
+{
+  "created": 1794881655.8852215,
+  "child_actual_exit_code": 0,
+  "publication_exit_code": 0,
+  "owner": {
+    "pid": 3414268,
+    "uid": 0,
+    "start_ticks": 56826321,
+    "argv_sha256": "6ef6fd6312e3531cd8e0cdad61ae1309381ea6f6d9a4851fbfba282e497b12a0"
+  },
+  "previous_snapshots_modified": false,
+  "new_model_tool_judge_calls": 0
+}

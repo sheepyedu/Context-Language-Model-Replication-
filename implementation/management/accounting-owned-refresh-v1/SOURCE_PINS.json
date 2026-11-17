@@ -1,0 +1,14 @@
+{
+  "created": 1794882346.0194528,
+  "files": {
+    "run_refresh.py": "5b8129b19749494771242b84c37d34c8b3bbe15d606fd9e0a21876a567887425",
+    "CURRENT.json": "f7fa528438bf690fb3b43d0c702ba84230d9b6060bb9d83b0a6583b3d2bf7dd2",
+    "INTENT.json": "9bb1312e3b2515aefe9d15757de75c301460d1fd4d9a266ec8d349dd68ac7408",
+    "CHILD_LAUNCH.json": "9ca5d86585ee2c73951d2d94db622ccb93e172b6f6ec0146ab2eaa22c6e159ee",
+    "EXIT.json": "7df750512e0e9d4995c2744e2a8203a45e762fab443caaaeb7d45c9fd113c20b",
+    "SNAPSHOT.json": "cc6d4a8fb6e72cd82e7acf139a81f70830bcf7fba9a52f206ace25c28e776725",
+    "README.md": "c9153004d502a9c360fbe60913759b66a8e161eee813e0e20cde09182fc9c3c6"
+  },
+  "scope": "one read-only accounting CPU refresh, training unchanged",
+  "all_failure_branches_tested": false
+}
